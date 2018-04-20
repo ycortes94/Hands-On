@@ -1,0 +1,18 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "cddb7e60995438a51b40ee7f64a0f86e"
+build_time: [1524194046, 524708000]
+inputs:
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/Models/UserProfile.swift": [1524035934, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/Authentication/InitialViewController.swift": [1524035909, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/Home/NewPostViewController.swift": [1524035950, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/Models/Post.swift": [1524035930, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/Services/UserService.swift": [1524035941, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/Services/ImageService.swift": [1524035938, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/HelperExtensions.swift": [1524083316, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/Authentication/MenuViewController.swift": [1524035920, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/Authentication/SignUpViewController.swift": [1524035924, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/Home/HomeViewController.swift": [1524035946, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/AppDelegate.swift": [1524033822, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/Home/PostTableViewCell.swift": [1524035953, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/Authentication/LoginViewController.swift": [1524035914, 0]
+  "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/HandsOn/UI/RoundedWhiteButton.swift": [1524035960, 0]

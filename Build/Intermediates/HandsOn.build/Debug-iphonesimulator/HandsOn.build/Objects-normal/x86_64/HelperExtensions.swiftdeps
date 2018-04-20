@@ -1,0 +1,605 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So8UIButtonC", ""]
+- ["So6UIViewC", ""]
+- ["So8UIButtonC", "setBackgroundColor"]
+- ["So6UIViewC", "addVerticalGradientLayer"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "Array"
+- "AssignmentPrecedence"
+- !private "CAGradientLayer"
+- !private "CGPoint"
+- !private "CGRect"
+- "UIButton"
+- "UIColor"
+- "UIControlState"
+- !private "UIGraphicsBeginImageContext"
+- !private "UIGraphicsEndImageContext"
+- !private "UIGraphicsGetCurrentContext"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "UIImage"
+- "UIView"
+depends-member:
+- !private ["So15CAGradientLayerC", "colors"]
+- !private ["So15CAGradientLayerC", "endPoint"]
+- !private ["So15CAGradientLayerC", "frame"]
+- !private ["So15CAGradientLayerC", "init"]
+- !private ["So15CAGradientLayerC", "locations"]
+- !private ["So15CAGradientLayerC", "startPoint"]
+- !private ["So7CALayerC", "colors"]
+- !private ["So7CALayerC", "endPoint"]
+- !private ["So7CALayerC", "frame"]
+- !private ["So7CALayerC", "init"]
+- !private ["So7CALayerC", "insertSublayer"]
+- !private ["So7CALayerC", "locations"]
+- !private ["So7CALayerC", "startPoint"]
+- !private ["So15CALayerDelegateP", "CAGradientLayer"]
+- !private ["So15CALayerDelegateP", "CGPoint"]
+- !private ["So15CALayerDelegateP", "CGRect"]
+- !private ["So15CALayerDelegateP", "UIGraphicsBeginImageContext"]
+- !private ["So15CALayerDelegateP", "UIGraphicsEndImageContext"]
+- !private ["So15CALayerDelegateP", "UIGraphicsGetCurrentContext"]
+- !private ["So15CALayerDelegateP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So15CALayerDelegateP", "bounds"]
+- !private ["So15CALayerDelegateP", "imageWithColor"]
+- !private ["So15CALayerDelegateP", "layer"]
+- !private ["So15CALayerDelegateP", "setBackgroundImage"]
+- !private ["So13CAMediaTimingP", "colors"]
+- !private ["So13CAMediaTimingP", "endPoint"]
+- !private ["So13CAMediaTimingP", "frame"]
+- !private ["So13CAMediaTimingP", "init"]
+- !private ["So13CAMediaTimingP", "insertSublayer"]
+- !private ["So13CAMediaTimingP", "locations"]
+- !private ["So13CAMediaTimingP", "startPoint"]
+- !private ["So9CGContextC", "fill"]
+- !private ["So9CGContextC", "setFillColor"]
+- !private ["SC7CGPointV", "init"]
+- !private ["SC6CGRectV", "init"]
+- !private ["SC6CGRectV", "size"]
+- !private ["s7CVarArgP", "CAGradientLayer"]
+- !private ["s7CVarArgP", "CGPoint"]
+- !private ["s7CVarArgP", "CGRect"]
+- !private ["s7CVarArgP", "UIGraphicsBeginImageContext"]
+- !private ["s7CVarArgP", "UIGraphicsEndImageContext"]
+- !private ["s7CVarArgP", "UIGraphicsGetCurrentContext"]
+- !private ["s7CVarArgP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "cgColor"]
+- !private ["s7CVarArgP", "colors"]
+- !private ["s7CVarArgP", "endPoint"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "imageWithColor"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "insertSublayer"]
+- !private ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "locations"]
+- !private ["s7CVarArgP", "setBackgroundImage"]
+- !private ["s7CVarArgP", "startPoint"]
+- !private ["s28CustomDebugStringConvertibleP", "CAGradientLayer"]
+- !private ["s28CustomDebugStringConvertibleP", "CGPoint"]
+- !private ["s28CustomDebugStringConvertibleP", "CGRect"]
+- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsBeginImageContext"]
+- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsEndImageContext"]
+- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsGetCurrentContext"]
+- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "cgColor"]
+- !private ["s28CustomDebugStringConvertibleP", "colors"]
+- !private ["s28CustomDebugStringConvertibleP", "endPoint"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "imageWithColor"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "insertSublayer"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "locations"]
+- !private ["s28CustomDebugStringConvertibleP", "setBackgroundImage"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
+- !private ["s28CustomDebugStringConvertibleP", "startPoint"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "size"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "size"]
+- !private ["s23CustomStringConvertibleP", "CAGradientLayer"]
+- !private ["s23CustomStringConvertibleP", "CGPoint"]
+- !private ["s23CustomStringConvertibleP", "CGRect"]
+- !private ["s23CustomStringConvertibleP", "UIGraphicsBeginImageContext"]
+- !private ["s23CustomStringConvertibleP", "UIGraphicsEndImageContext"]
+- !private ["s23CustomStringConvertibleP", "UIGraphicsGetCurrentContext"]
+- !private ["s23CustomStringConvertibleP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "cgColor"]
+- !private ["s23CustomStringConvertibleP", "colors"]
+- !private ["s23CustomStringConvertibleP", "endPoint"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "imageWithColor"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "insertSublayer"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "locations"]
+- !private ["s23CustomStringConvertibleP", "setBackgroundImage"]
+- !private ["s23CustomStringConvertibleP", "startPoint"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "size"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "size"]
+- !private ["s9EquatableP", "CAGradientLayer"]
+- !private ["s9EquatableP", "CGPoint"]
+- !private ["s9EquatableP", "CGRect"]
+- !private ["s9EquatableP", "UIGraphicsBeginImageContext"]
+- !private ["s9EquatableP", "UIGraphicsEndImageContext"]
+- !private ["s9EquatableP", "UIGraphicsGetCurrentContext"]
+- !private ["s9EquatableP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["s9EquatableP", "bounds"]
+- !private ["s9EquatableP", "cgColor"]
+- !private ["s9EquatableP", "colors"]
+- !private ["s9EquatableP", "endPoint"]
+- !private ["s9EquatableP", "fill"]
+- !private ["s9EquatableP", "frame"]
+- !private ["s9EquatableP", "imageWithColor"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "insertSublayer"]
+- !private ["s9EquatableP", "layer"]
+- !private ["s9EquatableP", "locations"]
+- !private ["s9EquatableP", "setBackgroundImage"]
+- !private ["s9EquatableP", "setFillColor"]
+- !private ["s9EquatableP", "size"]
+- !private ["s9EquatableP", "startPoint"]
+- !private ["s8HashableP", "CAGradientLayer"]
+- !private ["s8HashableP", "CGPoint"]
+- !private ["s8HashableP", "CGRect"]
+- !private ["s8HashableP", "UIGraphicsBeginImageContext"]
+- !private ["s8HashableP", "UIGraphicsEndImageContext"]
+- !private ["s8HashableP", "UIGraphicsGetCurrentContext"]
+- !private ["s8HashableP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["s8HashableP", "bounds"]
+- !private ["s8HashableP", "cgColor"]
+- !private ["s8HashableP", "colors"]
+- !private ["s8HashableP", "endPoint"]
+- !private ["s8HashableP", "fill"]
+- !private ["s8HashableP", "frame"]
+- !private ["s8HashableP", "imageWithColor"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "insertSublayer"]
+- !private ["s8HashableP", "layer"]
+- !private ["s8HashableP", "locations"]
+- !private ["s8HashableP", "setBackgroundImage"]
+- !private ["s8HashableP", "setFillColor"]
+- !private ["s8HashableP", "startPoint"]
+- !private ["So8NSCodingP", "CAGradientLayer"]
+- !private ["So8NSCodingP", "CGPoint"]
+- !private ["So8NSCodingP", "CGRect"]
+- !private ["So8NSCodingP", "UIGraphicsBeginImageContext"]
+- !private ["So8NSCodingP", "UIGraphicsEndImageContext"]
+- !private ["So8NSCodingP", "UIGraphicsGetCurrentContext"]
+- !private ["So8NSCodingP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So8NSCodingP", "bounds"]
+- !private ["So8NSCodingP", "cgColor"]
+- !private ["So8NSCodingP", "colors"]
+- !private ["So8NSCodingP", "endPoint"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "imageWithColor"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "insertSublayer"]
+- !private ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "locations"]
+- !private ["So8NSCodingP", "setBackgroundImage"]
+- !private ["So8NSCodingP", "startPoint"]
+- !private ["So9NSCopyingP", "cgColor"]
+- !private ["So21NSItemProviderReadingP", "cgColor"]
+- !private ["So21NSItemProviderWritingP", "cgColor"]
+- !private ["So8NSObjectC", "CAGradientLayer"]
+- !private ["So8NSObjectC", "CGPoint"]
+- !private ["So8NSObjectC", "CGRect"]
+- ["So8NSObjectC", "UIColor"]
+- ["So8NSObjectC", "UIControlState"]
+- !private ["So8NSObjectC", "UIGraphicsBeginImageContext"]
+- !private ["So8NSObjectC", "UIGraphicsEndImageContext"]
+- !private ["So8NSObjectC", "UIGraphicsGetCurrentContext"]
+- !private ["So8NSObjectC", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So8NSObjectC", "UIImage"]
+- ["So8NSObjectC", "addVerticalGradientLayer"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "cgColor"]
+- !private ["So8NSObjectC", "colors"]
+- !private ["So8NSObjectC", "endPoint"]
+- !private ["So8NSObjectC", "frame"]
+- ["So8NSObjectC", "imageWithColor"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "insertSublayer"]
+- !private ["So8NSObjectC", "layer"]
+- !private ["So8NSObjectC", "locations"]
+- ["So8NSObjectC", "setBackgroundColor"]
+- !private ["So8NSObjectC", "setBackgroundImage"]
+- !private ["So8NSObjectC", "startPoint"]
+- !private ["So16NSObjectProtocolP", "CAGradientLayer"]
+- !private ["So16NSObjectProtocolP", "CGPoint"]
+- !private ["So16NSObjectProtocolP", "CGRect"]
+- !private ["So16NSObjectProtocolP", "UIGraphicsBeginImageContext"]
+- !private ["So16NSObjectProtocolP", "UIGraphicsEndImageContext"]
+- !private ["So16NSObjectProtocolP", "UIGraphicsGetCurrentContext"]
+- !private ["So16NSObjectProtocolP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["So16NSObjectProtocolP", "cgColor"]
+- !private ["So16NSObjectProtocolP", "colors"]
+- !private ["So16NSObjectProtocolP", "endPoint"]
+- !private ["So16NSObjectProtocolP", "frame"]
+- !private ["So16NSObjectProtocolP", "imageWithColor"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "insertSublayer"]
+- !private ["So16NSObjectProtocolP", "layer"]
+- !private ["So16NSObjectProtocolP", "locations"]
+- !private ["So16NSObjectProtocolP", "setBackgroundImage"]
+- !private ["So16NSObjectProtocolP", "startPoint"]
+- !private ["So14NSSecureCodingP", "cgColor"]
+- !private ["So14NSSecureCodingP", "colors"]
+- !private ["So14NSSecureCodingP", "endPoint"]
+- !private ["So14NSSecureCodingP", "frame"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "insertSublayer"]
+- !private ["So14NSSecureCodingP", "locations"]
+- !private ["So14NSSecureCodingP", "startPoint"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "CGRect"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "UIGraphicsBeginImageContext"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "UIGraphicsEndImageContext"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "UIGraphicsGetCurrentContext"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "imageWithColor"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setBackgroundImage"]
+- !private ["So29UIAccessibilityIdentificationP", "CAGradientLayer"]
+- !private ["So29UIAccessibilityIdentificationP", "CGPoint"]
+- !private ["So29UIAccessibilityIdentificationP", "CGRect"]
+- !private ["So29UIAccessibilityIdentificationP", "UIGraphicsBeginImageContext"]
+- !private ["So29UIAccessibilityIdentificationP", "UIGraphicsEndImageContext"]
+- !private ["So29UIAccessibilityIdentificationP", "UIGraphicsGetCurrentContext"]
+- !private ["So29UIAccessibilityIdentificationP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So29UIAccessibilityIdentificationP", "bounds"]
+- !private ["So29UIAccessibilityIdentificationP", "imageWithColor"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "setBackgroundImage"]
+- !private ["So12UIAppearanceP", "CAGradientLayer"]
+- !private ["So12UIAppearanceP", "CGPoint"]
+- !private ["So12UIAppearanceP", "CGRect"]
+- !private ["So12UIAppearanceP", "UIGraphicsBeginImageContext"]
+- !private ["So12UIAppearanceP", "UIGraphicsEndImageContext"]
+- !private ["So12UIAppearanceP", "UIGraphicsGetCurrentContext"]
+- !private ["So12UIAppearanceP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So12UIAppearanceP", "bounds"]
+- !private ["So12UIAppearanceP", "imageWithColor"]
+- !private ["So12UIAppearanceP", "layer"]
+- !private ["So12UIAppearanceP", "setBackgroundImage"]
+- !private ["So21UIAppearanceContainerP", "CAGradientLayer"]
+- !private ["So21UIAppearanceContainerP", "CGPoint"]
+- !private ["So21UIAppearanceContainerP", "CGRect"]
+- !private ["So21UIAppearanceContainerP", "UIGraphicsBeginImageContext"]
+- !private ["So21UIAppearanceContainerP", "UIGraphicsEndImageContext"]
+- !private ["So21UIAppearanceContainerP", "UIGraphicsGetCurrentContext"]
+- !private ["So21UIAppearanceContainerP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So21UIAppearanceContainerP", "bounds"]
+- !private ["So21UIAppearanceContainerP", "imageWithColor"]
+- !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "setBackgroundImage"]
+- !private ["So8UIButtonC", "CGRect"]
+- ["So8UIButtonC", "UIColor"]
+- ["So8UIButtonC", "UIControlState"]
+- !private ["So8UIButtonC", "UIGraphicsBeginImageContext"]
+- !private ["So8UIButtonC", "UIGraphicsEndImageContext"]
+- !private ["So8UIButtonC", "UIGraphicsGetCurrentContext"]
+- !private ["So8UIButtonC", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So8UIButtonC", "UIImage"]
+- !private ["So8UIButtonC", "imageWithColor"]
+- ["So8UIButtonC", "setBackgroundColor"]
+- !private ["So8UIButtonC", "setBackgroundImage"]
+- !private ["So7UIColorC", "cgColor"]
+- !private ["So9UIControlC", "CGRect"]
+- ["So9UIControlC", "UIColor"]
+- ["So9UIControlC", "UIControlState"]
+- !private ["So9UIControlC", "UIGraphicsBeginImageContext"]
+- !private ["So9UIControlC", "UIGraphicsEndImageContext"]
+- !private ["So9UIControlC", "UIGraphicsGetCurrentContext"]
+- !private ["So9UIControlC", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So9UIControlC", "UIImage"]
+- ["So9UIControlC", "imageWithColor"]
+- ["So9UIControlC", "setBackgroundColor"]
+- !private ["So9UIControlC", "setBackgroundImage"]
+- !private ["So17UICoordinateSpaceP", "CAGradientLayer"]
+- !private ["So17UICoordinateSpaceP", "CGPoint"]
+- !private ["So17UICoordinateSpaceP", "CGRect"]
+- !private ["So17UICoordinateSpaceP", "UIGraphicsBeginImageContext"]
+- !private ["So17UICoordinateSpaceP", "UIGraphicsEndImageContext"]
+- !private ["So17UICoordinateSpaceP", "UIGraphicsGetCurrentContext"]
+- !private ["So17UICoordinateSpaceP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So17UICoordinateSpaceP", "bounds"]
+- !private ["So17UICoordinateSpaceP", "imageWithColor"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- !private ["So17UICoordinateSpaceP", "setBackgroundImage"]
+- !private ["So13UIDynamicItemP", "CAGradientLayer"]
+- !private ["So13UIDynamicItemP", "CGPoint"]
+- !private ["So13UIDynamicItemP", "CGRect"]
+- !private ["So13UIDynamicItemP", "UIGraphicsBeginImageContext"]
+- !private ["So13UIDynamicItemP", "UIGraphicsEndImageContext"]
+- !private ["So13UIDynamicItemP", "UIGraphicsGetCurrentContext"]
+- !private ["So13UIDynamicItemP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So13UIDynamicItemP", "bounds"]
+- !private ["So13UIDynamicItemP", "imageWithColor"]
+- !private ["So13UIDynamicItemP", "layer"]
+- !private ["So13UIDynamicItemP", "setBackgroundImage"]
+- !private ["So18UIFocusEnvironmentP", "CAGradientLayer"]
+- !private ["So18UIFocusEnvironmentP", "CGPoint"]
+- !private ["So18UIFocusEnvironmentP", "CGRect"]
+- !private ["So18UIFocusEnvironmentP", "UIGraphicsBeginImageContext"]
+- !private ["So18UIFocusEnvironmentP", "UIGraphicsEndImageContext"]
+- !private ["So18UIFocusEnvironmentP", "UIGraphicsGetCurrentContext"]
+- !private ["So18UIFocusEnvironmentP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So18UIFocusEnvironmentP", "bounds"]
+- !private ["So18UIFocusEnvironmentP", "imageWithColor"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "setBackgroundImage"]
+- !private ["So11UIFocusItemP", "CAGradientLayer"]
+- !private ["So11UIFocusItemP", "CGPoint"]
+- !private ["So11UIFocusItemP", "CGRect"]
+- !private ["So11UIFocusItemP", "UIGraphicsBeginImageContext"]
+- !private ["So11UIFocusItemP", "UIGraphicsEndImageContext"]
+- !private ["So11UIFocusItemP", "UIGraphicsGetCurrentContext"]
+- !private ["So11UIFocusItemP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So11UIFocusItemP", "bounds"]
+- !private ["So11UIFocusItemP", "imageWithColor"]
+- !private ["So11UIFocusItemP", "layer"]
+- !private ["So11UIFocusItemP", "setBackgroundImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "CAGradientLayer"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGPoint"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIGraphicsBeginImageContext"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIGraphicsEndImageContext"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIGraphicsGetCurrentContext"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So30UIPasteConfigurationSupportingP", "bounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "imageWithColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "setBackgroundImage"]
+- !private ["So11UIResponderC", "CAGradientLayer"]
+- !private ["So11UIResponderC", "CGPoint"]
+- !private ["So11UIResponderC", "CGRect"]
+- ["So11UIResponderC", "UIColor"]
+- ["So11UIResponderC", "UIControlState"]
+- !private ["So11UIResponderC", "UIGraphicsBeginImageContext"]
+- !private ["So11UIResponderC", "UIGraphicsEndImageContext"]
+- !private ["So11UIResponderC", "UIGraphicsGetCurrentContext"]
+- !private ["So11UIResponderC", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So11UIResponderC", "UIImage"]
+- ["So11UIResponderC", "addVerticalGradientLayer"]
+- !private ["So11UIResponderC", "bounds"]
+- ["So11UIResponderC", "imageWithColor"]
+- !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "setBackgroundColor"]
+- !private ["So11UIResponderC", "setBackgroundImage"]
+- !private ["So30UIResponderStandardEditActionsP", "CAGradientLayer"]
+- !private ["So30UIResponderStandardEditActionsP", "CGPoint"]
+- !private ["So30UIResponderStandardEditActionsP", "CGRect"]
+- !private ["So30UIResponderStandardEditActionsP", "UIGraphicsBeginImageContext"]
+- !private ["So30UIResponderStandardEditActionsP", "UIGraphicsEndImageContext"]
+- !private ["So30UIResponderStandardEditActionsP", "UIGraphicsGetCurrentContext"]
+- !private ["So30UIResponderStandardEditActionsP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So30UIResponderStandardEditActionsP", "bounds"]
+- !private ["So30UIResponderStandardEditActionsP", "imageWithColor"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "setBackgroundImage"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "CGRect"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "UIGraphicsBeginImageContext"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "UIGraphicsEndImageContext"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "UIGraphicsGetCurrentContext"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "imageWithColor"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "setBackgroundImage"]
+- !private ["So18UITraitEnvironmentP", "CAGradientLayer"]
+- !private ["So18UITraitEnvironmentP", "CGPoint"]
+- !private ["So18UITraitEnvironmentP", "CGRect"]
+- !private ["So18UITraitEnvironmentP", "UIGraphicsBeginImageContext"]
+- !private ["So18UITraitEnvironmentP", "UIGraphicsEndImageContext"]
+- !private ["So18UITraitEnvironmentP", "UIGraphicsGetCurrentContext"]
+- !private ["So18UITraitEnvironmentP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "imageWithColor"]
+- !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "setBackgroundImage"]
+- !private ["So6UIViewC", "CAGradientLayer"]
+- !private ["So6UIViewC", "CGPoint"]
+- !private ["So6UIViewC", "CGRect"]
+- ["So6UIViewC", "UIColor"]
+- ["So6UIViewC", "UIControlState"]
+- !private ["So6UIViewC", "UIGraphicsBeginImageContext"]
+- !private ["So6UIViewC", "UIGraphicsEndImageContext"]
+- !private ["So6UIViewC", "UIGraphicsGetCurrentContext"]
+- !private ["So6UIViewC", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So6UIViewC", "UIImage"]
+- ["So6UIViewC", "addVerticalGradientLayer"]
+- !private ["So6UIViewC", "bounds"]
+- ["So6UIViewC", "imageWithColor"]
+- !private ["So6UIViewC", "layer"]
+- ["So6UIViewC", "setBackgroundColor"]
+- !private ["So6UIViewC", "setBackgroundImage"]
+- !private ["14CoreFoundation9_CFObjectP", "fill"]
+- !private ["14CoreFoundation9_CFObjectP", "setFillColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CAGradientLayer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CGPoint"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CGRect"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIGraphicsBeginImageContext"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIGraphicsEndImageContext"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIGraphicsGetCurrentContext"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "imageWithColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setBackgroundImage"]
+- !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CAGradientLayer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsBeginImageContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsEndImageContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsGetCurrentContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "colors"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "endPoint"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageWithColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "insertSublayer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "locations"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setBackgroundImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startPoint"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "size"]
+depends-nominal:
+- !private "So15CAGradientLayerC"
+- !private "So7CALayerC"
+- !private "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
+- !private "So9CGContextC"
+- !private "SC7CGPointV"
+- !private "SC6CGRectV"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "s8HashableP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- "So8UIButtonC"
+- !private "So7UIColorC"
+- "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- !private "14CoreFoundation9_CFObjectP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestore.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FirebaseFirestore.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRListenerRegistration.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTransaction.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSetOptions.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRGeoPoint.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuery.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/HandsOn/HandsOn/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "e250dbf71c5e2b1843f99e095405babd"
