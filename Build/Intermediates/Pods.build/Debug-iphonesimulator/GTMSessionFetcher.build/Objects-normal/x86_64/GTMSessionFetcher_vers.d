@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/yosimycortes/Desktop/Documents/Developer/HandsOn/HandsOn/Build/Intermediates/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/DerivedSources/GTMSessionFetcher_vers.c
+  /Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/DerivedSources/GTMSessionFetcher_vers.c
