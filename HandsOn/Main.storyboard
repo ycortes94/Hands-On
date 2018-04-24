@@ -31,7 +31,7 @@
                                     <constraint firstAttribute="height" constant="64" id="Muo-w0-rKM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                                <state key="normal" title="Log In">
+                                <state key="normal" title="Get Started">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

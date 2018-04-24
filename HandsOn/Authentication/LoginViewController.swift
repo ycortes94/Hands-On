@@ -20,6 +20,13 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     var continueButton:RoundedWhiteButton!
     var activityView:UIActivityIndicatorView!
     
+    let registerButton : UIButton = {
+        let button = UIButton()
+        button.setTitle("Register", for: .normal)
+        button.backgroundColor = UIColor.yellow
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,12 +56,14 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
         emailField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         passwordField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        
+        view.addSubview(registerButton)
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        emailField.becomeFirstResponder()
+        //emailField.becomeFirstResponder()
         NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
     }
