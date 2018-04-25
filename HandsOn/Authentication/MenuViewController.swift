@@ -69,6 +69,14 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "HandsOnBackground.jpg")!)
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
+        blurredEffectView.alpha = 0.4
+        blurredEffectView.frame = self.view.bounds
+        view.addSubview(blurredEffectView)
+
+        
         // Add the HandsOn label
         self.view.addSubview(handsOnLabel)
         self.view.addSubview(subLabel)
@@ -77,9 +85,7 @@ class MenuViewController: UIViewController {
         
         // Add the background gradient
         //view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "HandsOnBackground.jpg")!)
-
+    
     }
     
     private func setUpLayout(){
@@ -104,7 +110,7 @@ class MenuViewController: UIViewController {
     @objc private func getStartedButtonClicked(){
     
         let loginView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        self.present(loginView, animated: true, completion: nil)
+        self.present(loginView, animated: false, completion: nil)
         
     }
     
