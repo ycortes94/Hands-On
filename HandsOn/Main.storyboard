@@ -165,7 +165,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="M6b-zJ-xCd">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="wie-nZ-YWG" customClass="SignUpViewController" customModule="HandsOn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" automaticallyAdjustsScrollViewInsets="NO" id="wie-nZ-YWG" customClass="SignUpViewController" customModule="HandsOn" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fnJ-WF-7WF"/>
                         <viewControllerLayoutGuide type="bottom" id="hUK-i1-RKh"/>
@@ -504,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNy-QR-Zzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1983" y="145"/>
+            <point key="canvasLocation" x="1937" y="125"/>
         </scene>
         <!--Item-->
         <scene sceneID="187-U8-Fk7">

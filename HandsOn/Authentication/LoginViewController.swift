@@ -16,14 +16,29 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     //@IBOutlet weak var dismissButton: UIButton!
-
-    var continueButton:RoundedWhiteButton!
+    
     var activityView:UIActivityIndicatorView!
+
+    var loginButton:RoundedWhiteButton = {
+        let button = RoundedWhiteButton()
+        button.setTitle("Log in", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
+        //button.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
+        //button.defaultColor = UIColor.white
+        button.addTarget(self, action: #selector(handleSignIn), for: .touchUpInside)
+        button.alpha = 0.5
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+        
+    }()
     
     let registerButton : UIButton = {
         let button = UIButton()
-        button.setTitle("Register", for: .normal)
-        button.backgroundColor = UIColor.yellow
+        button.setTitle("Don't have an account? Sign up.", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
+        button.backgroundColor = UIColor.blue
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(handleRegisterButton), for: .touchUpInside)
         return button
     }()
     
@@ -31,26 +46,18 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        
-        continueButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-        continueButton.setTitleColor(secondaryColor, for: .normal)
-        continueButton.setTitle("Continue", for: .normal)
-        continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
-        continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
-        continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
-        continueButton.defaultColor = UIColor.white
-        continueButton.addTarget(self, action: #selector(handleSignIn), for: .touchUpInside)
-        continueButton.alpha = 0.5
-        view.addSubview(continueButton)
-        setContinueButton(enabled: false)
+        view.addSubview(registerButton)
+        view.addSubview(loginButton)
+        setloginButton(enabled: false)
         
         
         activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityView.color = secondaryColor
         activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
-        activityView.center = continueButton.center
+        activityView.center = loginButton.center
         view.addSubview(activityView)
         
+        setUpLayout()
         
         emailField.delegate = self
         passwordField.delegate = self
@@ -58,7 +65,20 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         passwordField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         
         
-        view.addSubview(registerButton)
+    }
+    
+    private func setUpLayout(){
+        
+        registerButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        registerButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100).isActive = true
+        registerButton.widthAnchor.constraint(equalToConstant: self.view.frame.size.width ).isActive = true
+        registerButton.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        
+        loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loginButton.topAnchor.constraint(equalTo: passwordField.bottomAnchor, constant: 25).isActive = true
+        loginButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        loginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
     }
     
     
@@ -82,12 +102,15 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func handleDismissButton(_ sender: Any) {
-        self.dismiss(animated: false, completion: nil)
+    @objc private func handleRegisterButton(){
+        
+        let signUpView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        self.present(signUpView, animated: false, completion: nil)
+        
     }
     
     /**
-     Adjusts the center of the **continueButton** above the keyboard.
+     Adjusts the center of the **loginButton** above the keyboard.
      - Parameter notification: Contains the keyboardFrame info.
      */
     
@@ -96,9 +119,9 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         let info = notification.userInfo!
         let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
-        continueButton.center = CGPoint(x: view.center.x,
-                                        y: view.frame.height - keyboardFrame.height - 16.0 - continueButton.frame.height / 2)
-        activityView.center = continueButton.center
+        loginButton.center = CGPoint(x: view.center.x,
+                                        y: view.frame.height - keyboardFrame.height - 16.0 - loginButton.frame.height / 2)
+        activityView.center = loginButton.center
     }
     
     /**
@@ -111,7 +134,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         let email = emailField.text
         let password = passwordField.text
         let formFilled = email != nil && email != "" && password != nil && password != ""
-        setContinueButton(enabled: formFilled)
+        setloginButton(enabled: formFilled)
     }
     
     
@@ -135,16 +158,16 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     }
     
     /**
-     Enables or Disables the **continueButton**.
+     Enables or Disables the **loginButton**.
      */
     
-    func setContinueButton(enabled:Bool) {
+    func setloginButton(enabled:Bool) {
         if enabled {
-            continueButton.alpha = 1.0
-            continueButton.isEnabled = true
+            loginButton.alpha = 1.0
+            loginButton.isEnabled = true
         } else {
-            continueButton.alpha = 0.5
-            continueButton.isEnabled = false
+            loginButton.alpha = 0.5
+            loginButton.isEnabled = false
         }
     }
     
@@ -152,8 +175,8 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         guard let email = emailField.text else { return }
         guard let pass = passwordField.text else { return }
         
-        setContinueButton(enabled: false)
-        continueButton.setTitle("", for: .normal)
+        setloginButton(enabled: false)
+        loginButton.setTitle("", for: .normal)
         activityView.startAnimating()
         
         Auth.auth().signIn(withEmail: email, password: pass) { user, error in
@@ -172,8 +195,8 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
-        setContinueButton(enabled: true)
-        continueButton.setTitle("Continue", for: .normal)
+        setloginButton(enabled: true)
+        loginButton.setTitle("Continue", for: .normal)
         activityView.stopAnimating()
     }
 
