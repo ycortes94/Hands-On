@@ -15,7 +15,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var dismissButton: UIButton!
+    //@IBOutlet weak var dismissButton: UIButton!
 
     var continueButton:RoundedWhiteButton!
     var activityView:UIActivityIndicatorView!
@@ -44,18 +44,19 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         view.addSubview(continueButton)
         setContinueButton(enabled: false)
         
+        
         activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityView.color = secondaryColor
         activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
         activityView.center = continueButton.center
-        
         view.addSubview(activityView)
+        
         
         emailField.delegate = self
         passwordField.delegate = self
-        
         emailField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         passwordField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        
         
         view.addSubview(registerButton)
     }
