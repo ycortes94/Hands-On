@@ -47,17 +47,10 @@ class MenuViewController: UIViewController {
     //Get started button properties
     let getStartedButton : UIButton = {
        
-        //let borderAlpha : CGFloat = 0.7
-        //let cornerRadius : CGFloat = 5.0
-        
         let button = UIButton()
         button.setTitle("Get Started", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
-        button.setBackgroundColor(color: UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.85), forUIControlState: .normal)
-        
-        //button.layer.borderWidth = 1.0
-        //button.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
-        //button.layer.cornerRadius = cornerRadius
+        button.setBackgroundColor(color: UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.80), forUIControlState: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false;
         button.addTarget(self, action: #selector(getStartedButtonClicked), for: .touchUpInside)
         return button
