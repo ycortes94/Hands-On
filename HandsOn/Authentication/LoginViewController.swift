@@ -51,9 +51,10 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.80)
         textField.layer.cornerRadius = 5
         textField.translatesAutoresizingMaskIntoConstraints = false;
+        
         return textField
     }()
-
+    
     var loginButton:UIButton = {
         let button = UIButton()
         button.setTitle("Log in", for: .normal)
@@ -179,13 +180,13 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     
     //@objc func keyboardWillAppear(notification: NSNotification){
-        
-        //let info = notification.userInfo!
-        //let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        
-        //loginButton.center = CGPoint(x: view.center.x,
-        //                                y: view.frame.height - keyboardFrame.height - 16.0 - loginButton.frame.height / 2)
-        //activityView.center = loginButton.center
+    
+    //let info = notification.userInfo!
+    //let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+    
+    //loginButton.center = CGPoint(x: view.center.x,
+    //                                y: view.frame.height - keyboardFrame.height - 16.0 - loginButton.frame.height / 2)
+    //activityView.center = loginButton.center
     //}
     
     
@@ -254,7 +255,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
                 self.dismiss(animated: false, completion: nil)
             } else {
                 print("Error logging in: \(error!.localizedDescription)")
-
+                
                 self.resetForm()
             }
         }
@@ -269,5 +270,5 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         loginButton.setTitle("Continue", for: .normal)
         activityView.stopAnimating()
     }
-
+    
 }
