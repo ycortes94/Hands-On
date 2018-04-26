@@ -13,11 +13,10 @@ import Firebase
 
 class LoginViewController:UIViewController, UITextFieldDelegate {
     
-<<<<<<< HEAD
+
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var dismissButton: UIButton!
-=======
     //@IBOutlet weak var emailTextField: UITextField!
     //@IBOutlet weak var passwordTextField: UITextField!
     
@@ -34,8 +33,6 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         return label
         
     }()
->>>>>>> d20149c7820fe540efc8913532a31f3a1e3e4e6b
-    
     var activityView:UIActivityIndicatorView!
     
     let emailTextField : UITextField = {
