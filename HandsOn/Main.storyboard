@@ -51,85 +51,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Gb-fa-797">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="687"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPr-fP-Ghl">
-                                                <rect key="frame" x="36" y="44" width="303" height="350"/>
-<<<<<<< HEAD
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lX-Ej-Ybs">
-                                                        <rect key="frame" x="124" y="8" width="55" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoQ-fs-FJs">
-                                                        <rect key="frame" x="12" y="56" width="41" height="17"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="urX-Do-eiR">
-                                                        <rect key="frame" x="12" y="85" width="279" height="22"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
-                                                    </textField>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0if-Nc-wcD">
-                                                        <rect key="frame" x="12" y="111" width="279" height="1"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="1" id="UmC-mR-bWK"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cB-ai-Uk8">
-                                                        <rect key="frame" x="14" y="128" width="78" height="17"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xlq-r8-dSG">
-                                                        <rect key="frame" x="12" y="157" width="279" height="22"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
-                                                    </textField>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgQ-Hd-LIq">
-                                                        <rect key="frame" x="12" y="183" width="279" height="1"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="1" id="UaE-CQ-lis"/>
-                                                        </constraints>
-                                                    </view>
-                                                </subviews>
-=======
->>>>>>> d20149c7820fe540efc8913532a31f3a1e3e4e6b
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="350" id="PwG-Jk-MDC"/>
-                                                </constraints>
-                                            </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBY-YS-8pS">
-                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="44" id="3gr-iZ-9Z4"/>
-                                                </constraints>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <state key="normal" image="backArrow"/>
-                                                <connections>
-                                                    <action selector="handleDismissButton:" destination="wie-nZ-YWG" eventType="touchUpInside" id="XEJ-0g-hr1"/>
-                                                    <action selector="handleDismissButton:" destination="Gzf-aY-Irw" eventType="touchUpInside" id="v8N-0W-m2S"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="HPr-fP-Ghl" firstAttribute="top" secondItem="vBY-YS-8pS" secondAttribute="bottom" id="LDT-Cd-K2m"/>
-                                            <constraint firstItem="vBY-YS-8pS" firstAttribute="leading" secondItem="7Gb-fa-797" secondAttribute="leading" id="O0c-oG-yYz"/>
-                                            <constraint firstItem="HPr-fP-Ghl" firstAttribute="leading" secondItem="7Gb-fa-797" secondAttribute="leading" constant="36" id="UQg-1i-Aah"/>
-                                            <constraint firstItem="HPr-fP-Ghl" firstAttribute="top" secondItem="7Gb-fa-797" secondAttribute="top" constant="44" id="aCO-HR-Ouo"/>
-                                            <constraint firstItem="vBY-YS-8pS" firstAttribute="top" secondItem="7Gb-fa-797" secondAttribute="top" id="m9F-gR-8r8"/>
-                                            <constraint firstAttribute="trailing" secondItem="HPr-fP-Ghl" secondAttribute="trailing" constant="36" id="wPy-c4-WNb"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -151,14 +73,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ql9-tN-f5h"/>
                     </view>
-<<<<<<< HEAD
-                    <connections>
-                        <outlet property="dismissButton" destination="vBY-YS-8pS" id="fpI-0O-9xt"/>
-                        <outlet property="emailField" destination="urX-Do-eiR" id="RQd-ry-4Bo"/>
-                        <outlet property="passwordField" destination="Xlq-r8-dSG" id="Hva-l0-fRF"/>
-                    </connections>
-=======
->>>>>>> d20149c7820fe540efc8913532a31f3a1e3e4e6b
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jtj-YC-26n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

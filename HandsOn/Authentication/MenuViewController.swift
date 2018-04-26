@@ -16,7 +16,7 @@ class MenuViewController: UIViewController {
     
     //hands on label properties
     let handsOnLabel : UILabel = {
-       
+        
         let label = UILabel()
         label.text = "HandsOn"
         label.textColor = UIColor.white
@@ -24,7 +24,7 @@ class MenuViewController: UIViewController {
         //label.backgroundColor = UIColor.gray
         label.font = UIFont.systemFont(ofSize: 55, weight: .semibold)
         label.translatesAutoresizingMaskIntoConstraints = false;
-
+        
         return label
         
     }()
@@ -46,7 +46,7 @@ class MenuViewController: UIViewController {
     
     //Get started button properties
     let getStartedButton : UIButton = {
-       
+        
         let button = UIButton()
         button.setTitle("Get Started", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
@@ -56,7 +56,7 @@ class MenuViewController: UIViewController {
         return button
         
     }()
- 
+    
     
     
     override func viewDidLoad() {
@@ -67,9 +67,8 @@ class MenuViewController: UIViewController {
         let blurredEffectView = UIVisualEffectView(effect: blurEffect)
         blurredEffectView.alpha = 0.4
         blurredEffectView.frame = self.view.bounds
-        
-        view.frame = CGRect(x: 500, y: 500, width: 0, height: 0)
         view.addSubview(blurredEffectView)
+        
         
         // Add the HandsOn label
         self.view.addSubview(handsOnLabel)
@@ -79,7 +78,7 @@ class MenuViewController: UIViewController {
         
         // Add the background gradient
         //view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-    
+        
     }
     
     private func setUpLayout(){
@@ -102,7 +101,7 @@ class MenuViewController: UIViewController {
     
     //Presents log in view after get started is pressed
     @objc private func getStartedButtonClicked(){
-    
+        
         let loginView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
         self.present(loginView, animated: false, completion: nil)
         

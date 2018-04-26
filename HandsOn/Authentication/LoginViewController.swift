@@ -13,10 +13,6 @@ import Firebase
 
 class LoginViewController:UIViewController, UITextFieldDelegate {
     
-
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var dismissButton: UIButton!
     //@IBOutlet weak var emailTextField: UITextField!
     //@IBOutlet weak var passwordTextField: UITextField!
     
@@ -33,6 +29,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         return label
         
     }()
+    
     var activityView:UIActivityIndicatorView!
     
     let emailTextField : UITextField = {
@@ -54,9 +51,10 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.80)
         textField.layer.cornerRadius = 5
         textField.translatesAutoresizingMaskIntoConstraints = false;
+        
         return textField
     }()
-
+    
     var loginButton:UIButton = {
         let button = UIButton()
         button.setTitle("Log in", for: .normal)
@@ -86,6 +84,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         view.addSubview(handsOnLabel)
         view.addSubview(registerButton)
@@ -174,9 +173,6 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
     }
     
-    @IBAction func handleDismissButton(_ sender: Any) {
-        self.dismiss(animated: false, completion: nil)
-    }
     /**
      Adjusts the center of the **loginButton** above the keyboard.
      - Parameter notification: Contains the keyboardFrame info.
@@ -184,13 +180,13 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     
     //@objc func keyboardWillAppear(notification: NSNotification){
-        
-        //let info = notification.userInfo!
-        //let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        
-        //loginButton.center = CGPoint(x: view.center.x,
-        //                                y: view.frame.height - keyboardFrame.height - 16.0 - loginButton.frame.height / 2)
-        //activityView.center = loginButton.center
+    
+    //let info = notification.userInfo!
+    //let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+    
+    //loginButton.center = CGPoint(x: view.center.x,
+    //                                y: view.frame.height - keyboardFrame.height - 16.0 - loginButton.frame.height / 2)
+    //activityView.center = loginButton.center
     //}
     
     
@@ -259,7 +255,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
                 self.dismiss(animated: false, completion: nil)
             } else {
                 print("Error logging in: \(error!.localizedDescription)")
-
+                
                 self.resetForm()
             }
         }
@@ -274,5 +270,5 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         loginButton.setTitle("Continue", for: .normal)
         activityView.stopAnimating()
     }
-
+    
 }
