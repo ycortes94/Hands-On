@@ -54,6 +54,7 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPr-fP-Ghl">
                                                 <rect key="frame" x="36" y="44" width="303" height="350"/>
+<<<<<<< HEAD
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lX-Ej-Ybs">
                                                         <rect key="frame" x="124" y="8" width="55" height="24"/>
@@ -100,29 +101,11 @@
                                                         </constraints>
                                                     </view>
                                                 </subviews>
+=======
+>>>>>>> d20149c7820fe540efc8913532a31f3a1e3e4e6b
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="0if-Nc-wcD" firstAttribute="centerX" secondItem="urX-Do-eiR" secondAttribute="centerX" id="0oa-O8-j3G"/>
-                                                    <constraint firstItem="RoQ-fs-FJs" firstAttribute="leading" secondItem="HPr-fP-Ghl" secondAttribute="leading" constant="12" id="4n6-h8-Lul"/>
-                                                    <constraint firstItem="4cB-ai-Uk8" firstAttribute="leading" secondItem="HPr-fP-Ghl" secondAttribute="leading" constant="14" id="GSh-KM-npz"/>
-                                                    <constraint firstItem="0if-Nc-wcD" firstAttribute="top" secondItem="urX-Do-eiR" secondAttribute="bottom" constant="4" id="GUA-PC-04k"/>
-                                                    <constraint firstItem="jgQ-Hd-LIq" firstAttribute="width" secondItem="Xlq-r8-dSG" secondAttribute="width" id="HDN-aq-5rH"/>
-                                                    <constraint firstItem="jgQ-Hd-LIq" firstAttribute="centerX" secondItem="Xlq-r8-dSG" secondAttribute="centerX" id="HQc-4o-u49"/>
-                                                    <constraint firstItem="urX-Do-eiR" firstAttribute="top" secondItem="RoQ-fs-FJs" secondAttribute="bottom" constant="12" id="Hf6-ms-h5R"/>
-                                                    <constraint firstItem="0if-Nc-wcD" firstAttribute="width" secondItem="urX-Do-eiR" secondAttribute="width" id="Ip0-5U-bbI"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Xlq-r8-dSG" secondAttribute="trailing" constant="12" id="Mg9-fB-QNv"/>
-                                                    <constraint firstItem="jgQ-Hd-LIq" firstAttribute="top" secondItem="Xlq-r8-dSG" secondAttribute="bottom" constant="4" id="MwR-CR-Eyr"/>
-                                                    <constraint firstItem="RoQ-fs-FJs" firstAttribute="top" secondItem="9lX-Ej-Ybs" secondAttribute="bottom" constant="24" id="Nyk-Tt-6ZB"/>
                                                     <constraint firstAttribute="height" constant="350" id="PwG-Jk-MDC"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4cB-ai-Uk8" secondAttribute="trailing" constant="20" symbolic="YES" id="Vc8-g2-5YV"/>
-                                                    <constraint firstItem="urX-Do-eiR" firstAttribute="leading" secondItem="HPr-fP-Ghl" secondAttribute="leading" constant="12" id="aqf-lH-SC6"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RoQ-fs-FJs" secondAttribute="trailing" constant="20" symbolic="YES" id="dfN-M7-PCi"/>
-                                                    <constraint firstItem="Xlq-r8-dSG" firstAttribute="leading" secondItem="HPr-fP-Ghl" secondAttribute="leading" constant="12" id="fkq-AT-Mkm"/>
-                                                    <constraint firstItem="9lX-Ej-Ybs" firstAttribute="centerX" secondItem="HPr-fP-Ghl" secondAttribute="centerX" id="lLT-mL-udC"/>
-                                                    <constraint firstItem="9lX-Ej-Ybs" firstAttribute="top" secondItem="HPr-fP-Ghl" secondAttribute="top" constant="8" id="prp-H2-JbF"/>
-                                                    <constraint firstAttribute="trailing" secondItem="urX-Do-eiR" secondAttribute="trailing" constant="12" id="tQv-jy-Mqe"/>
-                                                    <constraint firstItem="Xlq-r8-dSG" firstAttribute="top" secondItem="4cB-ai-Uk8" secondAttribute="bottom" constant="12" id="vCA-Jm-Ivg"/>
-                                                    <constraint firstItem="4cB-ai-Uk8" firstAttribute="top" secondItem="0if-Nc-wcD" secondAttribute="bottom" constant="16" id="zlu-0H-K7u"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBY-YS-8pS">
@@ -168,15 +151,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ql9-tN-f5h"/>
                     </view>
+<<<<<<< HEAD
                     <connections>
                         <outlet property="dismissButton" destination="vBY-YS-8pS" id="fpI-0O-9xt"/>
                         <outlet property="emailField" destination="urX-Do-eiR" id="RQd-ry-4Bo"/>
                         <outlet property="passwordField" destination="Xlq-r8-dSG" id="Hva-l0-fRF"/>
                     </connections>
+=======
+>>>>>>> d20149c7820fe540efc8913532a31f3a1e3e4e6b
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jtj-YC-26n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3540" y="-238"/>
+            <point key="canvasLocation" x="3540" y="-238.83058470764618"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="M6b-zJ-xCd">
