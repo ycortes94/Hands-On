@@ -34,27 +34,34 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     let emailTextField : UITextField = {
         let textField = UITextField()
-        textField.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
+        textField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         textField.textColor = UIColor.white
+        
         textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.80)
+        textField.layer.cornerRadius = 5
+        textField.keyboardType = UIKeyboardType.emailAddress
         textField.translatesAutoresizingMaskIntoConstraints = false;
         return textField
     }()
     
     let passwordTextField : UITextField = {
         let textField = UITextField()
-        textField.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
+        textField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         textField.textColor = UIColor.white
         textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.80)
+        textField.layer.cornerRadius = 5
         textField.translatesAutoresizingMaskIntoConstraints = false;
         return textField
     }()
 
-    var loginButton:RoundedWhiteButton = {
-        let button = RoundedWhiteButton()
+    var loginButton:UIButton = {
+        let button = UIButton()
         button.setTitle("Log in", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 16.0, weight: UIFont.Weight.semibold)
         button.titleLabel?.textColor = UIColor.white
+        button.layer.borderWidth = 1
+        button.layer.cornerRadius = 5
+        button.layer.borderColor = UIColor.white.cgColor
         button.addTarget(self, action: #selector(handleSignIn), for: .touchUpInside)
         button.alpha = 0.8
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -85,6 +92,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         view.addSubview(passwordTextField)
         setloginButton(enabled: false)
         
+        setUpLayout()
         
         activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityView.color = secondaryColor
@@ -92,16 +100,18 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         activityView.center = loginButton.center
         view.addSubview(activityView)
         
-        setUpLayout()
-        
         emailTextField.delegate = self
         passwordTextField.delegate = self
         emailTextField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture)
+        
         
     }
     
+    //positions components
     private func setUpLayout(){
         
         handsOnLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -110,7 +120,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         handsOnLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         emailTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        emailTextField.topAnchor.constraint(equalTo: handsOnLabel.bottomAnchor, constant: 5).isActive = true
+        emailTextField.topAnchor.constraint(equalTo: handsOnLabel.bottomAnchor, constant: 4).isActive = true
         emailTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
         emailTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         emailTextField.heightAnchor.constraint(equalToConstant: 33).isActive = true
@@ -128,8 +138,8 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
         loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 10).isActive = true
-        loginButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -18).isActive = true
-        loginButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 18).isActive = true
+        loginButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        loginButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         loginButton.heightAnchor.constraint(equalToConstant: 33).isActive = true
         
     }
@@ -138,7 +148,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //emailTextField.becomeFirstResponder()
-        NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        //NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
     }
     
@@ -167,14 +177,21 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
      - Parameter notification: Contains the keyboardFrame info.
      */
     
-    @objc func keyboardWillAppear(notification: NSNotification){
+    
+    //@objc func keyboardWillAppear(notification: NSNotification){
         
-        let info = notification.userInfo!
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        //let info = notification.userInfo!
+        //let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
         //loginButton.center = CGPoint(x: view.center.x,
         //                                y: view.frame.height - keyboardFrame.height - 16.0 - loginButton.frame.height / 2)
-        activityView.center = loginButton.center
+        //activityView.center = loginButton.center
+    //}
+    
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
     }
     
     /**
@@ -219,7 +236,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
             loginButton.alpha = 1.0
             loginButton.isEnabled = true
         } else {
-            loginButton.alpha = 0.5
+            loginButton.alpha = 1.0
             loginButton.isEnabled = false
         }
     }

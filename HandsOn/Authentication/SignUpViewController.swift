@@ -24,10 +24,23 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     
     var imagePicker:UIImagePickerController!
     
+    let loginButton : UIButton = {
+        let button = UIButton()
+        button.setTitle("Have an account? Sign in.", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
+        button.setBackgroundColor(color: UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.80), forUIControlState: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(handleLoginButton), for: .touchUpInside)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        
+        view.addSubview(loginButton)
+        setUpLayout()
         
         continueButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         continueButton.setTitleColor(secondaryColor, for: .normal)
@@ -68,6 +81,20 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
         imagePicker.delegate = self
+    }
+    
+    private func setUpLayout(){
+        
+        loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loginButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+        loginButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
+        loginButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
+        loginButton.heightAnchor.constraint(equalToConstant: 33).isActive = true
+        
+    }
+    
+    @objc private func handleLoginButton(){
+        self.dismiss(animated: false, completion: nil)
     }
     
     @objc func openImagePicker(_ sender:Any) {
