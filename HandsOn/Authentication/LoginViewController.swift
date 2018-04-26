@@ -15,7 +15,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    //@IBOutlet weak var dismissButton: UIButton!
+    @IBOutlet weak var dismissButton: UIButton!
     
     var activityView:UIActivityIndicatorView!
 
@@ -44,7 +44,6 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         view.addSubview(registerButton)
         view.addSubview(loginButton)
@@ -109,6 +108,9 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
     }
     
+    @IBAction func handleDismissButton(_ sender: Any) {
+        self.dismiss(animated: false, completion: nil)
+    }
     /**
      Adjusts the center of the **loginButton** above the keyboard.
      - Parameter notification: Contains the keyboardFrame info.

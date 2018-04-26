@@ -74,8 +74,9 @@ class MenuViewController: UIViewController {
         let blurredEffectView = UIVisualEffectView(effect: blurEffect)
         blurredEffectView.alpha = 0.4
         blurredEffectView.frame = self.view.bounds
+        
+        view.frame = CGRect(x: 500, y: 500, width: 0, height: 0)
         view.addSubview(blurredEffectView)
-
         
         // Add the HandsOn label
         self.view.addSubview(handsOnLabel)
