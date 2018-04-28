@@ -13,9 +13,6 @@ import Firebase
 
 class LoginViewController:UIViewController, UITextFieldDelegate {
     
-    //@IBOutlet weak var emailTextField: UITextField!
-    //@IBOutlet weak var passwordTextField: UITextField!
-    
     let handsOnLabel : UILabel = {
         
         let label = UILabel()
@@ -36,10 +33,16 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         let textField = UITextField()
         textField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         textField.textColor = UIColor.white
-        
-        textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.80)
+        textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.70)
         textField.layer.cornerRadius = 5
         textField.keyboardType = UIKeyboardType.emailAddress
+        
+         //adds left and right padding to textField
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.leftViewMode = .always
+        textField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.rightViewMode = .always
+        
         textField.translatesAutoresizingMaskIntoConstraints = false;
         return textField
     }()
@@ -48,8 +51,18 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         let textField = UITextField()
         textField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         textField.textColor = UIColor.white
-        textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.80)
+        textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.70)
         textField.layer.cornerRadius = 5
+        
+        //adds left and right padding to textField
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.leftViewMode = .always
+        textField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.rightViewMode = .always
+        
+        //hides characters of password
+        textField.isSecureTextEntry = true
+        
         textField.translatesAutoresizingMaskIntoConstraints = false;
         
         return textField
@@ -74,7 +87,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         let button = UIButton()
         button.setTitle("Don't have an account? Sign up.", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
-        button.setBackgroundColor(color: UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.80), forUIControlState: .normal)
+        button.setBackgroundColor(color: UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.70), forUIControlState: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(handleRegisterButton), for: .touchUpInside)
         return button
@@ -85,7 +98,13 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "HandsOnBackground.jpg")!)
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
+        blurredEffectView.alpha = 0.6
+        blurredEffectView.frame = self.view.bounds
+        view.addSubview(blurredEffectView)
+        
         view.addSubview(handsOnLabel)
         view.addSubview(registerButton)
         view.addSubview(loginButton)
@@ -106,6 +125,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         emailTextField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         
+        //Keyboard hides when user taps anything but textfields
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
         

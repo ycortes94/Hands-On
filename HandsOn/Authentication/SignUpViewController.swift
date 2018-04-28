@@ -12,19 +12,127 @@ import Firebase
 
 class SignUpViewController:UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var dismissButton: UIButton!
-    @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var tapToChangeProfileButton: UIButton!
-    
-    var continueButton:RoundedWhiteButton!
+   
     var activityView:UIActivityIndicatorView!
-    
     var imagePicker:UIImagePickerController!
     
+    let handsOnLabel : UILabel = {
+        
+        let label = UILabel()
+        label.text = "HandsOn"
+        label.textColor = UIColor.white
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
+        //label.backgroundColor = UIColor.black
+        label.translatesAutoresizingMaskIntoConstraints = false;
+        
+        return label
+        
+    }()
+    
+    let profileImageView : UIImageView = {
+       
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "userIcon")
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        return imageView
+        
+    }()
+    
+    let tapToChangeLabel : UILabel = {
+        
+        let label = UILabel()
+        label.text = "Tap to Change"
+        label.textColor = UIColor.white
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
+        label.translatesAutoresizingMaskIntoConstraints = false;
+        
+        return label
+    }()
+    
+    let usernameTextField : UITextField = {
+        let textField = UITextField()
+        textField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        textField.textColor = UIColor.white
+        textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.70)
+        textField.layer.cornerRadius = 5
+        textField.keyboardType = UIKeyboardType.emailAddress
+        
+        //adds left and right padding to textField
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.leftViewMode = .always
+        textField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.rightViewMode = .always
+        
+        textField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        
+        textField.translatesAutoresizingMaskIntoConstraints = false;
+        
+        return textField
+    }()
+    
+    let emailTextField : UITextField = {
+        let textField = UITextField()
+        textField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        textField.textColor = UIColor.white
+        textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.70)
+        textField.layer.cornerRadius = 5
+        textField.keyboardType = UIKeyboardType.emailAddress
+        
+        //adds left and right padding to textField
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.leftViewMode = .always
+        textField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.rightViewMode = .always
+        
+        textField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        
+        textField.translatesAutoresizingMaskIntoConstraints = false;
+        return textField
+    }()
+    
+    let passwordTextField : UITextField = {
+        let textField = UITextField()
+        textField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        textField.textColor = UIColor.white
+        textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.70)
+        textField.layer.cornerRadius = 5
+        
+        //adds left and right padding to textField
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.leftViewMode = .always
+        textField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.rightViewMode = .always
+        
+        textField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        
+        //hides characters of password
+        textField.isSecureTextEntry = true
+        
+        textField.translatesAutoresizingMaskIntoConstraints = false;
+        
+        return textField
+    }()
+    
+    var registerButton:UIButton = {
+        let button = UIButton()
+        button.setTitle("Register", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 16.0, weight: UIFont.Weight.semibold)
+        button.titleLabel?.textColor = UIColor.white
+        button.layer.borderWidth = 1
+        button.layer.cornerRadius = 5
+        button.layer.borderColor = UIColor.white.cgColor
+        button.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
+        button.alpha = 0.8
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+        
+    }()
+    
     let loginButton : UIButton = {
+        
         let button = UIButton()
         button.setTitle("Have an account? Sign in.", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
@@ -32,43 +140,44 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(handleLoginButton), for: .touchUpInside)
         return button
+        
     }()
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "HandsOnBackground.jpg")!)
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
+        blurredEffectView.alpha = 0.6
+        blurredEffectView.frame = self.view.bounds
+        view.addSubview(blurredEffectView)
         
+        view.addSubview(handsOnLabel)
+        view.addSubview(profileImageView)
+        view.addSubview(tapToChangeLabel)
+        view.addSubview(usernameTextField)
+        view.addSubview(emailTextField)
+        view.addSubview(passwordTextField)
+        view.addSubview(registerButton)
         view.addSubview(loginButton)
         setUpLayout()
         
-        continueButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-        continueButton.setTitleColor(secondaryColor, for: .normal)
-        continueButton.setTitle("Continue", for: .normal)
-        continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
-        continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
-        continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
-        continueButton.defaultColor = UIColor.white
-        continueButton.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
-        
-        view.addSubview(continueButton)
-        setContinueButton(enabled: false)
+
+        setregisterButton(enabled: false)
         
         activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityView.color = secondaryColor
         activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
-        activityView.center = continueButton.center
-        
+        activityView.center = registerButton.center
         view.addSubview(activityView)
         
-        usernameField.delegate = self
-        emailField.delegate = self
-        passwordField.delegate = self
-        
-        usernameField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-        emailField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-        passwordField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-        
+        usernameTextField.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
         
         let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
         profileImageView.isUserInteractionEnabled = true
@@ -81,16 +190,64 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
         imagePicker.delegate = self
+        
+        //Keyboard hides when user taps anything but textfields
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture)
     }
     
     private func setUpLayout(){
         
+        handsOnLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        handsOnLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
+        handsOnLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        handsOnLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
+        profileImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        profileImageView.topAnchor.constraint(equalTo: handsOnLabel.bottomAnchor, constant: 3).isActive = true
+        profileImageView.widthAnchor.constraint(equalToConstant: 64).isActive = true
+        profileImageView.heightAnchor.constraint(equalToConstant: 64).isActive = true
+        
+        tapToChangeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        tapToChangeLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 2).isActive = true
+        tapToChangeLabel.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        tapToChangeLabel.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        
+        usernameTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        usernameTextField.topAnchor.constraint(equalTo: tapToChangeLabel.bottomAnchor, constant: 4).isActive = true
+        usernameTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        usernameTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        usernameTextField.heightAnchor.constraint(equalToConstant: 33).isActive = true
+        
+        emailTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        emailTextField.topAnchor.constraint(equalTo: usernameTextField.bottomAnchor, constant: 10).isActive = true
+        emailTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        emailTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        emailTextField.heightAnchor.constraint(equalToConstant: 33).isActive = true
+        
+        passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 10).isActive = true
+        passwordTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        passwordTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        passwordTextField.heightAnchor.constraint(equalToConstant: 33).isActive = true
+        
+        registerButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        registerButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 10).isActive = true
+        registerButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        registerButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        registerButton.heightAnchor.constraint(equalToConstant: 33).isActive = true
+        
         loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         loginButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-        loginButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
-        loginButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
-        loginButton.heightAnchor.constraint(equalToConstant: 33).isActive = true
+        loginButton.widthAnchor.constraint(equalToConstant: self.view.frame.size.width ).isActive = true
+        loginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
+    }
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        usernameTextField.resignFirstResponder()
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
     }
     
     @objc private func handleLoginButton(){
@@ -104,16 +261,16 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //usernameField.becomeFirstResponder()
+        //usernameTextField.becomeFirstResponder()
         NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        usernameField.resignFirstResponder()
-        emailField.resignFirstResponder()
-        passwordField.resignFirstResponder()
+        usernameTextField.resignFirstResponder()
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
         
         NotificationCenter.default.removeObserver(self)
     }
@@ -123,24 +280,20 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
             return .lightContent
         }
     }
-    
-    @IBAction func handleDismissButton(_ sender: Any) {
-        self.dismiss(animated: false, completion: nil)
-    }
-    
+ 
     /**
-     Adjusts the center of the **continueButton** above the keyboard.
+     Adjusts the center of the **registerButton** above the keyboard.
      - Parameter notification: Contains the keyboardFrame info.
      */
+    
     
     @objc func keyboardWillAppear(notification: NSNotification){
         
         let info = notification.userInfo!
         let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        
-        continueButton.center = CGPoint(x: view.center.x,
-                                        y: view.frame.height - keyboardFrame.height - 16.0 - continueButton.frame.height / 2)
-        activityView.center = continueButton.center
+        //registerButton.center = CGPoint(x: view.center.x,
+                                        //y: view.frame.height - keyboardFrame.height - 16.0 - registerButton.frame.height / 2)
+        activityView.center = registerButton.center
     }
     
     /**
@@ -150,11 +303,11 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
      */
     
     @objc func textFieldChanged(_ target:UITextField) {
-        let username = usernameField.text
-        let email = emailField.text
-        let password = passwordField.text
+        let username = usernameTextField.text
+        let email = emailTextField.text
+        let password = passwordTextField.text
         let formFilled = username != nil && username != "" && email != nil && email != "" && password != nil && password != ""
-        setContinueButton(enabled: formFilled)
+        setregisterButton(enabled: formFilled)
     }
     
     
@@ -164,15 +317,15 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
          // Resigns the target textField and assigns the next textField in the form.
 
         switch textField {
-        case usernameField:
-            usernameField.resignFirstResponder()
-            emailField.becomeFirstResponder()
+        case usernameTextField:
+            usernameTextField.resignFirstResponder()
+            emailTextField.becomeFirstResponder()
             break
-        case emailField:
-            emailField.resignFirstResponder()
-            passwordField.becomeFirstResponder()
+        case emailTextField:
+            emailTextField.resignFirstResponder()
+            passwordTextField.becomeFirstResponder()
             break
-        case passwordField:
+        case passwordTextField:
             handleSignUp()
             break
         default:
@@ -182,27 +335,27 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     }
     
     /**
-     Enables or Disables the **continueButton**.
+     Enables or Disables the **registerButton**.
      */
     
-    func setContinueButton(enabled:Bool) {
+    func setregisterButton(enabled:Bool) {
         if enabled {
-            continueButton.alpha = 1.0
-            continueButton.isEnabled = true
+            registerButton.alpha = 1.0
+            registerButton.isEnabled = true
         } else {
-            continueButton.alpha = 0.5
-            continueButton.isEnabled = false
+            registerButton.alpha = 1.0
+            registerButton.isEnabled = false
         }
     }
     
     @objc func handleSignUp() {
-        guard let username = usernameField.text else { return }
-        guard let email = emailField.text else { return }
-        guard let pass = passwordField.text else { return }
+        guard let username = usernameTextField.text else { return }
+        guard let email = emailTextField.text else { return }
+        guard let pass = passwordTextField.text else { return }
         guard let image = profileImageView.image else { return }
         
-        setContinueButton(enabled: false)
-        continueButton.setTitle("", for: .normal)
+        setregisterButton(enabled: false)
+        registerButton.setTitle("", for: .normal)
         activityView.startAnimating()
         
         Auth.auth().createUser(withEmail: email, password: pass) { user, error in
@@ -253,8 +406,8 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
-        setContinueButton(enabled: true)
-        continueButton.setTitle("Continue", for: .normal)
+        setregisterButton(enabled: true)
+        registerButton.setTitle("Continue", for: .normal)
         activityView.stopAnimating()
     }
     
