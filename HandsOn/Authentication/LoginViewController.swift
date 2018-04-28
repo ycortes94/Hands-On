@@ -31,6 +31,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     let emailTextField : UITextField = {
         let textField = UITextField()
+        textField.placeholder = "Email"
         textField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         textField.textColor = UIColor.white
         textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.70)
@@ -49,6 +50,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     let passwordTextField : UITextField = {
         let textField = UITextField()
+        textField.placeholder = "Password"
         textField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         textField.textColor = UIColor.white
         textField.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.70)
@@ -75,7 +77,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         button.titleLabel?.textColor = UIColor.white
         button.layer.borderWidth = 1
         button.layer.cornerRadius = 5
-        button.layer.borderColor = UIColor.white.cgColor
+        button.layer.borderColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.70).cgColor
         button.addTarget(self, action: #selector(handleSignIn), for: .touchUpInside)
         button.alpha = 0.8
         button.translatesAutoresizingMaskIntoConstraints = false
