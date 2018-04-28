@@ -34,9 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 UserService.observeUserProfile(user!.uid) { userProfile in
                     UserService.currentUserProfile = userProfile
                 }
-                //
-                let controller = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
-                self.window?.rootViewController = controller
+
+                //let controller = storyboard.instantiateViewController(withIdentifier: "HomeNavigationController")
+                self.window?.rootViewController = CustomTabBarController()
                 self.window?.makeKeyAndVisible()
             } else {
                 
