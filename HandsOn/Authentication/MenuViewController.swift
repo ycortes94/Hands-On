@@ -61,14 +61,8 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "HandsOnBackground.jpg")!)
-        let blurEffect = UIBlurEffect(style: .dark)
-        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
-        blurredEffectView.alpha = 0.4
-        blurredEffectView.frame = self.view.bounds
-        view.addSubview(blurredEffectView)
-        
+ 
+        assignbackground()
         
         // Add the HandsOn label
         self.view.addSubview(handsOnLabel)
@@ -97,6 +91,25 @@ class MenuViewController: UIViewController {
         getStartedButton.widthAnchor.constraint(equalToConstant: self.view.frame.size.width ).isActive = true
         getStartedButton.heightAnchor.constraint(equalToConstant: 70).isActive = true
         
+    }
+    
+    func assignbackground(){
+        let background = UIImage(named: "HandsOnBackground.jpg")
+        
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+        
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
+        blurredEffectView.alpha = 0.4
+        blurredEffectView.frame = self.view.bounds
+        self.view.addSubview(blurredEffectView)
     }
     
     //Presents log in view after get started is pressed

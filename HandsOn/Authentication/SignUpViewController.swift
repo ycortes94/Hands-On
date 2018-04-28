@@ -12,7 +12,7 @@ import Firebase
 
 class SignUpViewController:UIViewController, UITextFieldDelegate {
     
-    var activityView:UIActivityIndicatorView!
+    //var activityView:UIActivityIndicatorView!
     var imagePicker:UIImagePickerController!
     
     let handsOnLabel : UILabel = {
@@ -151,12 +151,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "HandsOnBackground.jpg")!)
-        let blurEffect = UIBlurEffect(style: .dark)
-        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
-        blurredEffectView.alpha = 0.6
-        blurredEffectView.frame = self.view.bounds
-        view.addSubview(blurredEffectView)
+        assignbackground()
         
         view.addSubview(handsOnLabel)
         view.addSubview(profileImageView)
@@ -171,11 +166,11 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
 
         setregisterButton(enabled: false)
         
-        activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-        activityView.color = secondaryColor
-        activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
-        activityView.center = registerButton.center
-        view.addSubview(activityView)
+        //activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        //activityView.color = secondaryColor
+        //activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
+        //activityView.center = registerButton.center
+        //view.addSubview(activityView)
         
         usernameTextField.delegate = self
         emailTextField.delegate = self
@@ -246,6 +241,25 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         
     }
     
+    func assignbackground(){
+        let background = UIImage(named: "HandsOnBackground.jpg")
+        
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+        
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
+        blurredEffectView.alpha = 0.7
+        blurredEffectView.frame = self.view.bounds
+        self.view.addSubview(blurredEffectView)
+    }
+    
     @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
         usernameTextField.resignFirstResponder()
         emailTextField.resignFirstResponder()
@@ -295,7 +309,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         //registerButton.center = CGPoint(x: view.center.x,
                                         //y: view.frame.height - keyboardFrame.height - 16.0 - registerButton.frame.height / 2)
-        activityView.center = registerButton.center
+        //activityView.center = registerButton.center
     }
     
     /**
@@ -358,7 +372,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         
         setregisterButton(enabled: false)
         registerButton.setTitle("", for: .normal)
-        activityView.startAnimating()
+        //activityView.startAnimating()
         
         Auth.auth().createUser(withEmail: email, password: pass) { user, error in
             if error == nil && user != nil {
@@ -410,7 +424,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         
         setregisterButton(enabled: true)
         registerButton.setTitle("Continue", for: .normal)
-        activityView.stopAnimating()
+        //activityView.stopAnimating()
     }
     
     func uploadProfileImage(_ image:UIImage, completion: @escaping ((_ url:URL?)->())) {

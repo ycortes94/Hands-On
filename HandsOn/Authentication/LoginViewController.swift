@@ -27,7 +27,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
     }()
     
-    var activityView:UIActivityIndicatorView!
+    //var activityView:UIActivityIndicatorView!
     
     let emailTextField : UITextField = {
         let textField = UITextField()
@@ -100,12 +100,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "HandsOnBackground.jpg")!)
-        let blurEffect = UIBlurEffect(style: .dark)
-        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
-        blurredEffectView.alpha = 0.6
-        blurredEffectView.frame = self.view.bounds
-        view.addSubview(blurredEffectView)
+        assignbackground()
         
         view.addSubview(handsOnLabel)
         view.addSubview(registerButton)
@@ -116,11 +111,11 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
         setUpLayout()
         
-        activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-        activityView.color = secondaryColor
-        activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
-        activityView.center = loginButton.center
-        view.addSubview(activityView)
+        //activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        //activityView.color = secondaryColor
+        //activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
+        //activityView.center = loginButton.center
+        //view.addSubview(activityView)
         
         emailTextField.delegate = self
         passwordTextField.delegate = self
@@ -165,6 +160,25 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         loginButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         loginButton.heightAnchor.constraint(equalToConstant: 33).isActive = true
         
+    }
+    
+    func assignbackground(){
+        let background = UIImage(named: "HandsOnBackground.jpg")
+        
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+        
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
+        blurredEffectView.alpha = 0.7
+        blurredEffectView.frame = self.view.bounds
+        self.view.addSubview(blurredEffectView)
     }
     
     
@@ -270,7 +284,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
         setloginButton(enabled: false)
         loginButton.setTitle("", for: .normal)
-        activityView.startAnimating()
+        //activityView.startAnimating()
         
         Auth.auth().signIn(withEmail: email, password: pass) { user, error in
             if error == nil && user != nil {
@@ -290,7 +304,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
         setloginButton(enabled: true)
         loginButton.setTitle("Continue", for: .normal)
-        activityView.stopAnimating()
+        //activityView.stopAnimating()
     }
     
 }
