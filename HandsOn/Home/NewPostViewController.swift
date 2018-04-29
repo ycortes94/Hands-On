@@ -12,6 +12,26 @@ import Firebase
 
 class NewPostViewController:UIViewController, UITextViewDelegate {
     
+    let backgroundView : UIView = {
+        
+        let view = UIView()
+        view.backgroundColor = UIColor(red: 0.976, green: 0.977, blue: 0.976, alpha: 1.0)
+        view.layer.cornerRadius = 7
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+        
+    }()
+    
+    
+    let taskInputStackView : UIStackView = {
+        let stack = UIStackView()
+        stack.backgroundColor = UIColor.clear
+        
+        return stack
+    }()
+    
     let textView : UITextView = {
         let view = UITextView()
         view.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
@@ -45,6 +65,8 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         
         return button
     }()
+    
+    
     
     @objc private func handlePostButton() {
         
@@ -89,6 +111,10 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        assignbackground()
+        
+        
+        view.addSubview(backgroundView)
         view.addSubview(textView)
         view.addSubview(doneButton)
         view.addSubview(cancelButton)
@@ -104,6 +130,13 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
     
     func setUpLayout(){
         
+        backgroundView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        backgroundView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        backgroundView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive = true
+        backgroundView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10).isActive = true
+        backgroundView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 13).isActive = true
+        backgroundView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -13).isActive = true
+        
         textView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         textView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
         textView.heightAnchor.constraint(equalToConstant: 300).isActive = true
@@ -118,6 +151,25 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         doneButton.topAnchor.constraint(equalTo: cancelButton.bottomAnchor, constant: 5).isActive = true
         doneButton.widthAnchor.constraint(equalToConstant: 75).isActive = true
         doneButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    }
+    
+    func assignbackground(){
+        let background = UIImage(named: "HandsOnBackground.jpg")
+        
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+        
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
+        blurredEffectView.alpha = 0.4
+        blurredEffectView.frame = self.view.bounds
+        self.view.addSubview(blurredEffectView)
     }
 
     @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
