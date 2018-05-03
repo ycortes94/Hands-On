@@ -12,6 +12,7 @@ import Firebase
 
 class NewPostViewController:UIViewController, UITextViewDelegate {
     
+    var stackView : UIStackView!
     
     let backgroundView : UIView = {
         
@@ -102,6 +103,34 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         return textField
     }()
     
+    let durationLabel : UILabel = {
+        let label = UILabel()
+        label.text = "Duration"
+        label.textColor = UIColor.black
+        label.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let durationTextField : UITextField = {
+        let textField = UITextField()
+        textField.placeholder = "Enter in days"
+        textField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        textField.textColor = UIColor.black
+        textField.backgroundColor = UIColor.clear
+        textField.layer.cornerRadius = 5
+        textField.layer.borderWidth = 2.5
+        textField.layer.borderColor = UIColor(red: 0.737, green: 0.737, blue: 0.737, alpha: 1.0).cgColor
+        
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.leftViewMode = .always
+        textField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.rightViewMode = .always
+        
+        textField.translatesAutoresizingMaskIntoConstraints = false;
+        return textField
+    }()
+    
     let locationLabel : UILabel = {
         let label = UILabel()
         label.text = "Location of Task"
@@ -151,7 +180,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
     let postButton : UIButton = {
         let button = UIButton()
         button.setTitle("Preview and Post", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 12.0, weight: UIFont.Weight.semibold)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 14.0, weight: UIFont.Weight.semibold)
         button.titleLabel?.textColor = UIColor.black
         button.backgroundColor = UIColor(red: 0.737, green: 0.737, blue: 0.737, alpha: 1.0)
         button.layer.cornerRadius = 3
@@ -201,24 +230,41 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         
         assignbackground()
+        /*
+        let priceContentView = UIStackView(arrangedSubviews: [durationLabel, durationTextField])
+        priceContentView.translatesAutoresizingMaskIntoConstraints = false
+        priceContentView.axis = .horizontal
+        priceContentView.distribution = .fillProportionally
+        priceContentView.spacing = 4
         
         
-        let stackView = UIStackView(arrangedSubviews: [titleLabel, titleTextField, descLabel,descTextField, priceLabel, priceTextField, locationLabel, locationTextField, addImagesLabel,addImagesImageView ,postButton])
+        let durationContentView = UIStackView(arrangedSubviews: [priceLabel, priceTextField])
+        durationContentView.translatesAutoresizingMaskIntoConstraints = false
+        durationContentView.axis = .vertical
+        durationContentView.distribution = .fillProportionally
+        durationContentView.spacing = 4
+ 
+        
+        let priceAndDurationContentViews = UIStackView(arrangedSubviews: [priceContentView, durationContentView])
+        durationContentView.translatesAutoresizingMaskIntoConstraints = false
+        durationContentView.axis = .horizontal
+        durationContentView.distribution = .fill
+        durationContentView.spacing = 20
+        */
+        
+        stackView = UIStackView(arrangedSubviews: [titleLabel, titleTextField, descLabel,descTextField, priceLabel, priceTextField, locationLabel, locationTextField, addImagesLabel,addImagesImageView ,postButton])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
-        stackView.spacing = 1
-        
+        stackView.spacing = 4
+ 
         
         
         view.addSubview(backgroundView)
         view.addSubview(stackView)
-        //view.addSubview(titleLabel)
-        //view.addSubview(titleTextField)
         view.addSubview(textView)
         view.addSubview(doneButton)
         view.addSubview(cancelButton)
-        
         setUpLayout()
         
         
@@ -267,18 +313,27 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         titleLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
         descLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
         priceLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
+        //durationLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
         locationLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
         addImagesLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
         
         let fieldHeight : CGFloat = 30
         titleTextField.heightAnchor.constraint(equalToConstant: fieldHeight).isActive = true
+        //durationTextField.heightAnchor.constraint(equalToConstant: fieldHeight).isActive = true
         priceTextField.heightAnchor.constraint(equalToConstant: fieldHeight).isActive = true
         locationTextField.heightAnchor.constraint(equalToConstant: fieldHeight).isActive = true
         
-    
-        addImagesImageView.heightAnchor.constraint(equalToConstant: 70).isActive = true
-        descTextField.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        postButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        
+        let textFieldSpacing : CGFloat = 8
+        stackView.setCustomSpacing(textFieldSpacing, after: titleTextField)
+        stackView.setCustomSpacing(textFieldSpacing, after: descTextField)
+        stackView.setCustomSpacing(textFieldSpacing, after: priceTextField)
+        stackView.setCustomSpacing(textFieldSpacing, after: locationTextField)
+        stackView.setCustomSpacing(textFieldSpacing, after: addImagesImageView)
+        
+        addImagesImageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        descTextField.heightAnchor.constraint(equalToConstant: 85).isActive = true
+        postButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
 
     }
     
