@@ -24,8 +24,6 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
     }()
     
     
-    
-    
     let titleLabel : UILabel = {
         let label = UILabel()
         label.text = "Title of Task"
@@ -42,8 +40,13 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         textField.textColor = UIColor.black
         textField.backgroundColor = UIColor.clear
         textField.layer.cornerRadius = 5
-        textField.layer.borderWidth = 2
-        textField.layer.borderColor = UIColor.black.cgColor
+        textField.layer.borderWidth = 2.5
+        textField.layer.borderColor = UIColor(red: 0.737, green: 0.737, blue: 0.737, alpha: 1.0).cgColor
+        
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.leftViewMode = .always
+        textField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.rightViewMode = .always
         
         textField.translatesAutoresizingMaskIntoConstraints = false;
         return textField
@@ -58,15 +61,14 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         return label
     }()
     
-    let descTextField : UITextField = {
-        let textField = UITextField()
-        textField.placeholder = "Enter a description"
+    let descTextField : UITextView = {
+        let textField = UITextView()
         textField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         textField.textColor = UIColor.black
         textField.backgroundColor = UIColor.clear
         textField.layer.cornerRadius = 5
-        textField.layer.borderWidth = 2
-        textField.layer.borderColor = UIColor.black.cgColor
+        textField.layer.borderWidth = 2.5
+        textField.layer.borderColor = UIColor(red: 0.737, green: 0.737, blue: 0.737, alpha: 1.0).cgColor
         
         textField.translatesAutoresizingMaskIntoConstraints = false;
         return textField
@@ -88,8 +90,13 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         textField.textColor = UIColor.black
         textField.backgroundColor = UIColor.clear
         textField.layer.cornerRadius = 5
-        textField.layer.borderWidth = 2
-        textField.layer.borderColor = UIColor.black.cgColor
+        textField.layer.borderWidth = 2.5
+        textField.layer.borderColor = UIColor(red: 0.737, green: 0.737, blue: 0.737, alpha: 1.0).cgColor
+        
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.leftViewMode = .always
+        textField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.rightViewMode = .always
         
         textField.translatesAutoresizingMaskIntoConstraints = false;
         return textField
@@ -111,8 +118,13 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         textField.textColor = UIColor.black
         textField.backgroundColor = UIColor.clear
         textField.layer.cornerRadius = 5
-        textField.layer.borderWidth = 2
-        textField.layer.borderColor = UIColor.black.cgColor
+        textField.layer.borderWidth = 2.5
+        textField.layer.borderColor = UIColor(red: 0.737, green: 0.737, blue: 0.737, alpha: 1.0).cgColor
+        
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.leftViewMode = .always
+        textField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 11, height: textField.frame.height))
+        textField.rightViewMode = .always
         
         textField.translatesAutoresizingMaskIntoConstraints = false;
         return textField
@@ -127,13 +139,21 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         return label
     }()
     
+    let addImagesImageView : UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(named: "HandsOnBackground")
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
     
     let postButton : UIButton = {
         let button = UIButton()
         button.setTitle("Preview and Post", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 12.0, weight: UIFont.Weight.semibold)
         button.titleLabel?.textColor = UIColor.black
-        button.backgroundColor = UIColor(red: 0.408, green: 0.408, blue: 0.408, alpha: 1.0)
+        button.backgroundColor = UIColor(red: 0.737, green: 0.737, blue: 0.737, alpha: 1.0)
         button.layer.cornerRadius = 3
         button.addTarget(self, action: #selector(testPrint), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -177,72 +197,36 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         return button
     }()
     
-    
-    
-    @objc private func handlePostButton() {
-        
-        guard let userProfile = UserService.currentUserProfile else { return }
-        // Firebase code here
-        
-        let postRef = Database.database().reference().child("posts").childByAutoId()
-        
-        let postObject = [
-            "author": [
-                "uid": userProfile.uid,
-                "username": userProfile.username,
-                "photoURL": userProfile.photoURL.absoluteString
-            ],
-            "text": textView.text,
-            "timestamp": [".sv":"timestamp"]
-        ] as [String:Any]
-        
-        postRef.setValue(postObject, withCompletionBlock: { error, ref in
-            if error == nil {
-                self.dismiss(animated: true, completion: nil)
-            } else {
-                // Handle the error
-            }
-        })
-    }
-    
-    
-    @objc private func handleCancelButton() {
-        textView.text = ""
-    }
-    
-    
-    override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
-        textView.resignFirstResponder()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25, execute: {
-            super.dismiss(animated: flag, completion: completion)
-        })
-    }
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         assignbackground()
         
         
-        let stackView = UIStackView(arrangedSubviews: [titleLabel, titleTextField, descLabel,descTextField, priceLabel, priceTextField, locationLabel, locationTextField, addImagesLabel, postButton])
+        let stackView = UIStackView(arrangedSubviews: [titleLabel, titleTextField, descLabel,descTextField, priceLabel, priceTextField, locationLabel, locationTextField, addImagesLabel,addImagesImageView ,postButton])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
         stackView.spacing = 1
         
         
+        
         view.addSubview(backgroundView)
         view.addSubview(stackView)
+        //view.addSubview(titleLabel)
+        //view.addSubview(titleTextField)
         view.addSubview(textView)
         view.addSubview(doneButton)
         view.addSubview(cancelButton)
+        
         setUpLayout()
+        
         
         stackView.leftAnchor.constraint(equalTo: backgroundView.leftAnchor, constant: 30).isActive = true
         stackView.rightAnchor.constraint(equalTo: backgroundView.rightAnchor, constant: -30).isActive = true
         stackView.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: 20).isActive = true
         stackView.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -20).isActive = true
+        
         
         textView.delegate = self
         
@@ -278,7 +262,8 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         doneButton.widthAnchor.constraint(equalToConstant: 75).isActive = true
         doneButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
-        let labelHeight : CGFloat = 30
+        
+        let labelHeight : CGFloat = 25
         titleLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
         descLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
         priceLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
@@ -290,8 +275,10 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         priceTextField.heightAnchor.constraint(equalToConstant: fieldHeight).isActive = true
         locationTextField.heightAnchor.constraint(equalToConstant: fieldHeight).isActive = true
         
-        postButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
     
+        addImagesImageView.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        descTextField.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        postButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
 
     }
     
@@ -330,10 +317,49 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         navigationController?.navigationBar.shadowImage = UIImage()
     }
     
-    /*
-    func textViewDidChange(_ textView: UITextView) {
-        placeHolderLabel.isHidden = !textView.text.isEmpty
+    
+    
+    
+    
+    
+    
+    @objc private func handlePostButton() {
+        
+        guard let userProfile = UserService.currentUserProfile else { return }
+        // Firebase code here
+        
+        let postRef = Database.database().reference().child("posts").childByAutoId()
+        
+        let postObject = [
+            "author": [
+                "uid": userProfile.uid,
+                "username": userProfile.username,
+                "photoURL": userProfile.photoURL.absoluteString
+            ],
+            "text": textView.text,
+            "timestamp": [".sv":"timestamp"]
+            ] as [String:Any]
+        
+        postRef.setValue(postObject, withCompletionBlock: { error, ref in
+            if error == nil {
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                // Handle the error
+            }
+        })
     }
-     */
+    
+    
+    @objc private func handleCancelButton() {
+        textView.text = ""
+    }
+    
+    
+    override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
+        textView.resignFirstResponder()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25, execute: {
+            super.dismiss(animated: flag, completion: completion)
+        })
+    }
 }
 
