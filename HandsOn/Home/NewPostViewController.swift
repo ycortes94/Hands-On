@@ -70,7 +70,6 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 2.5
         textField.layer.borderColor = UIColor(red: 0.737, green: 0.737, blue: 0.737, alpha: 1.0).cgColor
-        
         textField.translatesAutoresizingMaskIntoConstraints = false;
         return textField
     }()
@@ -184,42 +183,6 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         button.titleLabel?.textColor = UIColor.black
         button.backgroundColor = UIColor(red: 0.737, green: 0.737, blue: 0.737, alpha: 1.0)
         button.layer.cornerRadius = 3
-        button.addTarget(self, action: #selector(testPrint), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        return button
-    }()
-    
-    
-    
-    let textView : UITextView = {
-        let view = UITextView()
-        view.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
-        view.textColor = UIColor.white
-        view.backgroundColor = UIColor.blue
-        view.translatesAutoresizingMaskIntoConstraints = false
-        
-        return view
-    }()
-    
-    let cancelButton : UIButton = {
-        let button = UIButton()
-        button.setTitle("Cancel", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 16.0, weight: UIFont.Weight.semibold)
-        button.titleLabel?.textColor = UIColor.white
-        button.backgroundColor = UIColor.blue
-        button.addTarget(self, action: #selector(handleCancelButton), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        return button
-    }()
-    
-    let doneButton : UIButton = {
-        let button = UIButton()
-        button.setTitle("Done", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 16.0, weight: UIFont.Weight.semibold)
-        button.titleLabel?.textColor = UIColor.white
-        button.backgroundColor = UIColor.orange
         button.addTarget(self, action: #selector(handlePostButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
@@ -230,28 +193,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         
         assignbackground()
-        /*
-        let priceContentView = UIStackView(arrangedSubviews: [durationLabel, durationTextField])
-        priceContentView.translatesAutoresizingMaskIntoConstraints = false
-        priceContentView.axis = .horizontal
-        priceContentView.distribution = .fillProportionally
-        priceContentView.spacing = 4
-        
-        
-        let durationContentView = UIStackView(arrangedSubviews: [priceLabel, priceTextField])
-        durationContentView.translatesAutoresizingMaskIntoConstraints = false
-        durationContentView.axis = .vertical
-        durationContentView.distribution = .fillProportionally
-        durationContentView.spacing = 4
- 
-        
-        let priceAndDurationContentViews = UIStackView(arrangedSubviews: [priceContentView, durationContentView])
-        durationContentView.translatesAutoresizingMaskIntoConstraints = false
-        durationContentView.axis = .horizontal
-        durationContentView.distribution = .fill
-        durationContentView.spacing = 20
-        */
-        
+     
         stackView = UIStackView(arrangedSubviews: [titleLabel, titleTextField, descLabel,descTextField, priceLabel, priceTextField, locationLabel, locationTextField, addImagesLabel,addImagesImageView ,postButton])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
@@ -262,9 +204,8 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         
         view.addSubview(backgroundView)
         view.addSubview(stackView)
-        view.addSubview(textView)
-        view.addSubview(doneButton)
-        view.addSubview(cancelButton)
+
+        
         setUpLayout()
         
         
@@ -274,11 +215,10 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         stackView.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -20).isActive = true
         
         
-        textView.delegate = self
         
         //Keyboard hides when user taps anything but textfields
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
-        self.view.addGestureRecognizer(tapGesture)
+        //let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        //self.view.addGestureRecognizer(tapGesture)
         
     }
     
@@ -291,23 +231,6 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         backgroundView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10).isActive = true
         backgroundView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 13).isActive = true
         backgroundView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -13).isActive = true
-        
-        
-        textView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        textView.topAnchor.constraint(equalTo: view.bottomAnchor, constant: 100).isActive = true
-        textView.heightAnchor.constraint(equalToConstant: 300).isActive = true
-        textView.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        
-        cancelButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        cancelButton.centerYAnchor.constraint(equalTo: textView.bottomAnchor, constant: 5).isActive = true
-        cancelButton.widthAnchor.constraint(equalToConstant: 75).isActive = true
-        cancelButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        
-        doneButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        doneButton.topAnchor.constraint(equalTo: cancelButton.bottomAnchor, constant: 5).isActive = true
-        doneButton.widthAnchor.constraint(equalToConstant: 75).isActive = true
-        doneButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        
         
         let labelHeight : CGFloat = 25
         titleLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
@@ -360,10 +283,6 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         self.view.addSubview(blurredEffectView)
     }
 
-    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
-        textView.resignFirstResponder()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //textView.becomeFirstResponder()
@@ -371,10 +290,6 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         // Remove the nav shadow underline
         navigationController?.navigationBar.shadowImage = UIImage()
     }
-    
-    
-    
-    
     
     
     
@@ -391,7 +306,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
                 "username": userProfile.username,
                 "photoURL": userProfile.photoURL.absoluteString
             ],
-            "text": textView.text,
+            "text": titleTextField.text!,
             "timestamp": [".sv":"timestamp"]
             ] as [String:Any]
         
@@ -405,13 +320,8 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
     }
     
     
-    @objc private func handleCancelButton() {
-        textView.text = ""
-    }
-    
-    
     override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
-        textView.resignFirstResponder()
+        //textView.resignFirstResponder()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25, execute: {
             super.dismiss(animated: flag, completion: completion)
         })
