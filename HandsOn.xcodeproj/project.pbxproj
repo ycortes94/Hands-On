@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D05D2EEA2094F05F00C823A0 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05D2EE92094F05F00C823A0 /* MoreViewController.swift */; };
 		D06449902094D310005B8BF2 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064498F2094D310005B8BF2 /* CustomTabBarController.swift */; };
 		D06449922094ECBB005B8BF2 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06449912094ECBB005B8BF2 /* TasksViewController.swift */; };
 		D06449942094EE80005B8BF2 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06449932094EE80005B8BF2 /* MessagesViewController.swift */; };
+		D083594620A3C47200A1B7C8 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083594520A3C47200A1B7C8 /* MoreViewController.swift */; };
+		D083594820A3D92F00A1B7C8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */; };
 		E285F6383885579EF6B6206C /* Pods_HandsOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47116C8283DB21B4DAB8E8B4 /* Pods_HandsOn.framework */; };
 		FFE861A7207618E600C5B8DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE861A6207618E600C5B8DD /* AppDelegate.swift */; };
 		FFE861AF207618E600C5B8DD /* HandsOn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFE861AD207618E600C5B8DD /* HandsOn.xcdatamodeld */; };
@@ -37,10 +38,11 @@
 /* Begin PBXFileReference section */
 		41D0F598446DB1E318522302 /* Pods-HandsOn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsOn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandsOn/Pods-HandsOn.debug.xcconfig"; sourceTree = "<group>"; };
 		47116C8283DB21B4DAB8E8B4 /* Pods_HandsOn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandsOn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D05D2EE92094F05F00C823A0 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		D064498F2094D310005B8BF2 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		D06449912094ECBB005B8BF2 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		D06449932094EE80005B8BF2 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		D083594520A3C47200A1B7C8 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DBB7B8D3C6922A35ECA5EB88 /* Pods-HandsOn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsOn.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandsOn/Pods-HandsOn.release.xcconfig"; sourceTree = "<group>"; };
 		FFE861A3207618E600C5B8DD /* HandsOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandsOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE861A6207618E600C5B8DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,15 @@
 				47116C8283DB21B4DAB8E8B4 /* Pods_HandsOn.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D083594920A3D93700A1B7C8 /* MoreVC */ = {
+			isa = PBXGroup;
+			children = (
+				D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */,
+				D083594520A3C47200A1B7C8 /* MoreViewController.swift */,
+			);
+			path = MoreVC;
 			sourceTree = "<group>";
 		};
 		FFE8619A207618E600C5B8DD = {
@@ -154,14 +165,14 @@
 		FFE862012076316C00C5B8DD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D064498F2094D310005B8BF2 /* CustomTabBarController.swift */,
 				FFE861EF207630F300C5B8DD /* HomeViewController.swift */,
 				FFE861F2207630F300C5B8DD /* NewPostViewController.swift */,
 				FFE861F0207630F300C5B8DD /* PostTableViewCell.swift */,
 				FFE861F1207630F300C5B8DD /* PostTableViewCell.xib */,
-				D064498F2094D310005B8BF2 /* CustomTabBarController.swift */,
 				D06449912094ECBB005B8BF2 /* TasksViewController.swift */,
 				D06449932094EE80005B8BF2 /* MessagesViewController.swift */,
-				D05D2EE92094F05F00C823A0 /* MoreViewController.swift */,
+				D083594920A3D93700A1B7C8 /* MoreVC */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -336,6 +347,7 @@
 			files = (
 				FFE861E2207630E000C5B8DD /* UserProfile.swift in Sources */,
 				FFE8620C207632F000C5B8DD /* InitialViewController.swift in Sources */,
+				D083594820A3D92F00A1B7C8 /* ProfileViewController.swift in Sources */,
 				D06449902094D310005B8BF2 /* CustomTabBarController.swift in Sources */,
 				FFE861F6207630F300C5B8DD /* NewPostViewController.swift in Sources */,
 				FFE861E1207630E000C5B8DD /* Post.swift in Sources */,
@@ -345,7 +357,7 @@
 				FFE861FC2076310800C5B8DD /* HelperExtensions.swift in Sources */,
 				FFE8620A207632F000C5B8DD /* MenuViewController.swift in Sources */,
 				FFE8620D207632F000C5B8DD /* SignUpViewController.swift in Sources */,
-				D05D2EEA2094F05F00C823A0 /* MoreViewController.swift in Sources */,
+				D083594620A3C47200A1B7C8 /* MoreViewController.swift in Sources */,
 				FFE861F3207630F300C5B8DD /* HomeViewController.swift in Sources */,
 				D06449942094EE80005B8BF2 /* MessagesViewController.swift in Sources */,
 				D06449922094ECBB005B8BF2 /* TasksViewController.swift in Sources */,

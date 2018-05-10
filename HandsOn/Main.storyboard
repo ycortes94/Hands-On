@@ -177,6 +177,21 @@
             </objects>
             <point key="canvasLocation" x="4854" y="672"/>
         </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="lIa-PQ-MhQ">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" title="Profile View Controller" id="7je-8E-SBF" customClass="ProfileViewController" customModule="HandsOn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BHY-CB-wrN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="tPh-rq-7Y1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLY-wQ-Ehv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4854" y="1561"/>
+        </scene>
         <!--More View Controller-->
         <scene sceneID="SyX-Uh-12p">
             <objects>

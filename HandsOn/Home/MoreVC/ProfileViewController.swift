@@ -1,17 +1,19 @@
 //
-//  MoreViewController.swift
+//  ProfileViewController.swift
 //  HandsOn
 //
-//  Created by Rich Chau on 4/28/18.
+//  Created by Rich Chau on 5/9/18.
 //  Copyright © 2018 Yosimy Cortes. All rights reserved.
 //
 
 import UIKit
 
-class MoreViewController : UIViewController {
+class ProfileViewController : UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
     
 }
