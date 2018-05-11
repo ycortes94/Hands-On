@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Firebase
 
-class NewPostViewController:UIViewController, UITextViewDelegate {
+class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     var stackView : UIStackView!
     
@@ -169,12 +169,11 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
     
     let addImagesImageView : UIImageView = {
         let view = UIImageView()
-        view.image = UIImage(named: "HandsOnBackground")
+        view.backgroundColor = UIColor.white
         view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
     }()
-    
     
     let postButton : UIButton = {
         let button = UIButton()
@@ -189,12 +188,29 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         return button
     }()
     
+    let containerView : UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.blue
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let addImageButton : UIButton = {
+        let button  = UIButton()
+        button.setTitle("Add Images", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 14.0, weight: UIFont.Weight.semibold)
+        button.backgroundColor = UIColor.lightGray
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(addImage), for: .touchUpInside)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         assignbackground()
      
-        stackView = UIStackView(arrangedSubviews: [titleLabel, titleTextField, descLabel,descTextField, priceLabel, priceTextField, locationLabel, locationTextField, addImagesLabel,addImagesImageView ,postButton])
+        stackView = UIStackView(arrangedSubviews: [titleLabel, titleTextField, descLabel,descTextField, priceLabel, priceTextField, durationLabel, durationTextField, locationLabel, locationTextField, addImagesLabel,containerView,postButton])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
@@ -205,6 +221,8 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         view.addSubview(backgroundView)
         view.addSubview(stackView)
 
+        containerView.addSubview(addImagesImageView)
+        containerView.addSubview(addImageButton)
         
         setUpLayout()
         
@@ -232,17 +250,18 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         backgroundView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 13).isActive = true
         backgroundView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -13).isActive = true
         
+        
         let labelHeight : CGFloat = 25
         titleLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
         descLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
         priceLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
-        //durationLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
+        durationLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
         locationLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
         addImagesLabel.heightAnchor.constraint(equalToConstant: labelHeight).isActive = true
         
         let fieldHeight : CGFloat = 30
         titleTextField.heightAnchor.constraint(equalToConstant: fieldHeight).isActive = true
-        //durationTextField.heightAnchor.constraint(equalToConstant: fieldHeight).isActive = true
+        durationTextField.heightAnchor.constraint(equalToConstant: fieldHeight).isActive = true
         priceTextField.heightAnchor.constraint(equalToConstant: fieldHeight).isActive = true
         locationTextField.heightAnchor.constraint(equalToConstant: fieldHeight).isActive = true
         
@@ -254,14 +273,21 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         stackView.setCustomSpacing(textFieldSpacing, after: locationTextField)
         stackView.setCustomSpacing(textFieldSpacing, after: addImagesImageView)
         
-        addImagesImageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        containerView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        
+        addImagesImageView.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 15).isActive = true
+        addImagesImageView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+        addImagesImageView.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        addImagesImageView.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        
+        addImageButton.leftAnchor.constraint(equalTo: addImagesImageView.rightAnchor, constant: 20).isActive = true
+        addImageButton.centerYAnchor.constraint(equalTo: addImagesImageView.centerYAnchor).isActive = true
+        addImageButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
+    
+        
         descTextField.heightAnchor.constraint(equalToConstant: 85).isActive = true
         postButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
 
-    }
-    
-    @objc func testPrint(){
-        print(1)
     }
     
     func assignbackground(){
@@ -291,7 +317,26 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         navigationController?.navigationBar.shadowImage = UIImage()
     }
     
+    @objc private func addImage(){
+        let image = UIImagePickerController()
+        image.delegate = self
+        
+        image.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        image.allowsEditing = false
+        
+        self.present(image, animated: true){
+            //after it is complete
+        }
+    }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
+            addImagesImageView.image = image
+        }
+        
+        self.dismiss(animated: true)
+    }
     
     @objc private func handlePostButton() {
         
