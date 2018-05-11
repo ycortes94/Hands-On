@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0557CD120A51DA000E08F6C /* ActivityLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0557CD020A51DA000E08F6C /* ActivityLogViewController.swift */; };
+		D0557CD320A51DB900E08F6C /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0557CD220A51DB900E08F6C /* VerificationViewController.swift */; };
+		D0557CD520A51DCA00E08F6C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0557CD420A51DCA00E08F6C /* SettingsViewController.swift */; };
 		D06449902094D310005B8BF2 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064498F2094D310005B8BF2 /* CustomTabBarController.swift */; };
 		D06449922094ECBB005B8BF2 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06449912094ECBB005B8BF2 /* TasksViewController.swift */; };
 		D06449942094EE80005B8BF2 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06449932094EE80005B8BF2 /* MessagesViewController.swift */; };
@@ -38,6 +41,9 @@
 /* Begin PBXFileReference section */
 		41D0F598446DB1E318522302 /* Pods-HandsOn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsOn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandsOn/Pods-HandsOn.debug.xcconfig"; sourceTree = "<group>"; };
 		47116C8283DB21B4DAB8E8B4 /* Pods_HandsOn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandsOn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0557CD020A51DA000E08F6C /* ActivityLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogViewController.swift; sourceTree = "<group>"; };
+		D0557CD220A51DB900E08F6C /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		D0557CD420A51DCA00E08F6C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D064498F2094D310005B8BF2 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		D06449912094ECBB005B8BF2 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		D06449932094EE80005B8BF2 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -100,8 +106,11 @@
 		D083594920A3D93700A1B7C8 /* MoreVC */ = {
 			isa = PBXGroup;
 			children = (
-				D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */,
 				D083594520A3C47200A1B7C8 /* MoreViewController.swift */,
+				D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */,
+				D0557CD020A51DA000E08F6C /* ActivityLogViewController.swift */,
+				D0557CD220A51DB900E08F6C /* VerificationViewController.swift */,
+				D0557CD420A51DCA00E08F6C /* SettingsViewController.swift */,
 			);
 			path = MoreVC;
 			sourceTree = "<group>";
@@ -349,6 +358,7 @@
 				FFE8620C207632F000C5B8DD /* InitialViewController.swift in Sources */,
 				D083594820A3D92F00A1B7C8 /* ProfileViewController.swift in Sources */,
 				D06449902094D310005B8BF2 /* CustomTabBarController.swift in Sources */,
+				D0557CD320A51DB900E08F6C /* VerificationViewController.swift in Sources */,
 				FFE861F6207630F300C5B8DD /* NewPostViewController.swift in Sources */,
 				FFE861E1207630E000C5B8DD /* Post.swift in Sources */,
 				FFE861E6207630E600C5B8DD /* UserService.swift in Sources */,
@@ -357,7 +367,9 @@
 				FFE861FC2076310800C5B8DD /* HelperExtensions.swift in Sources */,
 				FFE8620A207632F000C5B8DD /* MenuViewController.swift in Sources */,
 				FFE8620D207632F000C5B8DD /* SignUpViewController.swift in Sources */,
+				D0557CD120A51DA000E08F6C /* ActivityLogViewController.swift in Sources */,
 				D083594620A3C47200A1B7C8 /* MoreViewController.swift in Sources */,
+				D0557CD520A51DCA00E08F6C /* SettingsViewController.swift in Sources */,
 				FFE861F3207630F300C5B8DD /* HomeViewController.swift in Sources */,
 				D06449942094EE80005B8BF2 /* MessagesViewController.swift in Sources */,
 				D06449922094ECBB005B8BF2 /* TasksViewController.swift in Sources */,

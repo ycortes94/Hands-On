@@ -31,11 +31,42 @@ class MoreViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //pushes profile view
         if (indexPath.row == 0){
             let profileView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
-            //self.definesPresentationContext = true
-            //profileView.modalPresentationStyle = .overCurrentContext
-            self.present(profileView, animated: true, completion: nil)
+            if let navigator = navigationController{
+                navigator.pushViewController(profileView, animated: false)
+            }
+        }
+        
+        //pushes activity log view
+        if (indexPath.row == 1){
+            let activityLogView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ActivityLogViewController") as! ActivityLogViewController
+            if let navigator = navigationController{
+                navigator.pushViewController(activityLogView, animated: false)
+            }
+        }
+        
+        //pushes verification view
+        if (indexPath.row == 2){
+            let verificationView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VerificationViewController") as! VerificationViewController
+            if let navigator = navigationController{
+                navigator.pushViewController(verificationView, animated: false)
+            }
+        }
+        
+        //pushes settings view
+        if (indexPath.row == 3){
+            let settingsView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
+            if let navigator = navigationController{
+                navigator.pushViewController(settingsView, animated: false)
+            }
+        }
+        
+        //LOGOUT FUNCTIONALITY GOES HERE?
+        if (indexPath.row == 4){
+            print("Logout button tapped")
         }
     }
     

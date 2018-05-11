@@ -192,6 +192,51 @@
             </objects>
             <point key="canvasLocation" x="4854" y="1561"/>
         </scene>
+        <!--Verification View Controller-->
+        <scene sceneID="dei-0F-vsy">
+            <objects>
+                <viewController storyboardIdentifier="VerificationViewController" title="Verification View Controller" id="Fw6-W0-Mjf" customClass="VerificationViewController" customModule="HandsOn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DOR-Uj-hhA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6RD-Kc-PeL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEN-GB-vcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4854" y="2242"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="u6x-YF-uxf">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" title="Settings View Controller" id="hv0-ic-cX5" customClass="SettingsViewController" customModule="HandsOn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ub-tw-sxk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="HtE-nO-SfM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXp-7k-P2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5521" y="2241"/>
+        </scene>
+        <!--Activity Log View Controller-->
+        <scene sceneID="Fqi-yS-eSg">
+            <objects>
+                <viewController storyboardIdentifier="ActivityLogViewController" title="Activity Log View Controller" id="l4V-Ec-EX8" customClass="ActivityLogViewController" customModule="HandsOn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j86-z9-jw3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="G33-gS-U0y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGL-H6-9CG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5521" y="1560"/>
+        </scene>
         <!--More View Controller-->
         <scene sceneID="SyX-Uh-12p">
             <objects>
