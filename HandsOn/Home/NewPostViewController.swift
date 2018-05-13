@@ -169,7 +169,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
     
     let addImagesImageView : UIImageView = {
         let view = UIImageView()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.darkGray
         view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
@@ -188,9 +188,9 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
         return button
     }()
     
-    let containerView : UIView = {
+    let addImagesContainerView : UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.blue
+        view.backgroundColor = UIColor.clear
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -205,33 +205,47 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
         return button
     }()
     
+    let priceAndDurationContainerView : UIView = {
+        
+        let view = UIView()
+        view.backgroundColor = UIColor.clear
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+        
+    }()
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         assignbackground()
      
-        stackView = UIStackView(arrangedSubviews: [titleLabel, titleTextField, descLabel,descTextField, priceLabel, priceTextField, durationLabel, durationTextField, locationLabel, locationTextField, addImagesLabel,containerView,postButton])
+        stackView = UIStackView(arrangedSubviews: [titleLabel, titleTextField, descLabel,descTextField, priceAndDurationContainerView , locationLabel, locationTextField, addImagesLabel,addImagesContainerView,postButton])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
         stackView.spacing = 4
- 
-        
+
         
         view.addSubview(backgroundView)
         view.addSubview(stackView)
 
-        containerView.addSubview(addImagesImageView)
-        containerView.addSubview(addImageButton)
+        priceAndDurationContainerView.addSubview(priceLabel)
+        priceAndDurationContainerView.addSubview(priceTextField)
+        priceAndDurationContainerView.addSubview(durationTextField)
+        priceAndDurationContainerView.addSubview(durationLabel)
+        
+        addImagesContainerView.addSubview(addImagesImageView)
+        addImagesContainerView.addSubview(addImageButton)
         
         setUpLayout()
-        
         
         stackView.leftAnchor.constraint(equalTo: backgroundView.leftAnchor, constant: 30).isActive = true
         stackView.rightAnchor.constraint(equalTo: backgroundView.rightAnchor, constant: -30).isActive = true
         stackView.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: 20).isActive = true
         stackView.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -20).isActive = true
-        
         
         
         //Keyboard hides when user taps anything but textfields
@@ -269,14 +283,29 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
         let textFieldSpacing : CGFloat = 8
         stackView.setCustomSpacing(textFieldSpacing, after: titleTextField)
         stackView.setCustomSpacing(textFieldSpacing, after: descTextField)
-        stackView.setCustomSpacing(textFieldSpacing, after: priceTextField)
+        //stackView.setCustomSpacing(textFieldSpacing, after: priceTextField)
         stackView.setCustomSpacing(textFieldSpacing, after: locationTextField)
-        stackView.setCustomSpacing(textFieldSpacing, after: addImagesImageView)
+        //stackView.setCustomSpacing(textFieldSpacing, after: addImagesImageView)
         
-        containerView.heightAnchor.constraint(equalToConstant: 80).isActive = true
         
-        addImagesImageView.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 15).isActive = true
-        addImagesImageView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+        
+        addImagesContainerView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        priceAndDurationContainerView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        
+        priceLabel.leftAnchor.constraint(equalTo: priceAndDurationContainerView.leftAnchor, constant: 0).isActive = true
+        priceLabel.topAnchor.constraint(equalTo: priceAndDurationContainerView.topAnchor, constant: 10).isActive = true
+        
+        priceTextField.leftAnchor.constraint(equalTo: priceLabel.leftAnchor, constant: 0).isActive = true
+        priceTextField.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: 5).isActive = true
+        
+        durationTextField.rightAnchor.constraint(equalTo: priceAndDurationContainerView.rightAnchor, constant: 0).isActive = true
+        durationTextField.topAnchor.constraint(equalTo: priceTextField.topAnchor, constant: 0).isActive = true
+        
+        durationLabel.topAnchor.constraint(equalTo: priceAndDurationContainerView.topAnchor, constant: 10).isActive = true
+        durationLabel.leftAnchor.constraint(equalTo: durationTextField.leftAnchor, constant: 0).isActive = true
+        
+        addImagesImageView.leftAnchor.constraint(equalTo: addImagesContainerView.leftAnchor, constant: 15).isActive = true
+        addImagesImageView.centerYAnchor.constraint(equalTo: addImagesContainerView.centerYAnchor).isActive = true
         addImagesImageView.heightAnchor.constraint(equalToConstant: 60).isActive = true
         addImagesImageView.widthAnchor.constraint(equalToConstant: 60).isActive = true
         
@@ -284,6 +313,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
         addImageButton.centerYAnchor.constraint(equalTo: addImagesImageView.centerYAnchor).isActive = true
         addImageButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
     
+        
         
         descTextField.heightAnchor.constraint(equalToConstant: 85).isActive = true
         postButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
@@ -338,6 +368,8 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
         self.dismiss(animated: true)
     }
     
+    
+    //handle post button so far only saves the title of the task
     @objc private func handlePostButton() {
         
         guard let userProfile = UserService.currentUserProfile else { return }

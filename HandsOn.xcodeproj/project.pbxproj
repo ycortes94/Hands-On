@@ -10,6 +10,7 @@
 		D0557CD120A51DA000E08F6C /* ActivityLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0557CD020A51DA000E08F6C /* ActivityLogViewController.swift */; };
 		D0557CD320A51DB900E08F6C /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0557CD220A51DB900E08F6C /* VerificationViewController.swift */; };
 		D0557CD520A51DCA00E08F6C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0557CD420A51DCA00E08F6C /* SettingsViewController.swift */; };
+		D059DC2B20A798B000E8C932 /* TaskDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D059DC2A20A798B000E8C932 /* TaskDetailsViewController.swift */; };
 		D06449902094D310005B8BF2 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064498F2094D310005B8BF2 /* CustomTabBarController.swift */; };
 		D06449922094ECBB005B8BF2 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06449912094ECBB005B8BF2 /* TasksViewController.swift */; };
 		D06449942094EE80005B8BF2 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06449932094EE80005B8BF2 /* MessagesViewController.swift */; };
@@ -44,6 +45,7 @@
 		D0557CD020A51DA000E08F6C /* ActivityLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogViewController.swift; sourceTree = "<group>"; };
 		D0557CD220A51DB900E08F6C /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		D0557CD420A51DCA00E08F6C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D059DC2A20A798B000E8C932 /* TaskDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewController.swift; sourceTree = "<group>"; };
 		D064498F2094D310005B8BF2 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		D06449912094ECBB005B8BF2 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		D06449932094EE80005B8BF2 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				FFE861F1207630F300C5B8DD /* PostTableViewCell.xib */,
 				D06449912094ECBB005B8BF2 /* TasksViewController.swift */,
 				D06449932094EE80005B8BF2 /* MessagesViewController.swift */,
+				D059DC2A20A798B000E8C932 /* TaskDetailsViewController.swift */,
 				D083594920A3D93700A1B7C8 /* MoreVC */,
 			);
 			path = Home;
@@ -364,6 +367,7 @@
 				FFE861E6207630E600C5B8DD /* UserService.swift in Sources */,
 				FFE861AF207618E600C5B8DD /* HandsOn.xcdatamodeld in Sources */,
 				FFE861E5207630E600C5B8DD /* ImageService.swift in Sources */,
+				D059DC2B20A798B000E8C932 /* TaskDetailsViewController.swift in Sources */,
 				FFE861FC2076310800C5B8DD /* HelperExtensions.swift in Sources */,
 				FFE8620A207632F000C5B8DD /* MenuViewController.swift in Sources */,
 				FFE8620D207632F000C5B8DD /* SignUpViewController.swift in Sources */,
