@@ -52,21 +52,22 @@ class ProfileViewController : UIViewController{
         
     }()
     
-    let editDescButton : UIButton = {
+    
+    let locationLabel : UILabel = {
         
-        let button = UIButton()
-        button.titleLabel?.text = "Edit Description"
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .regular)
-        button.addTarget(self, action: #selector(editDescription), for: .touchUpInside)
-        button.backgroundColor = UIColor.lightGray
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-        
+        let label = UILabel()
+        label.backgroundColor = UIColor.lightGray
+        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.text = "San Jose, CA"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Profile"
+        let editButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.edit, target: self, action: #selector(editDescription))
+        navigationItem.rightBarButtonItem = editButton
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         backgroundImageView.isUserInteractionEnabled = true
@@ -76,7 +77,7 @@ class ProfileViewController : UIViewController{
         view.addSubview(profileImageView)
         view.addSubview(nameLabel)
         view.addSubview(descriptionTextView)
-        view.addSubview(editDescButton)
+        view.addSubview(locationLabel)
         
         setUpLayout()
         
@@ -96,18 +97,16 @@ class ProfileViewController : UIViewController{
         profileImageView.layer.cornerRadius = profileImageView.frame.size.height/2
         
         nameLabel.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 15).isActive = true
-        nameLabel.topAnchor.constraint(equalTo: backgroundImageView.bottomAnchor, constant: 15).isActive = true
+        nameLabel.topAnchor.constraint(equalTo: backgroundImageView.bottomAnchor, constant: 12).isActive = true
+        
+        locationLabel.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 15).isActive = true
+        locationLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 2).isActive = true
         
         descriptionTextView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         descriptionTextView.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 20).isActive = true
         descriptionTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 30).isActive = true
         descriptionTextView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30).isActive = true
         descriptionTextView.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        
-        editDescButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        editDescButton.topAnchor.constraint(equalTo: descriptionTextView.bottomAnchor, constant: 10).isActive = true
-        editDescButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        editDescButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
     }
     
@@ -117,9 +116,13 @@ class ProfileViewController : UIViewController{
         print("image tapped")
         // Your action
     }
+
     
     @objc func editDescription(){
-        print("edit desc button tapped")
+        
+        let editPostVC = storyboard?.instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
+        self.present(editPostVC, animated: true, completion: nil)
+        
     }
     
 }

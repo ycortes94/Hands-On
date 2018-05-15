@@ -237,6 +237,21 @@
             </objects>
             <point key="canvasLocation" x="5521" y="1560"/>
         </scene>
+        <!--Edit Post View Controller-->
+        <scene sceneID="CSk-nX-wKC">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileViewController" title="Edit Post View Controller" id="tdF-nb-bkH" customClass="EditProfileViewController" customModule="HandsOn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CFg-Tn-jl1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="zRs-kb-7WK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WKW-0P-bk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6217" y="1560"/>
+        </scene>
         <!--More View Controller-->
         <scene sceneID="SyX-Uh-12p">
             <objects>
