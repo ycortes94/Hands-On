@@ -7,7 +7,9 @@ provides-member:
 - ["7HandsOn17PostTableViewCellC", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
+- "moreButton"
 - "postTextLabel"
+- "priceLabel"
 - "profileImageView"
 - "setSelected"
 - "subtitleLabel"
@@ -20,12 +22,14 @@ depends-top-level:
 - !private "ImageService"
 - "Post"
 - "PostTableViewCell"
+- "UIButton"
 - "UIImageView"
 - "UILabel"
 - "UITableViewCell"
 depends-member:
 - !private ["So7CALayerC", "cornerRadius"]
 - !private ["So15CALayerDelegateP", "ImageService"]
+- ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "awakeFromNib"]
 - !private ["So15CALayerDelegateP", "bounds"]
 - !private ["So15CALayerDelegateP", "clipsToBounds"]
@@ -33,14 +37,15 @@ depends-member:
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "postTextLabel"]
+- !private ["So15CALayerDelegateP", "priceLabel"]
 - !private ["So15CALayerDelegateP", "profileImageView"]
 - !private ["So15CALayerDelegateP", "setSelected"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "usernameLabel"]
-- ["So15CALayerDelegateP", ""]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
 - !private ["SC6CGRectV", "height"]
 - !private ["s7CVarArgP", "ImageService"]
+- ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "awakeFromNib"]
 - !private ["s7CVarArgP", "bounds"]
 - !private ["s7CVarArgP", "clipsToBounds"]
@@ -49,12 +54,13 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "postTextLabel"]
+- !private ["s7CVarArgP", "priceLabel"]
 - !private ["s7CVarArgP", "profileImageView"]
 - !private ["s7CVarArgP", "setSelected"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "usernameLabel"]
-- ["s7CVarArgP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "ImageService"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
 - !private ["s28CustomDebugStringConvertibleP", "clipsToBounds"]
@@ -64,14 +70,15 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "postTextLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "priceLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "profileImageView"]
 - !private ["s28CustomDebugStringConvertibleP", "setSelected"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "usernameLabel"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s23CustomStringConvertibleP", "ImageService"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "awakeFromNib"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
 - !private ["s23CustomStringConvertibleP", "clipsToBounds"]
@@ -80,14 +87,15 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "postTextLabel"]
+- !private ["s23CustomStringConvertibleP", "priceLabel"]
 - !private ["s23CustomStringConvertibleP", "profileImageView"]
 - !private ["s23CustomStringConvertibleP", "setSelected"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "usernameLabel"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "height"]
 - !private ["s9EncodableP", "height"]
 - !private ["s9EquatableP", "ImageService"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "awakeFromNib"]
 - !private ["s9EquatableP", "bounds"]
 - !private ["s9EquatableP", "clipsToBounds"]
@@ -97,12 +105,13 @@ depends-member:
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "layer"]
 - !private ["s9EquatableP", "postTextLabel"]
+- !private ["s9EquatableP", "priceLabel"]
 - !private ["s9EquatableP", "profileImageView"]
 - !private ["s9EquatableP", "setSelected"]
 - !private ["s9EquatableP", "text"]
 - !private ["s9EquatableP", "usernameLabel"]
-- ["s9EquatableP", ""]
 - !private ["s8HashableP", "ImageService"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "awakeFromNib"]
 - !private ["s8HashableP", "bounds"]
 - !private ["s8HashableP", "clipsToBounds"]
@@ -111,13 +120,14 @@ depends-member:
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "layer"]
 - !private ["s8HashableP", "postTextLabel"]
+- !private ["s8HashableP", "priceLabel"]
 - !private ["s8HashableP", "profileImageView"]
 - !private ["s8HashableP", "setSelected"]
 - !private ["s8HashableP", "text"]
 - !private ["s8HashableP", "usernameLabel"]
-- ["s8HashableP", ""]
 - !private ["7HandsOn12ImageServiceC", "getImage"]
 - !private ["So8NSCodingP", "ImageService"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "awakeFromNib"]
 - !private ["So8NSCodingP", "bounds"]
 - !private ["So8NSCodingP", "clipsToBounds"]
@@ -126,14 +136,15 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "postTextLabel"]
+- !private ["So8NSCodingP", "priceLabel"]
 - !private ["So8NSCodingP", "profileImageView"]
 - !private ["So8NSCodingP", "setSelected"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "usernameLabel"]
-- ["So8NSCodingP", ""]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "ImageService"]
 - ["So8NSObjectC", "Post"]
+- ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "awakeFromNib"]
@@ -143,7 +154,9 @@ depends-member:
 - !private ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "layer"]
+- ["So8NSObjectC", "moreButton"]
 - ["So8NSObjectC", "postTextLabel"]
+- ["So8NSObjectC", "priceLabel"]
 - ["So8NSObjectC", "profileImageView"]
 - ["So8NSObjectC", "set"]
 - ["So8NSObjectC", "setSelected"]
@@ -151,6 +164,7 @@ depends-member:
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "usernameLabel"]
 - !private ["So16NSObjectProtocolP", "ImageService"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "awakeFromNib"]
 - !private ["So16NSObjectProtocolP", "bounds"]
 - !private ["So16NSObjectProtocolP", "clipsToBounds"]
@@ -159,23 +173,27 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "layer"]
 - !private ["So16NSObjectProtocolP", "postTextLabel"]
+- !private ["So16NSObjectProtocolP", "priceLabel"]
 - !private ["So16NSObjectProtocolP", "profileImageView"]
 - !private ["So16NSObjectProtocolP", "setSelected"]
 - !private ["So16NSObjectProtocolP", "text"]
 - !private ["So16NSObjectProtocolP", "usernameLabel"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "cornerRadius"]
 - !private ["7HandsOn4PostC", "author"]
+- !private ["7HandsOn4PostC", "price"]
 - !private ["7HandsOn4PostC", "text"]
 - ["7HandsOn17PostTableViewCellC", "Bool"]
 - !private ["7HandsOn17PostTableViewCellC", "ImageService"]
 - ["7HandsOn17PostTableViewCellC", "Post"]
+- ["7HandsOn17PostTableViewCellC", "UIButton"]
 - ["7HandsOn17PostTableViewCellC", "UIImageView"]
 - ["7HandsOn17PostTableViewCellC", "UILabel"]
 - ["7HandsOn17PostTableViewCellC", "awakeFromNib"]
 - ["7HandsOn17PostTableViewCellC", "deinit"]
 - ["7HandsOn17PostTableViewCellC", "init"]
+- ["7HandsOn17PostTableViewCellC", "moreButton"]
 - ["7HandsOn17PostTableViewCellC", "postTextLabel"]
+- ["7HandsOn17PostTableViewCellC", "priceLabel"]
 - ["7HandsOn17PostTableViewCellC", "profileImageView"]
 - ["7HandsOn17PostTableViewCellC", "set"]
 - ["7HandsOn17PostTableViewCellC", "setSelected"]
@@ -186,6 +204,7 @@ depends-member:
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "ImageService"]
+- ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
 - !private ["So29UIAccessibilityIdentificationP", "bounds"]
 - !private ["So29UIAccessibilityIdentificationP", "clipsToBounds"]
@@ -193,12 +212,13 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "postTextLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "priceLabel"]
 - !private ["So29UIAccessibilityIdentificationP", "profileImageView"]
 - !private ["So29UIAccessibilityIdentificationP", "setSelected"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "usernameLabel"]
-- ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So12UIAppearanceP", "ImageService"]
+- ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "awakeFromNib"]
 - !private ["So12UIAppearanceP", "bounds"]
 - !private ["So12UIAppearanceP", "clipsToBounds"]
@@ -206,12 +226,13 @@ depends-member:
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "postTextLabel"]
+- !private ["So12UIAppearanceP", "priceLabel"]
 - !private ["So12UIAppearanceP", "profileImageView"]
 - !private ["So12UIAppearanceP", "setSelected"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "usernameLabel"]
-- ["So12UIAppearanceP", ""]
 - !private ["So21UIAppearanceContainerP", "ImageService"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "awakeFromNib"]
 - !private ["So21UIAppearanceContainerP", "bounds"]
 - !private ["So21UIAppearanceContainerP", "clipsToBounds"]
@@ -219,13 +240,14 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "postTextLabel"]
+- !private ["So21UIAppearanceContainerP", "priceLabel"]
 - !private ["So21UIAppearanceContainerP", "profileImageView"]
 - !private ["So21UIAppearanceContainerP", "setSelected"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "usernameLabel"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So17UICoordinateSpaceP", "ImageService"]
+- ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "awakeFromNib"]
 - !private ["So17UICoordinateSpaceP", "bounds"]
 - !private ["So17UICoordinateSpaceP", "clipsToBounds"]
@@ -233,12 +255,13 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "postTextLabel"]
+- !private ["So17UICoordinateSpaceP", "priceLabel"]
 - !private ["So17UICoordinateSpaceP", "profileImageView"]
 - !private ["So17UICoordinateSpaceP", "setSelected"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "usernameLabel"]
-- ["So17UICoordinateSpaceP", ""]
 - !private ["So13UIDynamicItemP", "ImageService"]
+- ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "awakeFromNib"]
 - !private ["So13UIDynamicItemP", "bounds"]
 - !private ["So13UIDynamicItemP", "clipsToBounds"]
@@ -246,12 +269,13 @@ depends-member:
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "postTextLabel"]
+- !private ["So13UIDynamicItemP", "priceLabel"]
 - !private ["So13UIDynamicItemP", "profileImageView"]
 - !private ["So13UIDynamicItemP", "setSelected"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "usernameLabel"]
-- ["So13UIDynamicItemP", ""]
 - !private ["So18UIFocusEnvironmentP", "ImageService"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
 - !private ["So18UIFocusEnvironmentP", "bounds"]
 - !private ["So18UIFocusEnvironmentP", "clipsToBounds"]
@@ -259,12 +283,13 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "postTextLabel"]
+- !private ["So18UIFocusEnvironmentP", "priceLabel"]
 - !private ["So18UIFocusEnvironmentP", "profileImageView"]
 - !private ["So18UIFocusEnvironmentP", "setSelected"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "usernameLabel"]
-- ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "ImageService"]
+- ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "awakeFromNib"]
 - !private ["So11UIFocusItemP", "bounds"]
 - !private ["So11UIFocusItemP", "clipsToBounds"]
@@ -272,25 +297,27 @@ depends-member:
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "postTextLabel"]
+- !private ["So11UIFocusItemP", "priceLabel"]
 - !private ["So11UIFocusItemP", "profileImageView"]
 - !private ["So11UIFocusItemP", "setSelected"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "usernameLabel"]
-- ["So11UIFocusItemP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "ImageService"]
+- ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "postTextLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "priceLabel"]
 - !private ["So27UIGestureRecognizerDelegateP", "profileImageView"]
 - !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
 - !private ["So27UIGestureRecognizerDelegateP", "usernameLabel"]
-- ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So11UIImageViewC", "bounds"]
 - !private ["So11UIImageViewC", "clipsToBounds"]
 - !private ["So11UIImageViewC", "image"]
 - !private ["So11UIImageViewC", "layer"]
 - !private ["So7UILabelC", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "ImageService"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
 - !private ["So30UIPasteConfigurationSupportingP", "bounds"]
 - !private ["So30UIPasteConfigurationSupportingP", "clipsToBounds"]
@@ -298,14 +325,15 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "postTextLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "priceLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "profileImageView"]
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "usernameLabel"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "ImageService"]
 - ["So11UIResponderC", "Post"]
+- ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "awakeFromNib"]
@@ -314,7 +342,9 @@ depends-member:
 - !private ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "moreButton"]
 - ["So11UIResponderC", "postTextLabel"]
+- ["So11UIResponderC", "priceLabel"]
 - ["So11UIResponderC", "profileImageView"]
 - ["So11UIResponderC", "set"]
 - ["So11UIResponderC", "setSelected"]
@@ -322,6 +352,7 @@ depends-member:
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "usernameLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "ImageService"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
 - !private ["So30UIResponderStandardEditActionsP", "bounds"]
 - !private ["So30UIResponderStandardEditActionsP", "clipsToBounds"]
@@ -329,26 +360,30 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "postTextLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "priceLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "profileImageView"]
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "usernameLabel"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - ["So15UITableViewCellC", "Bool"]
 - !private ["So15UITableViewCellC", "ImageService"]
 - ["So15UITableViewCellC", "Post"]
+- ["So15UITableViewCellC", "UIButton"]
 - ["So15UITableViewCellC", "UIImageView"]
 - ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
 - ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "moreButton"]
 - ["So15UITableViewCellC", "postTextLabel"]
+- ["So15UITableViewCellC", "priceLabel"]
 - ["So15UITableViewCellC", "profileImageView"]
 - ["So15UITableViewCellC", "set"]
 - ["So15UITableViewCellC", "setSelected"]
 - ["So15UITableViewCellC", "subtitleLabel"]
 - ["So15UITableViewCellC", "usernameLabel"]
-- ["So15UITableViewCellC", ""]
 - !private ["So18UITraitEnvironmentP", "ImageService"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
 - !private ["So18UITraitEnvironmentP", "clipsToBounds"]
@@ -356,14 +391,15 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "postTextLabel"]
+- !private ["So18UITraitEnvironmentP", "priceLabel"]
 - !private ["So18UITraitEnvironmentP", "profileImageView"]
 - !private ["So18UITraitEnvironmentP", "setSelected"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "usernameLabel"]
-- ["So18UITraitEnvironmentP", ""]
 - ["So6UIViewC", "Bool"]
 - !private ["So6UIViewC", "ImageService"]
 - ["So6UIViewC", "Post"]
+- ["So6UIViewC", "UIButton"]
 - ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "awakeFromNib"]
@@ -372,7 +408,9 @@ depends-member:
 - !private ["So6UIViewC", "image"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "layer"]
+- ["So6UIViewC", "moreButton"]
 - ["So6UIViewC", "postTextLabel"]
+- ["So6UIViewC", "priceLabel"]
 - ["So6UIViewC", "profileImageView"]
 - ["So6UIViewC", "set"]
 - ["So6UIViewC", "setSelected"]
@@ -382,6 +420,7 @@ depends-member:
 - !private ["7HandsOn11UserProfileC", "photoURL"]
 - !private ["7HandsOn11UserProfileC", "username"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "ImageService"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "clipsToBounds"]
@@ -389,12 +428,13 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "postTextLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "priceLabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "profileImageView"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setSelected"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "usernameLabel"]
-- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ImageService"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "clipsToBounds"]
@@ -403,11 +443,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "postTextLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "priceLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "profileImageView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "usernameLabel"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 depends-nominal:
 - !private "So7CALayerC"
@@ -467,90 +507,100 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestore.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FirebaseFirestore.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRListenerRegistration.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTransaction.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSetOptions.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRGeoPoint.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuery.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "85f9da87c08317d5e26b85528b86920d"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestore.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FirebaseFirestore.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRListenerRegistration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTransaction.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSetOptions.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRGeoPoint.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuery.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "22615d80b83f90294f86b9fa8f571630"

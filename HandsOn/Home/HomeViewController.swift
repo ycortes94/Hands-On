@@ -64,10 +64,14 @@ class HomeViewController:UIViewController, UITableViewDelegate, UITableViewDataS
                     let photoURL = author["photoURL"] as? String,
                     let url = URL(string:photoURL),
                     let text = dict["text"] as? String,
-                    let timestamp = dict["timestamp"] as? Double {
+                    let timestamp = dict["timestamp"] as? Double,
+                    let price = dict["price"] as? String,
+                    let location = dict["location"] as? String,
+                    let duration = dict["duration"] as? Int,
+                    let description = dict["description"] as? String{
                     
                     let userProfile = UserProfile(uid: uid, username: username, photoURL: url)
-                    let post = Post(id: childSnapshot.key, author: userProfile, text: text, timestamp:timestamp)
+                    let post = Post(id: childSnapshot.key, author: userProfile, text: text, timestamp:timestamp, price: price, location: location, duration: duration, description: description)
                     tempPosts.append(post)
                 }
             }
@@ -78,9 +82,9 @@ class HomeViewController:UIViewController, UITableViewDelegate, UITableViewDataS
         })
     }
     
-    @IBAction func handleLogout(_ sender:Any) {
-        try! Auth.auth().signOut()
-    }
+//    @IBAction func handleLogout(_ sender:Any) {
+//        try! Auth.auth().signOut()
+//    }
     
    
     

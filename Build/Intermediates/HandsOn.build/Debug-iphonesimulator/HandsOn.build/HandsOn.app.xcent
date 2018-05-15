@@ -2,11 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>application-identifier</key>
-	<string>6WA6Y7KBQJ.yosimy.cortes.HandsOn</string>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>6WA6Y7KBQJ.yosimy.cortes.HandsOn</string>
-	</array>
+	<key>com.apple.security.get-task-allow</key>
+	<true/>
 </dict>
 </plist>

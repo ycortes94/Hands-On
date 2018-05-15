@@ -1,0 +1,341 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GameRequest"
+- "=="
+provides-nominal:
+- "13FacebookShare11GameRequestV"
+provides-member:
+- ["13FacebookShare11GameRequestV", ""]
+- ["13FacebookShare11GameRequestV", "sdkContentRepresentation"]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- "Equatable"
+- "FBSDKGameRequestContent"
+- "GameRequest"
+- "Set"
+- "String"
+depends-member:
+- !private ["13FacebookShare11GameRequestV10ActionTypeO", "sdkActionRepresentation"]
+- !private ["s7CVarArgP", "actionType"]
+- !private ["s7CVarArgP", "data"]
+- !private ["s7CVarArgP", "filters"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "message"]
+- !private ["s7CVarArgP", "objectID"]
+- !private ["s7CVarArgP", "recipientSuggestions"]
+- !private ["s7CVarArgP", "recipients"]
+- !private ["s7CVarArgP", "title"]
+- !private ["s10CollectionP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "actionType"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "filters"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "message"]
+- !private ["s28CustomDebugStringConvertibleP", "objectID"]
+- !private ["s28CustomDebugStringConvertibleP", "recipientSuggestions"]
+- !private ["s28CustomDebugStringConvertibleP", "recipients"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s23CustomStringConvertibleP", "actionType"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "filters"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "message"]
+- !private ["s23CustomStringConvertibleP", "objectID"]
+- !private ["s23CustomStringConvertibleP", "recipientSuggestions"]
+- !private ["s23CustomStringConvertibleP", "recipients"]
+- !private ["s23CustomStringConvertibleP", "title"]
+- !private ["s9DecodableP", "map"]
+- !private ["s9EncodableP", "map"]
+- !private ["s9EquatableP", "FBSDKGameRequestContent"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "actionType"]
+- !private ["s9EquatableP", "data"]
+- !private ["s9EquatableP", "filters"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "map"]
+- !private ["s9EquatableP", "message"]
+- !private ["s9EquatableP", "none"]
+- !private ["s9EquatableP", "objectID"]
+- !private ["s9EquatableP", "rawValue"]
+- !private ["s9EquatableP", "recipientSuggestions"]
+- !private ["s9EquatableP", "recipients"]
+- !private ["s9EquatableP", "recipientsFilter"]
+- !private ["s9EquatableP", "sdkContentRepresentation"]
+- !private ["s9EquatableP", "sdkFilterRepresentation"]
+- !private ["s9EquatableP", "title"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s25ExpressibleByArrayLiteralP", "none"]
+- !private ["s25ExpressibleByArrayLiteralP", "sdkFilterRepresentation"]
+- !private ["So12FBSDKCopyingP", "actionType"]
+- !private ["So12FBSDKCopyingP", "data"]
+- !private ["So12FBSDKCopyingP", "filters"]
+- !private ["So12FBSDKCopyingP", "init"]
+- !private ["So12FBSDKCopyingP", "message"]
+- !private ["So12FBSDKCopyingP", "objectID"]
+- !private ["So12FBSDKCopyingP", "recipientSuggestions"]
+- !private ["So12FBSDKCopyingP", "recipients"]
+- !private ["So12FBSDKCopyingP", "title"]
+- !private ["SC26FBSDKGameRequestActionTypeO", "none"]
+- !private ["So23FBSDKGameRequestContentC", "actionType"]
+- !private ["So23FBSDKGameRequestContentC", "data"]
+- !private ["So23FBSDKGameRequestContentC", "filters"]
+- !private ["So23FBSDKGameRequestContentC", "init"]
+- !private ["So23FBSDKGameRequestContentC", "message"]
+- !private ["So23FBSDKGameRequestContentC", "objectID"]
+- !private ["So23FBSDKGameRequestContentC", "recipientSuggestions"]
+- !private ["So23FBSDKGameRequestContentC", "recipients"]
+- !private ["So23FBSDKGameRequestContentC", "title"]
+- ["13FacebookShare11GameRequestV", "=="]
+- ["13FacebookShare11GameRequestV", "ActionType"]
+- ["13FacebookShare11GameRequestV", "Bool"]
+- ["13FacebookShare11GameRequestV", "FBSDKGameRequestContent"]
+- ["13FacebookShare11GameRequestV", "GameRequest"]
+- ["13FacebookShare11GameRequestV", "Recipient"]
+- ["13FacebookShare11GameRequestV", "RecipientsFilter"]
+- ["13FacebookShare11GameRequestV", "Set"]
+- ["13FacebookShare11GameRequestV", "String"]
+- ["13FacebookShare11GameRequestV", "actionType"]
+- ["13FacebookShare11GameRequestV", "data"]
+- ["13FacebookShare11GameRequestV", "deinit"]
+- ["13FacebookShare11GameRequestV", "init"]
+- ["13FacebookShare11GameRequestV", "message"]
+- ["13FacebookShare11GameRequestV", "recipientSuggestions"]
+- ["13FacebookShare11GameRequestV", "recipients"]
+- ["13FacebookShare11GameRequestV", "recipientsFilter"]
+- ["13FacebookShare11GameRequestV", "sdkContentRepresentation"]
+- ["13FacebookShare11GameRequestV", "title"]
+- !private ["s8HashableP", "actionType"]
+- !private ["s8HashableP", "data"]
+- !private ["s8HashableP", "filters"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "map"]
+- !private ["s8HashableP", "message"]
+- !private ["s8HashableP", "none"]
+- !private ["s8HashableP", "objectID"]
+- !private ["s8HashableP", "rawValue"]
+- !private ["s8HashableP", "recipientSuggestions"]
+- !private ["s8HashableP", "recipients"]
+- !private ["s8HashableP", "title"]
+- !private ["So8NSCodingP", "actionType"]
+- !private ["So8NSCodingP", "data"]
+- !private ["So8NSCodingP", "filters"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "message"]
+- !private ["So8NSCodingP", "objectID"]
+- !private ["So8NSCodingP", "recipientSuggestions"]
+- !private ["So8NSCodingP", "recipients"]
+- !private ["So8NSCodingP", "title"]
+- !private ["So9NSCopyingP", "actionType"]
+- !private ["So9NSCopyingP", "data"]
+- !private ["So9NSCopyingP", "filters"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "message"]
+- !private ["So9NSCopyingP", "objectID"]
+- !private ["So9NSCopyingP", "recipientSuggestions"]
+- !private ["So9NSCopyingP", "recipients"]
+- !private ["So9NSCopyingP", "title"]
+- !private ["So8NSObjectC", "actionType"]
+- !private ["So8NSObjectC", "data"]
+- !private ["So8NSObjectC", "filters"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "message"]
+- !private ["So8NSObjectC", "objectID"]
+- !private ["So8NSObjectC", "recipientSuggestions"]
+- !private ["So8NSObjectC", "recipients"]
+- !private ["So8NSObjectC", "title"]
+- !private ["So16NSObjectProtocolP", "actionType"]
+- !private ["So16NSObjectProtocolP", "data"]
+- !private ["So16NSObjectProtocolP", "filters"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "message"]
+- !private ["So16NSObjectProtocolP", "objectID"]
+- !private ["So16NSObjectProtocolP", "recipientSuggestions"]
+- !private ["So16NSObjectProtocolP", "recipients"]
+- !private ["So16NSObjectProtocolP", "title"]
+- !private ["So14NSSecureCodingP", "actionType"]
+- !private ["So14NSSecureCodingP", "data"]
+- !private ["So14NSSecureCodingP", "filters"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "message"]
+- !private ["So14NSSecureCodingP", "objectID"]
+- !private ["So14NSSecureCodingP", "recipientSuggestions"]
+- !private ["So14NSSecureCodingP", "recipients"]
+- !private ["So14NSSecureCodingP", "title"]
+- !private ["s9OptionSetP", "none"]
+- !private ["s9OptionSetP", "sdkFilterRepresentation"]
+- !private ["s16RawRepresentableP", "none"]
+- !private ["s16RawRepresentableP", "sdkFilterRepresentation"]
+- ["13FacebookShare11GameRequestV9RecipientO", "deinit"]
+- !private ["13FacebookShare11GameRequestV9RecipientO", "rawValue"]
+- !private ["13FacebookShare11GameRequestV16RecipientsFilterV", "none"]
+- !private ["13FacebookShare11GameRequestV16RecipientsFilterV", "sdkFilterRepresentation"]
+- !private ["s8SequenceP", "map"]
+- !private ["s3SetV", "map"]
+- !private ["s10SetAlgebraP", "map"]
+- !private ["s10SetAlgebraP", "none"]
+- !private ["s10SetAlgebraP", "sdkFilterRepresentation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "actionType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "filters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "message"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "objectID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "recipientSuggestions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "recipients"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+depends-nominal:
+- !private "13FacebookShare11GameRequestV10ActionTypeO"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "So12FBSDKCopyingP"
+- !private "SC26FBSDKGameRequestActionTypeO"
+- !private "So23FBSDKGameRequestContentC"
+- "13FacebookShare11GameRequestV"
+- !private "s8HashableP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "s9OptionSetP"
+- !private "s16RawRepresentableP"
+- "13FacebookShare11GameRequestV9RecipientO"
+- !private "13FacebookShare11GameRequestV16RecipientsFilterV"
+- !private "s8SequenceP"
+- !private "s3SetV"
+- !private "s10SetAlgebraP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Files/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareAPI.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFURL.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/FacebookShare/FacebookShare-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/FBSDKShareKit/FBSDKShareKit-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/FBSDKCoreKit/FBSDKCoreKit-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFGeneric.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareDialogMode.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLikeObjectType.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKHashtag.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLiking.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharing.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkResolving.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMutableCopying.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppGroupAddDialog.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKMessageDialog.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareDialog.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppInviteDialog.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppGroupJoinDialog.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestDialog.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLink.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLikeControl.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFCancellationToken.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkNavigation.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphAction.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSendButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLikeButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharingButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerURLActionButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerActionButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareVideo.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharePhoto.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKTestUsersManager.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkReturnToRefererController.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphValueContainer.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkResolver.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFWebViewAppLinkResolver.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFExecutor.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKCameraEffectTextures.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/Bolts.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareConstants.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKCameraEffectArguments.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppEvents.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphObject.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkTarget.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Files/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerGenericTemplateElement.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestDataAttachment.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMediaContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerMediaTemplateContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerGenericTemplateContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerOpenGraphMusicTemplateContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppInviteContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharingContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareLinkContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareVideoContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharePhotoContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppGroupContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareCameraEffectContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFMeasurementEvent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequest.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfilePictureView.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkReturnToRefererView.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkUtility.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/FacebookShare.build/unextended-module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/FacebookCore.build/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKShareKit.build/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "da13c77509d5abeac3a0804e86aa812f"

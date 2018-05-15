@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MoreViewController: UITableViewController{
     
@@ -67,6 +68,8 @@ class MoreViewController: UITableViewController{
         //LOGOUT FUNCTIONALITY GOES HERE?
         if (indexPath.row == 4){
             print("Logout button tapped")
+            try! Auth.auth().signOut()
+            print("User Logged Out")
         }
     }
     

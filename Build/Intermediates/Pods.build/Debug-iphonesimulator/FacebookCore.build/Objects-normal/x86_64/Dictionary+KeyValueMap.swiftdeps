@@ -1,0 +1,121 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["s10DictionaryV", ""]
+- ["s10DictionaryV", "keyValueMap"]
+- ["s10DictionaryV", "keyValueFlatMap"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "AssignmentPrecedence"
+- "Dictionary"
+depends-member:
+- !private ["s7CVarArgP", "forEach"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s10CollectionP", "forEach"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "forEach"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s9DecodableP", "forEach"]
+- !private ["s9DecodableP", "subscript"]
+- ["s10DictionaryV", "Element"]
+- !private ["s10DictionaryV", "forEach"]
+- ["s10DictionaryV", "keyValueFlatMap"]
+- ["s10DictionaryV", "keyValueMap"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["s9EncodableP", "forEach"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "forEach"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "forEach"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s8SequenceP", "forEach"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- "s10DictionaryV"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s8SequenceP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFURL.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/FBSDKCoreKit/FBSDKCoreKit-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFGeneric.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkResolving.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMutableCopying.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLink.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFCancellationToken.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkNavigation.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKTestUsersManager.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkReturnToRefererController.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkResolver.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFWebViewAppLinkResolver.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFExecutor.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/Bolts.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppEvents.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkTarget.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestDataAttachment.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFMeasurementEvent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequest.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfilePictureView.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkReturnToRefererView.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkUtility.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/FacebookCore.build/unextended-module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "e63129556e1b5d35162ea8c9fa65c09b"

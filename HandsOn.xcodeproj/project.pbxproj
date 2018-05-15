@@ -17,6 +17,7 @@
 		D083594620A3C47200A1B7C8 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083594520A3C47200A1B7C8 /* MoreViewController.swift */; };
 		D083594820A3D92F00A1B7C8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */; };
 		E285F6383885579EF6B6206C /* Pods_HandsOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47116C8283DB21B4DAB8E8B4 /* Pods_HandsOn.framework */; };
+		FF974A8F20AA3AD90073EB11 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF974A8E20AA3AD90073EB11 /* LogoutViewController.swift */; };
 		FFE861A7207618E600C5B8DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE861A6207618E600C5B8DD /* AppDelegate.swift */; };
 		FFE861AF207618E600C5B8DD /* HandsOn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFE861AD207618E600C5B8DD /* HandsOn.xcdatamodeld */; };
 		FFE861B1207618E600C5B8DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE861B0207618E600C5B8DD /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		D083594520A3C47200A1B7C8 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DBB7B8D3C6922A35ECA5EB88 /* Pods-HandsOn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsOn.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandsOn/Pods-HandsOn.release.xcconfig"; sourceTree = "<group>"; };
+		FF974A8E20AA3AD90073EB11 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		FFE861A3207618E600C5B8DD /* HandsOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandsOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE861A6207618E600C5B8DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFE861AE207618E600C5B8DD /* HandsOn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HandsOn.xcdatamodel; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				D0557CD020A51DA000E08F6C /* ActivityLogViewController.swift */,
 				D0557CD220A51DB900E08F6C /* VerificationViewController.swift */,
 				D0557CD420A51DCA00E08F6C /* SettingsViewController.swift */,
+				FF974A8E20AA3AD90073EB11 /* LogoutViewController.swift */,
 			);
 			path = MoreVC;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				FFE861A7207618E600C5B8DD /* AppDelegate.swift in Sources */,
 				FFE861F4207630F300C5B8DD /* PostTableViewCell.swift in Sources */,
 				FFE8620B207632F000C5B8DD /* LoginViewController.swift in Sources */,
+				FF974A8F20AA3AD90073EB11 /* LogoutViewController.swift in Sources */,
 				FFE861FA2076310300C5B8DD /* RoundedWhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

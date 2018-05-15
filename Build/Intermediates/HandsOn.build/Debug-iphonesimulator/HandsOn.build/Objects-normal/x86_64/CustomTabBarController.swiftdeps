@@ -1,0 +1,845 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CustomTabBarController"
+provides-nominal:
+- "7HandsOn22CustomTabBarControllerC"
+provides-member:
+- ["7HandsOn22CustomTabBarControllerC", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+depends-top-level:
+- !private "Array"
+- "AssignmentPrecedence"
+- "CustomTabBarController"
+- !private "HomeViewController"
+- !private "MessagesViewController"
+- !private "MoreViewController"
+- !private "NewPostViewController"
+- !private "StringLiteralType"
+- !private "TasksViewController"
+- !private "UIColor"
+- !private "UIEdgeInsets"
+- !private "UIImage"
+- !private "UINavigationBar"
+- !private "UINavigationController"
+- !private "UITabBar"
+- "UITabBarController"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["So15CALayerDelegateP", "appearance"]
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "tintColor"]
+- !private ["So15CALayerDelegateP", "topItem"]
+- !private ["So15CALayerDelegateP", "unselectedItemTintColor"]
+- !private ["s7CVarArgP", "HomeViewController"]
+- !private ["s7CVarArgP", "MessagesViewController"]
+- !private ["s7CVarArgP", "MoreViewController"]
+- !private ["s7CVarArgP", "NewPostViewController"]
+- !private ["s7CVarArgP", "TasksViewController"]
+- !private ["s7CVarArgP", "UIColor"]
+- !private ["s7CVarArgP", "UIEdgeInsets"]
+- !private ["s7CVarArgP", "UIImage"]
+- !private ["s7CVarArgP", "UINavigationBar"]
+- !private ["s7CVarArgP", "UINavigationController"]
+- !private ["s7CVarArgP", "UITabBar"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "appearance"]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "black"]
+- !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "imageInsets"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "navigationBar"]
+- !private ["s7CVarArgP", "tabBar"]
+- !private ["s7CVarArgP", "tabBarItem"]
+- !private ["s7CVarArgP", "tintColor"]
+- !private ["s7CVarArgP", "title"]
+- !private ["s7CVarArgP", "topItem"]
+- !private ["s7CVarArgP", "unselectedItemTintColor"]
+- !private ["s7CVarArgP", "viewControllers"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "HomeViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "MessagesViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "MoreViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "NewPostViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "TasksViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- !private ["s28CustomDebugStringConvertibleP", "UIEdgeInsets"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- !private ["s28CustomDebugStringConvertibleP", "UINavigationBar"]
+- !private ["s28CustomDebugStringConvertibleP", "UINavigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "UITabBar"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "appearance"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "black"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "imageInsets"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
+- !private ["s28CustomDebugStringConvertibleP", "tabBar"]
+- !private ["s28CustomDebugStringConvertibleP", "tabBarItem"]
+- !private ["s28CustomDebugStringConvertibleP", "tintColor"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "topItem"]
+- !private ["s28CustomDebugStringConvertibleP", "unselectedItemTintColor"]
+- !private ["s28CustomDebugStringConvertibleP", "viewControllers"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "HomeViewController"]
+- !private ["s23CustomStringConvertibleP", "MessagesViewController"]
+- !private ["s23CustomStringConvertibleP", "MoreViewController"]
+- !private ["s23CustomStringConvertibleP", "NewPostViewController"]
+- !private ["s23CustomStringConvertibleP", "TasksViewController"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- !private ["s23CustomStringConvertibleP", "UIEdgeInsets"]
+- !private ["s23CustomStringConvertibleP", "UIImage"]
+- !private ["s23CustomStringConvertibleP", "UINavigationBar"]
+- !private ["s23CustomStringConvertibleP", "UINavigationController"]
+- !private ["s23CustomStringConvertibleP", "UITabBar"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appearance"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "black"]
+- !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "imageInsets"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "navigationBar"]
+- !private ["s23CustomStringConvertibleP", "tabBar"]
+- !private ["s23CustomStringConvertibleP", "tabBarItem"]
+- !private ["s23CustomStringConvertibleP", "tintColor"]
+- !private ["s23CustomStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "topItem"]
+- !private ["s23CustomStringConvertibleP", "unselectedItemTintColor"]
+- !private ["s23CustomStringConvertibleP", "viewControllers"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["7HandsOn22CustomTabBarControllerC", "HomeViewController"]
+- !private ["7HandsOn22CustomTabBarControllerC", "MessagesViewController"]
+- !private ["7HandsOn22CustomTabBarControllerC", "MoreViewController"]
+- !private ["7HandsOn22CustomTabBarControllerC", "NewPostViewController"]
+- !private ["7HandsOn22CustomTabBarControllerC", "TasksViewController"]
+- !private ["7HandsOn22CustomTabBarControllerC", "UIColor"]
+- !private ["7HandsOn22CustomTabBarControllerC", "UIEdgeInsets"]
+- !private ["7HandsOn22CustomTabBarControllerC", "UIImage"]
+- !private ["7HandsOn22CustomTabBarControllerC", "UINavigationBar"]
+- !private ["7HandsOn22CustomTabBarControllerC", "UINavigationController"]
+- !private ["7HandsOn22CustomTabBarControllerC", "UITabBar"]
+- ["7HandsOn22CustomTabBarControllerC", "deinit"]
+- ["7HandsOn22CustomTabBarControllerC", "init"]
+- !private ["7HandsOn22CustomTabBarControllerC", "tabBar"]
+- !private ["7HandsOn22CustomTabBarControllerC", "viewControllers"]
+- ["7HandsOn22CustomTabBarControllerC", "viewDidLoad"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "HomeViewController"]
+- !private ["s9EquatableP", "MessagesViewController"]
+- !private ["s9EquatableP", "MoreViewController"]
+- !private ["s9EquatableP", "NewPostViewController"]
+- !private ["s9EquatableP", "TasksViewController"]
+- !private ["s9EquatableP", "UIColor"]
+- !private ["s9EquatableP", "UIEdgeInsets"]
+- !private ["s9EquatableP", "UIImage"]
+- !private ["s9EquatableP", "UINavigationBar"]
+- !private ["s9EquatableP", "UINavigationController"]
+- !private ["s9EquatableP", "UITabBar"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "appearance"]
+- !private ["s9EquatableP", "backgroundColor"]
+- !private ["s9EquatableP", "black"]
+- !private ["s9EquatableP", "image"]
+- !private ["s9EquatableP", "imageInsets"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "navigationBar"]
+- !private ["s9EquatableP", "tabBar"]
+- !private ["s9EquatableP", "tabBarItem"]
+- !private ["s9EquatableP", "tintColor"]
+- !private ["s9EquatableP", "title"]
+- !private ["s9EquatableP", "topItem"]
+- !private ["s9EquatableP", "unselectedItemTintColor"]
+- !private ["s9EquatableP", "viewControllers"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "HomeViewController"]
+- !private ["s8HashableP", "MessagesViewController"]
+- !private ["s8HashableP", "MoreViewController"]
+- !private ["s8HashableP", "NewPostViewController"]
+- !private ["s8HashableP", "TasksViewController"]
+- !private ["s8HashableP", "UIColor"]
+- !private ["s8HashableP", "UIEdgeInsets"]
+- !private ["s8HashableP", "UIImage"]
+- !private ["s8HashableP", "UINavigationBar"]
+- !private ["s8HashableP", "UINavigationController"]
+- !private ["s8HashableP", "UITabBar"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "appearance"]
+- !private ["s8HashableP", "backgroundColor"]
+- !private ["s8HashableP", "black"]
+- !private ["s8HashableP", "image"]
+- !private ["s8HashableP", "imageInsets"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "navigationBar"]
+- !private ["s8HashableP", "tabBar"]
+- !private ["s8HashableP", "tabBarItem"]
+- !private ["s8HashableP", "tintColor"]
+- !private ["s8HashableP", "title"]
+- !private ["s8HashableP", "topItem"]
+- !private ["s8HashableP", "unselectedItemTintColor"]
+- !private ["s8HashableP", "viewControllers"]
+- !private ["s8HashableP", "viewDidLoad"]
+- !private ["7HandsOn18HomeViewControllerC", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["7HandsOn22MessagesViewControllerC", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["7HandsOn18MoreViewControllerC", "init"]
+- !private ["So8NSCodingP", "HomeViewController"]
+- !private ["So8NSCodingP", "MessagesViewController"]
+- !private ["So8NSCodingP", "MoreViewController"]
+- !private ["So8NSCodingP", "NewPostViewController"]
+- !private ["So8NSCodingP", "TasksViewController"]
+- !private ["So8NSCodingP", "UIColor"]
+- !private ["So8NSCodingP", "UIEdgeInsets"]
+- !private ["So8NSCodingP", "UIImage"]
+- !private ["So8NSCodingP", "UINavigationBar"]
+- !private ["So8NSCodingP", "UINavigationController"]
+- !private ["So8NSCodingP", "UITabBar"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "appearance"]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "black"]
+- !private ["So8NSCodingP", "image"]
+- !private ["So8NSCodingP", "imageInsets"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "navigationBar"]
+- !private ["So8NSCodingP", "tabBar"]
+- !private ["So8NSCodingP", "tabBarItem"]
+- !private ["So8NSCodingP", "tintColor"]
+- !private ["So8NSCodingP", "title"]
+- !private ["So8NSCodingP", "topItem"]
+- !private ["So8NSCodingP", "unselectedItemTintColor"]
+- !private ["So8NSCodingP", "viewControllers"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So9NSCopyingP", "black"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "HomeViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "MessagesViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "MoreViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "NewPostViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "TasksViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "UIColor"]
+- !private ["So26NSExtensionRequestHandlingP", "UIEdgeInsets"]
+- !private ["So26NSExtensionRequestHandlingP", "UIImage"]
+- !private ["So26NSExtensionRequestHandlingP", "UINavigationBar"]
+- !private ["So26NSExtensionRequestHandlingP", "UINavigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "UITabBar"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationBar"]
+- !private ["So26NSExtensionRequestHandlingP", "tabBar"]
+- !private ["So26NSExtensionRequestHandlingP", "tabBarItem"]
+- !private ["So26NSExtensionRequestHandlingP", "viewControllers"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So21NSItemProviderReadingP", "black"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "black"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So8NSObjectC", "HomeViewController"]
+- !private ["So8NSObjectC", "MessagesViewController"]
+- !private ["So8NSObjectC", "MoreViewController"]
+- !private ["So8NSObjectC", "NewPostViewController"]
+- !private ["So8NSObjectC", "TasksViewController"]
+- !private ["So8NSObjectC", "UIColor"]
+- !private ["So8NSObjectC", "UIEdgeInsets"]
+- !private ["So8NSObjectC", "UIImage"]
+- !private ["So8NSObjectC", "UINavigationBar"]
+- !private ["So8NSObjectC", "UINavigationController"]
+- !private ["So8NSObjectC", "UITabBar"]
+- !private ["So8NSObjectC", "appearance"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "black"]
+- !private ["So8NSObjectC", "image"]
+- !private ["So8NSObjectC", "imageInsets"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "navigationBar"]
+- !private ["So8NSObjectC", "tabBar"]
+- !private ["So8NSObjectC", "tabBarItem"]
+- !private ["So8NSObjectC", "tintColor"]
+- !private ["So8NSObjectC", "title"]
+- !private ["So8NSObjectC", "topItem"]
+- !private ["So8NSObjectC", "unselectedItemTintColor"]
+- !private ["So8NSObjectC", "viewControllers"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "HomeViewController"]
+- !private ["So16NSObjectProtocolP", "MessagesViewController"]
+- !private ["So16NSObjectProtocolP", "MoreViewController"]
+- !private ["So16NSObjectProtocolP", "NewPostViewController"]
+- !private ["So16NSObjectProtocolP", "TasksViewController"]
+- !private ["So16NSObjectProtocolP", "UIColor"]
+- !private ["So16NSObjectProtocolP", "UIEdgeInsets"]
+- !private ["So16NSObjectProtocolP", "UIImage"]
+- !private ["So16NSObjectProtocolP", "UINavigationBar"]
+- !private ["So16NSObjectProtocolP", "UINavigationController"]
+- !private ["So16NSObjectProtocolP", "UITabBar"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "appearance"]
+- !private ["So16NSObjectProtocolP", "backgroundColor"]
+- !private ["So16NSObjectProtocolP", "black"]
+- !private ["So16NSObjectProtocolP", "image"]
+- !private ["So16NSObjectProtocolP", "imageInsets"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "navigationBar"]
+- !private ["So16NSObjectProtocolP", "tabBar"]
+- !private ["So16NSObjectProtocolP", "tabBarItem"]
+- !private ["So16NSObjectProtocolP", "tintColor"]
+- !private ["So16NSObjectProtocolP", "title"]
+- !private ["So16NSObjectProtocolP", "topItem"]
+- !private ["So16NSObjectProtocolP", "unselectedItemTintColor"]
+- !private ["So16NSObjectProtocolP", "viewControllers"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["So14NSSecureCodingP", "black"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["7HandsOn21NewPostViewControllerC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["7HandsOn19TasksViewControllerC", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "appearance"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "imageInsets"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "tintColor"]
+- !private ["So29UIAccessibilityIdentificationP", "topItem"]
+- !private ["So29UIAccessibilityIdentificationP", "unselectedItemTintColor"]
+- !private ["So12UIAppearanceP", "appearance"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "imageInsets"]
+- !private ["So12UIAppearanceP", "tintColor"]
+- !private ["So12UIAppearanceP", "topItem"]
+- !private ["So12UIAppearanceP", "unselectedItemTintColor"]
+- !private ["So21UIAppearanceContainerP", "HomeViewController"]
+- !private ["So21UIAppearanceContainerP", "MessagesViewController"]
+- !private ["So21UIAppearanceContainerP", "MoreViewController"]
+- !private ["So21UIAppearanceContainerP", "NewPostViewController"]
+- !private ["So21UIAppearanceContainerP", "TasksViewController"]
+- !private ["So21UIAppearanceContainerP", "UIColor"]
+- !private ["So21UIAppearanceContainerP", "UIEdgeInsets"]
+- !private ["So21UIAppearanceContainerP", "UIImage"]
+- !private ["So21UIAppearanceContainerP", "UINavigationBar"]
+- !private ["So21UIAppearanceContainerP", "UINavigationController"]
+- !private ["So21UIAppearanceContainerP", "UITabBar"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "appearance"]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "navigationBar"]
+- !private ["So21UIAppearanceContainerP", "tabBar"]
+- !private ["So21UIAppearanceContainerP", "tabBarItem"]
+- !private ["So21UIAppearanceContainerP", "tintColor"]
+- !private ["So21UIAppearanceContainerP", "topItem"]
+- !private ["So21UIAppearanceContainerP", "unselectedItemTintColor"]
+- !private ["So21UIAppearanceContainerP", "viewControllers"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So9UIBarItemC", "image"]
+- !private ["So9UIBarItemC", "imageInsets"]
+- !private ["So16UIBarPositioningP", "appearance"]
+- !private ["So16UIBarPositioningP", "backgroundColor"]
+- !private ["So16UIBarPositioningP", "topItem"]
+- !private ["So7UIColorC", "black"]
+- !private ["So7UIColorC", "init"]
+- !private ["So18UIContentContainerP", "HomeViewController"]
+- !private ["So18UIContentContainerP", "MessagesViewController"]
+- !private ["So18UIContentContainerP", "MoreViewController"]
+- !private ["So18UIContentContainerP", "NewPostViewController"]
+- !private ["So18UIContentContainerP", "TasksViewController"]
+- !private ["So18UIContentContainerP", "UIColor"]
+- !private ["So18UIContentContainerP", "UIEdgeInsets"]
+- !private ["So18UIContentContainerP", "UIImage"]
+- !private ["So18UIContentContainerP", "UINavigationBar"]
+- !private ["So18UIContentContainerP", "UINavigationController"]
+- !private ["So18UIContentContainerP", "UITabBar"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "navigationBar"]
+- !private ["So18UIContentContainerP", "tabBar"]
+- !private ["So18UIContentContainerP", "tabBarItem"]
+- !private ["So18UIContentContainerP", "viewControllers"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So17UICoordinateSpaceP", "appearance"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "tintColor"]
+- !private ["So17UICoordinateSpaceP", "topItem"]
+- !private ["So17UICoordinateSpaceP", "unselectedItemTintColor"]
+- !private ["So13UIDynamicItemP", "appearance"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "tintColor"]
+- !private ["So13UIDynamicItemP", "topItem"]
+- !private ["So13UIDynamicItemP", "unselectedItemTintColor"]
+- !private ["SC12UIEdgeInsetsV", "init"]
+- !private ["So18UIFocusEnvironmentP", "HomeViewController"]
+- !private ["So18UIFocusEnvironmentP", "MessagesViewController"]
+- !private ["So18UIFocusEnvironmentP", "MoreViewController"]
+- !private ["So18UIFocusEnvironmentP", "NewPostViewController"]
+- !private ["So18UIFocusEnvironmentP", "TasksViewController"]
+- !private ["So18UIFocusEnvironmentP", "UIColor"]
+- !private ["So18UIFocusEnvironmentP", "UIEdgeInsets"]
+- !private ["So18UIFocusEnvironmentP", "UIImage"]
+- !private ["So18UIFocusEnvironmentP", "UINavigationBar"]
+- !private ["So18UIFocusEnvironmentP", "UINavigationController"]
+- !private ["So18UIFocusEnvironmentP", "UITabBar"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "appearance"]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "navigationBar"]
+- !private ["So18UIFocusEnvironmentP", "tabBar"]
+- !private ["So18UIFocusEnvironmentP", "tabBarItem"]
+- !private ["So18UIFocusEnvironmentP", "tintColor"]
+- !private ["So18UIFocusEnvironmentP", "topItem"]
+- !private ["So18UIFocusEnvironmentP", "unselectedItemTintColor"]
+- !private ["So18UIFocusEnvironmentP", "viewControllers"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "appearance"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "tintColor"]
+- !private ["So11UIFocusItemP", "topItem"]
+- !private ["So11UIFocusItemP", "unselectedItemTintColor"]
+- !private ["So7UIImageC", "init"]
+- !private ["So31UIImagePickerControllerDelegateP", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So15UINavigationBarC", "appearance"]
+- !private ["So15UINavigationBarC", "backgroundColor"]
+- !private ["So15UINavigationBarC", "topItem"]
+- !private ["So22UINavigationControllerC", "init"]
+- !private ["So22UINavigationControllerC", "navigationBar"]
+- !private ["So22UINavigationControllerC", "tabBarItem"]
+- !private ["So30UINavigationControllerDelegateP", "init"]
+- !private ["So16UINavigationItemC", "title"]
+- !private ["So30UIPasteConfigurationSupportingP", "HomeViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "MessagesViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "MoreViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "NewPostViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "TasksViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIEdgeInsets"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "UINavigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "UINavigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UITabBar"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "appearance"]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "tabBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "tabBarItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "tintColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "topItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "unselectedItemTintColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewControllers"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So11UIResponderC", "HomeViewController"]
+- !private ["So11UIResponderC", "MessagesViewController"]
+- !private ["So11UIResponderC", "MoreViewController"]
+- !private ["So11UIResponderC", "NewPostViewController"]
+- !private ["So11UIResponderC", "TasksViewController"]
+- !private ["So11UIResponderC", "UIColor"]
+- !private ["So11UIResponderC", "UIEdgeInsets"]
+- !private ["So11UIResponderC", "UIImage"]
+- !private ["So11UIResponderC", "UINavigationBar"]
+- !private ["So11UIResponderC", "UINavigationController"]
+- !private ["So11UIResponderC", "UITabBar"]
+- !private ["So11UIResponderC", "appearance"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "navigationBar"]
+- !private ["So11UIResponderC", "tabBar"]
+- !private ["So11UIResponderC", "tabBarItem"]
+- !private ["So11UIResponderC", "tintColor"]
+- !private ["So11UIResponderC", "topItem"]
+- !private ["So11UIResponderC", "unselectedItemTintColor"]
+- !private ["So11UIResponderC", "viewControllers"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "HomeViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "MessagesViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "MoreViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "NewPostViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "TasksViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- !private ["So30UIResponderStandardEditActionsP", "UIEdgeInsets"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- !private ["So30UIResponderStandardEditActionsP", "UINavigationBar"]
+- !private ["So30UIResponderStandardEditActionsP", "UINavigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "UITabBar"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "appearance"]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationBar"]
+- !private ["So30UIResponderStandardEditActionsP", "tabBar"]
+- !private ["So30UIResponderStandardEditActionsP", "tabBarItem"]
+- !private ["So30UIResponderStandardEditActionsP", "tintColor"]
+- !private ["So30UIResponderStandardEditActionsP", "topItem"]
+- !private ["So30UIResponderStandardEditActionsP", "unselectedItemTintColor"]
+- !private ["So30UIResponderStandardEditActionsP", "viewControllers"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "appearance"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "backgroundColor"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "image"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "imageInsets"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "tintColor"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "unselectedItemTintColor"]
+- !private ["So16UIStateRestoringP", "HomeViewController"]
+- !private ["So16UIStateRestoringP", "MessagesViewController"]
+- !private ["So16UIStateRestoringP", "MoreViewController"]
+- !private ["So16UIStateRestoringP", "NewPostViewController"]
+- !private ["So16UIStateRestoringP", "TasksViewController"]
+- !private ["So16UIStateRestoringP", "UIColor"]
+- !private ["So16UIStateRestoringP", "UIEdgeInsets"]
+- !private ["So16UIStateRestoringP", "UIImage"]
+- !private ["So16UIStateRestoringP", "UINavigationBar"]
+- !private ["So16UIStateRestoringP", "UINavigationController"]
+- !private ["So16UIStateRestoringP", "UITabBar"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "navigationBar"]
+- !private ["So16UIStateRestoringP", "tabBar"]
+- !private ["So16UIStateRestoringP", "tabBarItem"]
+- !private ["So16UIStateRestoringP", "viewControllers"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So8UITabBarC", "appearance"]
+- !private ["So8UITabBarC", "backgroundColor"]
+- !private ["So8UITabBarC", "tintColor"]
+- !private ["So8UITabBarC", "unselectedItemTintColor"]
+- !private ["So18UITabBarControllerC", "HomeViewController"]
+- !private ["So18UITabBarControllerC", "MessagesViewController"]
+- !private ["So18UITabBarControllerC", "MoreViewController"]
+- !private ["So18UITabBarControllerC", "NewPostViewController"]
+- !private ["So18UITabBarControllerC", "TasksViewController"]
+- !private ["So18UITabBarControllerC", "UIColor"]
+- !private ["So18UITabBarControllerC", "UIEdgeInsets"]
+- !private ["So18UITabBarControllerC", "UIImage"]
+- !private ["So18UITabBarControllerC", "UINavigationBar"]
+- !private ["So18UITabBarControllerC", "UINavigationController"]
+- !private ["So18UITabBarControllerC", "UITabBar"]
+- ["So18UITabBarControllerC", ""]
+- ["So18UITabBarControllerC", "init"]
+- !private ["So18UITabBarControllerC", "tabBar"]
+- !private ["So18UITabBarControllerC", "viewControllers"]
+- ["So18UITabBarControllerC", "viewDidLoad"]
+- !private ["So16UITabBarDelegateP", "HomeViewController"]
+- !private ["So16UITabBarDelegateP", "MessagesViewController"]
+- !private ["So16UITabBarDelegateP", "MoreViewController"]
+- !private ["So16UITabBarDelegateP", "NewPostViewController"]
+- !private ["So16UITabBarDelegateP", "TasksViewController"]
+- !private ["So16UITabBarDelegateP", "UIColor"]
+- !private ["So16UITabBarDelegateP", "UIEdgeInsets"]
+- !private ["So16UITabBarDelegateP", "UIImage"]
+- !private ["So16UITabBarDelegateP", "UINavigationBar"]
+- !private ["So16UITabBarDelegateP", "UINavigationController"]
+- !private ["So16UITabBarDelegateP", "UITabBar"]
+- ["So16UITabBarDelegateP", ""]
+- !private ["So16UITabBarDelegateP", "init"]
+- !private ["So16UITabBarDelegateP", "tabBar"]
+- !private ["So16UITabBarDelegateP", "viewControllers"]
+- !private ["So16UITabBarDelegateP", "viewDidLoad"]
+- !private ["So12UITabBarItemC", "image"]
+- !private ["So12UITabBarItemC", "imageInsets"]
+- !private ["So21UITableViewControllerC", "init"]
+- !private ["So21UITableViewDataSourceP", "init"]
+- !private ["So19UITableViewDelegateP", "init"]
+- !private ["So18UITextViewDelegateP", "init"]
+- !private ["So18UITraitEnvironmentP", "HomeViewController"]
+- !private ["So18UITraitEnvironmentP", "MessagesViewController"]
+- !private ["So18UITraitEnvironmentP", "MoreViewController"]
+- !private ["So18UITraitEnvironmentP", "NewPostViewController"]
+- !private ["So18UITraitEnvironmentP", "TasksViewController"]
+- !private ["So18UITraitEnvironmentP", "UIColor"]
+- !private ["So18UITraitEnvironmentP", "UIEdgeInsets"]
+- !private ["So18UITraitEnvironmentP", "UIImage"]
+- !private ["So18UITraitEnvironmentP", "UINavigationBar"]
+- !private ["So18UITraitEnvironmentP", "UINavigationController"]
+- !private ["So18UITraitEnvironmentP", "UITabBar"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "appearance"]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "navigationBar"]
+- !private ["So18UITraitEnvironmentP", "tabBar"]
+- !private ["So18UITraitEnvironmentP", "tabBarItem"]
+- !private ["So18UITraitEnvironmentP", "tintColor"]
+- !private ["So18UITraitEnvironmentP", "topItem"]
+- !private ["So18UITraitEnvironmentP", "unselectedItemTintColor"]
+- !private ["So18UITraitEnvironmentP", "viewControllers"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So6UIViewC", "appearance"]
+- !private ["So6UIViewC", "backgroundColor"]
+- !private ["So6UIViewC", "tintColor"]
+- !private ["So6UIViewC", "topItem"]
+- !private ["So6UIViewC", "unselectedItemTintColor"]
+- !private ["So16UIViewControllerC", "HomeViewController"]
+- !private ["So16UIViewControllerC", "MessagesViewController"]
+- !private ["So16UIViewControllerC", "MoreViewController"]
+- !private ["So16UIViewControllerC", "NewPostViewController"]
+- !private ["So16UIViewControllerC", "TasksViewController"]
+- !private ["So16UIViewControllerC", "UIColor"]
+- !private ["So16UIViewControllerC", "UIEdgeInsets"]
+- !private ["So16UIViewControllerC", "UIImage"]
+- !private ["So16UIViewControllerC", "UINavigationBar"]
+- !private ["So16UIViewControllerC", "UINavigationController"]
+- !private ["So16UIViewControllerC", "UITabBar"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "navigationBar"]
+- !private ["So16UIViewControllerC", "tabBar"]
+- !private ["So16UIViewControllerC", "tabBarItem"]
+- !private ["So16UIViewControllerC", "viewControllers"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "appearance"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tintColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "topItem"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "unselectedItemTintColor"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "black"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "HomeViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MessagesViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MoreViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NewPostViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TasksViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIEdgeInsets"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UINavigationBar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UINavigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UITabBar"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "appearance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageInsets"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tabBar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tabBarItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "topItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unselectedItemTintColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllers"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "7HandsOn22CustomTabBarControllerC"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "7HandsOn18HomeViewControllerC"
+- !private "s25LosslessStringConvertibleP"
+- !private "7HandsOn22MessagesViewControllerC"
+- !private "s10MirrorPathP"
+- !private "7HandsOn18MoreViewControllerC"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "7HandsOn21NewPostViewControllerC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "7HandsOn19TasksViewControllerC"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So9UIBarItemC"
+- !private "So16UIBarPositioningP"
+- !private "So7UIColorC"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "SC12UIEdgeInsetsV"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So7UIImageC"
+- !private "So31UIImagePickerControllerDelegateP"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "So15UINavigationBarC"
+- !private "So22UINavigationControllerC"
+- !private "So30UINavigationControllerDelegateP"
+- !private "So16UINavigationItemC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So8UITabBarC"
+- "So18UITabBarControllerC"
+- "So16UITabBarDelegateP"
+- !private "So12UITabBarItemC"
+- !private "So21UITableViewControllerC"
+- !private "So21UITableViewDataSourceP"
+- !private "So19UITableViewDelegateP"
+- !private "So18UITextViewDelegateP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestore.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FirebaseFirestore.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRListenerRegistration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTransaction.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSetOptions.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRGeoPoint.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuery.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "4ca61483e98c6d634095dce21b082e58"

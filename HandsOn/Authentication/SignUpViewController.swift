@@ -375,7 +375,11 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         //activityView.startAnimating()
         
         Auth.auth().createUser(withEmail: email, password: pass) { user, error in
-            if error == nil && user != nil {
+            
+//            self.isValidEmail(email: email)
+//            self.isValidPassword(password: pass)
+            
+            if error == nil && user != nil && self.isValidEmail(email: email) != true && self.isValidPassword(password: pass) != true{
                 print("User created!")
                 
             
@@ -392,7 +396,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                             if error == nil {
                                 print("User display name changed!")
                                 
-                                self.saveProfile(username: username, profileImageURL: url!) { success in
+                                self.saveProfile(username: username, profileImageURL: url!, email: email, password: pass) { success in
                                     if success {
                                         self.dismiss(animated: true, completion: nil)
                                     } else {
@@ -411,10 +415,26 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                     
                 }
                 
-            } else {
+        } else {
                 self.resetForm()
             }
         }
+    }
+    
+    func isValidEmail(email: String) -> Bool {
+        let regEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{3,}"
+        
+        let pred = NSPredicate(format:"SELF MATCHES %@", regEx)
+        return pred.evaluate(with: email)
+    }
+    
+    func isValidPassword(password: String) -> Bool{
+        // at least one uppercase,
+        // at least one digit
+        // at least one lowercase
+        // 6 characters total
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{6,}")
+        return passwordTest.evaluate(with: password)
     }
     
     func resetForm() {
@@ -452,13 +472,15 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         }
     }
     
-    func saveProfile(username:String, profileImageURL:URL, completion: @escaping ((_ success:Bool)->())) {
+    func saveProfile(username:String, profileImageURL:URL, email: String, password: String, completion: @escaping ((_ success:Bool)->())) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let databaseRef = Database.database().reference().child("users/profile/\(uid)")
         
         let userObject = [
             "username": username,
-            "photoURL": profileImageURL.absoluteString
+            "photoURL": profileImageURL.absoluteString,
+            "email": email,
+            "password": password
         ] as [String:Any]
         
         databaseRef.setValue(userObject) { error, ref in

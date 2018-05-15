@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Files/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/FacebookLogin.build/unextended-module.modulemap',
+    }]
+  }]
+}

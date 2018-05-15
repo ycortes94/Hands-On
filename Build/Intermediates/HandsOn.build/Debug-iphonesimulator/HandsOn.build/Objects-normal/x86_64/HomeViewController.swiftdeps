@@ -6,13 +6,11 @@ provides-nominal:
 provides-member:
 - ["7HandsOn18HomeViewControllerC", ""]
 provides-dynamic-lookup:
-- "handleLogout"
 - "numberOfSections"
 - "tableView"
 - "viewDidLoad"
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "Auth"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "DataSnapshot"
@@ -40,8 +38,6 @@ depends-member:
 - !private ["Sa", "count"]
 - ["Sa", "init"]
 - !private ["Sa", "subscript"]
-- !private ["So4AuthC", "auth"]
-- !private ["So4AuthC", "signOut"]
 - !private ["s23BidirectionalCollectionP", "append"]
 - !private ["s23BidirectionalCollectionP", "count"]
 - ["s23BidirectionalCollectionP", "init"]
@@ -64,7 +60,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "topAnchor"]
 - !private ["So15CALayerDelegateP", "trailingAnchor"]
 - !private ["So15CALayerDelegateP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["s7CVarArgP", "Auth"]
 - !private ["s7CVarArgP", "Database"]
 - ["s7CVarArgP", "Post"]
 - !private ["s7CVarArgP", "UIColor"]
@@ -72,9 +67,9 @@ depends-member:
 - !private ["s7CVarArgP", "UITableView"]
 - !private ["s7CVarArgP", "URL"]
 - !private ["s7CVarArgP", "UserProfile"]
+- ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addSubview"]
 - !private ["s7CVarArgP", "append"]
-- !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "bottomAnchor"]
 - !private ["s7CVarArgP", "bounds"]
@@ -118,7 +113,6 @@ depends-member:
 - ["s7CVarArgP", "sectionIndexTitles"]
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
 - !private ["s7CVarArgP", "set"]
-- !private ["s7CVarArgP", "signOut"]
 - !private ["s7CVarArgP", "subscript"]
 - ["s7CVarArgP", "tableView"]
 - !private ["s7CVarArgP", "topAnchor"]
@@ -129,7 +123,6 @@ depends-member:
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
-- ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "count"]
 - ["s10CollectionP", "init"]
@@ -137,7 +130,6 @@ depends-member:
 - !private ["s10CollectionP", "subscript"]
 - !private ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "row"]
-- !private ["s28CustomDebugStringConvertibleP", "Auth"]
 - !private ["s28CustomDebugStringConvertibleP", "Database"]
 - ["s28CustomDebugStringConvertibleP", "Post"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
@@ -145,9 +137,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UITableView"]
 - !private ["s28CustomDebugStringConvertibleP", "URL"]
 - !private ["s28CustomDebugStringConvertibleP", "UserProfile"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
-- !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "bottomAnchor"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
@@ -192,7 +184,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitles"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitlesForTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "set"]
-- !private ["s28CustomDebugStringConvertibleP", "signOut"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", "tableView"]
 - !private ["s28CustomDebugStringConvertibleP", "topAnchor"]
@@ -203,14 +194,12 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "subscript"]
-- !private ["s23CustomStringConvertibleP", "Auth"]
 - !private ["s23CustomStringConvertibleP", "Database"]
 - ["s23CustomStringConvertibleP", "Post"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
@@ -218,9 +207,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UITableView"]
 - !private ["s23CustomStringConvertibleP", "URL"]
 - !private ["s23CustomStringConvertibleP", "UserProfile"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
 - !private ["s23CustomStringConvertibleP", "append"]
-- !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "bottomAnchor"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
@@ -265,7 +254,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "sectionIndexTitles"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
 - !private ["s23CustomStringConvertibleP", "set"]
-- !private ["s23CustomStringConvertibleP", "signOut"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - ["s23CustomStringConvertibleP", "tableView"]
 - !private ["s23CustomStringConvertibleP", "topAnchor"]
@@ -276,7 +264,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["SC13DataEventTypeO", "value"]
 - !private ["So12DataSnapshotC", "children"]
 - !private ["So12DataSnapshotC", "key"]
@@ -298,7 +285,6 @@ depends-member:
 - ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "row"]
 - !private ["s9EncodableP", "subscript"]
-- !private ["s9EquatableP", "Auth"]
 - !private ["s9EquatableP", "Database"]
 - ["s9EquatableP", "Post"]
 - !private ["s9EquatableP", "UIColor"]
@@ -306,21 +292,23 @@ depends-member:
 - !private ["s9EquatableP", "UITableView"]
 - !private ["s9EquatableP", "URL"]
 - !private ["s9EquatableP", "UserProfile"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "addSubview"]
-- !private ["s9EquatableP", "auth"]
+- !private ["s9EquatableP", "append"]
 - !private ["s9EquatableP", "backgroundColor"]
 - !private ["s9EquatableP", "bottomAnchor"]
 - !private ["s9EquatableP", "bounds"]
 - !private ["s9EquatableP", "child"]
 - !private ["s9EquatableP", "children"]
 - !private ["s9EquatableP", "constraint"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "dataSource"]
 - !private ["s9EquatableP", "database"]
 - !private ["s9EquatableP", "delegate"]
 - !private ["s9EquatableP", "dequeueReusableCell"]
 - ["s9EquatableP", "indexPathForPreferredFocusedView"]
 - ["s9EquatableP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "isActive"]
 - !private ["s9EquatableP", "key"]
 - !private ["s9EquatableP", "layoutMarginsGuide"]
@@ -352,7 +340,7 @@ depends-member:
 - ["s9EquatableP", "sectionIndexTitles"]
 - ["s9EquatableP", "sectionIndexTitlesForTableView"]
 - !private ["s9EquatableP", "set"]
-- !private ["s9EquatableP", "signOut"]
+- !private ["s9EquatableP", "subscript"]
 - ["s9EquatableP", "tableView"]
 - !private ["s9EquatableP", "topAnchor"]
 - !private ["s9EquatableP", "trailingAnchor"]
@@ -362,7 +350,6 @@ depends-member:
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", "viewForZooming"]
 - ["s9EquatableP", "viewForZoomingInScrollView"]
-- ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
@@ -372,7 +359,6 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "Auth"]
 - !private ["s8HashableP", "Database"]
 - ["s8HashableP", "Post"]
 - !private ["s8HashableP", "UIColor"]
@@ -380,8 +366,8 @@ depends-member:
 - !private ["s8HashableP", "UITableView"]
 - !private ["s8HashableP", "URL"]
 - !private ["s8HashableP", "UserProfile"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "addSubview"]
-- !private ["s8HashableP", "auth"]
 - !private ["s8HashableP", "backgroundColor"]
 - !private ["s8HashableP", "bottomAnchor"]
 - !private ["s8HashableP", "bounds"]
@@ -426,7 +412,6 @@ depends-member:
 - ["s8HashableP", "sectionIndexTitles"]
 - ["s8HashableP", "sectionIndexTitlesForTableView"]
 - !private ["s8HashableP", "set"]
-- !private ["s8HashableP", "signOut"]
 - ["s8HashableP", "tableView"]
 - !private ["s8HashableP", "topAnchor"]
 - !private ["s8HashableP", "trailingAnchor"]
@@ -436,8 +421,6 @@ depends-member:
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", "viewForZooming"]
 - ["s8HashableP", "viewForZoomingInScrollView"]
-- ["s8HashableP", ""]
-- !private ["7HandsOn18HomeViewControllerC", "Auth"]
 - !private ["7HandsOn18HomeViewControllerC", "DataSnapshot"]
 - !private ["7HandsOn18HomeViewControllerC", "Database"]
 - !private ["7HandsOn18HomeViewControllerC", "Double"]
@@ -454,7 +437,6 @@ depends-member:
 - !private ["7HandsOn18HomeViewControllerC", "URL"]
 - !private ["7HandsOn18HomeViewControllerC", "UserProfile"]
 - ["7HandsOn18HomeViewControllerC", "deinit"]
-- ["7HandsOn18HomeViewControllerC", "handleLogout"]
 - ["7HandsOn18HomeViewControllerC", "indexPathForPreferredFocusedView"]
 - ["7HandsOn18HomeViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["7HandsOn18HomeViewControllerC", "init"]
@@ -490,7 +472,6 @@ depends-member:
 - ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "row"]
 - !private ["s17MutableCollectionP", "subscript"]
-- !private ["So8NSCodingP", "Auth"]
 - !private ["So8NSCodingP", "Database"]
 - ["So8NSCodingP", "Post"]
 - !private ["So8NSCodingP", "UIColor"]
@@ -498,6 +479,7 @@ depends-member:
 - !private ["So8NSCodingP", "UITableView"]
 - !private ["So8NSCodingP", "URL"]
 - !private ["So8NSCodingP", "UserProfile"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addSubview"]
 - !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "bottomAnchor"]
@@ -541,9 +523,7 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
-- ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "init"]
-- !private ["So26NSExtensionRequestHandlingP", "Auth"]
 - !private ["So26NSExtensionRequestHandlingP", "Database"]
 - ["So26NSExtensionRequestHandlingP", "Post"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
@@ -551,6 +531,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UITableView"]
 - !private ["So26NSExtensionRequestHandlingP", "URL"]
 - !private ["So26NSExtensionRequestHandlingP", "UserProfile"]
+- ["So26NSExtensionRequestHandlingP", ""]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
@@ -578,15 +559,12 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
-- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So14NSLayoutAnchorC", "constraint"]
 - !private ["So18NSLayoutConstraintC", "isActive"]
 - !private ["So19NSLayoutXAxisAnchorC", "constraint"]
 - !private ["So19NSLayoutYAxisAnchorC", "constraint"]
-- !private ["So16NSMutableCopyingP", "init"]
-- !private ["So8NSObjectC", "Auth"]
 - !private ["So8NSObjectC", "DataSnapshot"]
 - !private ["So8NSObjectC", "Database"]
 - !private ["So8NSObjectC", "Double"]
@@ -603,7 +581,6 @@ depends-member:
 - !private ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "UserProfile"]
 - !private ["So8NSObjectC", "addSubview"]
-- !private ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "backgroundColor"]
 - !private ["So8NSObjectC", "bottomAnchor"]
 - !private ["So8NSObjectC", "bounds"]
@@ -614,7 +591,6 @@ depends-member:
 - !private ["So8NSObjectC", "database"]
 - !private ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
-- ["So8NSObjectC", "handleLogout"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectC", "init"]
@@ -647,7 +623,6 @@ depends-member:
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
 - !private ["So8NSObjectC", "set"]
-- !private ["So8NSObjectC", "signOut"]
 - ["So8NSObjectC", "tableView"]
 - !private ["So8NSObjectC", "topAnchor"]
 - !private ["So8NSObjectC", "trailingAnchor"]
@@ -657,7 +632,6 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
-- !private ["So16NSObjectProtocolP", "Auth"]
 - !private ["So16NSObjectProtocolP", "Database"]
 - ["So16NSObjectProtocolP", "Post"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
@@ -665,8 +639,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UITableView"]
 - !private ["So16NSObjectProtocolP", "URL"]
 - !private ["So16NSObjectProtocolP", "UserProfile"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "auth"]
 - !private ["So16NSObjectProtocolP", "backgroundColor"]
 - !private ["So16NSObjectProtocolP", "bottomAnchor"]
 - !private ["So16NSObjectProtocolP", "bounds"]
@@ -709,7 +683,6 @@ depends-member:
 - ["So16NSObjectProtocolP", "sectionIndexTitles"]
 - ["So16NSObjectProtocolP", "sectionIndexTitlesForTableView"]
 - !private ["So16NSObjectProtocolP", "set"]
-- !private ["So16NSObjectProtocolP", "signOut"]
 - ["So16NSObjectProtocolP", "tableView"]
 - !private ["So16NSObjectProtocolP", "topAnchor"]
 - !private ["So16NSObjectProtocolP", "trailingAnchor"]
@@ -719,9 +692,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", "viewForZooming"]
 - ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["7HandsOn4PostC", "init"]
 - !private ["7HandsOn17PostTableViewCellC", "set"]
 - !private ["s22RandomAccessCollectionP", "append"]
@@ -780,7 +751,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "topAnchor"]
 - !private ["So12UIAppearanceP", "trailingAnchor"]
 - !private ["So12UIAppearanceP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["So21UIAppearanceContainerP", "Auth"]
 - !private ["So21UIAppearanceContainerP", "Database"]
 - ["So21UIAppearanceContainerP", "Post"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
@@ -788,6 +758,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UITableView"]
 - !private ["So21UIAppearanceContainerP", "URL"]
 - !private ["So21UIAppearanceContainerP", "UserProfile"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
 - !private ["So21UIAppearanceContainerP", "bottomAnchor"]
@@ -831,9 +802,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So7UIColorC", "init"]
-- !private ["So18UIContentContainerP", "Auth"]
 - !private ["So18UIContentContainerP", "Database"]
 - ["So18UIContentContainerP", "Post"]
 - !private ["So18UIContentContainerP", "UIColor"]
@@ -841,6 +810,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "UITableView"]
 - !private ["So18UIContentContainerP", "URL"]
 - !private ["So18UIContentContainerP", "UserProfile"]
+- ["So18UIContentContainerP", ""]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So18UIContentContainerP", "init"]
@@ -868,7 +838,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
-- ["So18UIContentContainerP", ""]
 - !private ["So17UICoordinateSpaceP", "addSubview"]
 - !private ["So17UICoordinateSpaceP", "backgroundColor"]
 - !private ["So17UICoordinateSpaceP", "bottomAnchor"]
@@ -915,7 +884,6 @@ depends-member:
 - !private ["So13UIDynamicItemP", "topAnchor"]
 - !private ["So13UIDynamicItemP", "trailingAnchor"]
 - !private ["So13UIDynamicItemP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["So18UIFocusEnvironmentP", "Auth"]
 - !private ["So18UIFocusEnvironmentP", "Database"]
 - ["So18UIFocusEnvironmentP", "Post"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
@@ -923,6 +891,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UITableView"]
 - !private ["So18UIFocusEnvironmentP", "URL"]
 - !private ["So18UIFocusEnvironmentP", "UserProfile"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
 - !private ["So18UIFocusEnvironmentP", "bottomAnchor"]
@@ -966,7 +935,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
-- ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "addSubview"]
 - !private ["So11UIFocusItemP", "backgroundColor"]
 - !private ["So11UIFocusItemP", "bottomAnchor"]
@@ -990,7 +958,6 @@ depends-member:
 - !private ["So13UILayoutGuideC", "topAnchor"]
 - !private ["So13UILayoutGuideC", "trailingAnchor"]
 - !private ["So5UINibC", "init"]
-- !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "Database"]
 - ["So30UIPasteConfigurationSupportingP", "Post"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
@@ -998,6 +965,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UITableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "URL"]
 - !private ["So30UIPasteConfigurationSupportingP", "UserProfile"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "bottomAnchor"]
@@ -1041,8 +1009,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
-- ["So30UIPasteConfigurationSupportingP", ""]
-- !private ["So11UIResponderC", "Auth"]
 - !private ["So11UIResponderC", "DataSnapshot"]
 - !private ["So11UIResponderC", "Database"]
 - !private ["So11UIResponderC", "Double"]
@@ -1065,7 +1031,6 @@ depends-member:
 - !private ["So11UIResponderC", "dataSource"]
 - !private ["So11UIResponderC", "delegate"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
-- ["So11UIResponderC", "handleLogout"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So11UIResponderC", "init"]
@@ -1102,7 +1067,6 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
-- !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - !private ["So30UIResponderStandardEditActionsP", "Database"]
 - ["So30UIResponderStandardEditActionsP", "Post"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
@@ -1110,6 +1074,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UITableView"]
 - !private ["So30UIResponderStandardEditActionsP", "URL"]
 - !private ["So30UIResponderStandardEditActionsP", "UserProfile"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "bottomAnchor"]
@@ -1153,7 +1118,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So12UIScrollViewC", "backgroundColor"]
 - !private ["So12UIScrollViewC", "bottomAnchor"]
 - !private ["So12UIScrollViewC", "dataSource"]
@@ -1166,7 +1130,6 @@ depends-member:
 - !private ["So12UIScrollViewC", "topAnchor"]
 - !private ["So12UIScrollViewC", "trailingAnchor"]
 - !private ["So12UIScrollViewC", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["So20UIScrollViewDelegateP", "Auth"]
 - !private ["So20UIScrollViewDelegateP", "Database"]
 - ["So20UIScrollViewDelegateP", "Post"]
 - !private ["So20UIScrollViewDelegateP", "UIColor"]
@@ -1174,6 +1137,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "UITableView"]
 - !private ["So20UIScrollViewDelegateP", "URL"]
 - !private ["So20UIScrollViewDelegateP", "UserProfile"]
+- ["So20UIScrollViewDelegateP", ""]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
@@ -1199,7 +1163,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "view"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
-- ["So20UIScrollViewDelegateP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "backgroundColor"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "bottomAnchor"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dataSource"]
@@ -1212,7 +1175,6 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "topAnchor"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "trailingAnchor"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["So16UIStateRestoringP", "Auth"]
 - !private ["So16UIStateRestoringP", "Database"]
 - ["So16UIStateRestoringP", "Post"]
 - !private ["So16UIStateRestoringP", "UIColor"]
@@ -1220,6 +1182,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UITableView"]
 - !private ["So16UIStateRestoringP", "URL"]
 - !private ["So16UIStateRestoringP", "UserProfile"]
+- ["So16UIStateRestoringP", ""]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So16UIStateRestoringP", "init"]
@@ -1247,7 +1210,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
-- ["So16UIStateRestoringP", ""]
 - !private ["So11UITableViewC", "backgroundColor"]
 - !private ["So11UITableViewC", "bottomAnchor"]
 - !private ["So11UITableViewC", "dataSource"]
@@ -1261,7 +1223,6 @@ depends-member:
 - !private ["So11UITableViewC", "trailingAnchor"]
 - !private ["So11UITableViewC", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So15UITableViewCellC", "set"]
-- !private ["So21UITableViewDataSourceP", "Auth"]
 - !private ["So21UITableViewDataSourceP", "Database"]
 - ["So21UITableViewDataSourceP", "Post"]
 - !private ["So21UITableViewDataSourceP", "UIColor"]
@@ -1269,6 +1230,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "UITableView"]
 - !private ["So21UITableViewDataSourceP", "URL"]
 - !private ["So21UITableViewDataSourceP", "UserProfile"]
+- ["So21UITableViewDataSourceP", ""]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedView"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So21UITableViewDataSourceP", "numberOfSections"]
@@ -1294,8 +1256,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "view"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
-- ["So21UITableViewDataSourceP", ""]
-- !private ["So19UITableViewDelegateP", "Auth"]
 - !private ["So19UITableViewDelegateP", "Database"]
 - ["So19UITableViewDelegateP", "Post"]
 - !private ["So19UITableViewDelegateP", "UIColor"]
@@ -1303,6 +1263,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "UITableView"]
 - !private ["So19UITableViewDelegateP", "URL"]
 - !private ["So19UITableViewDelegateP", "UserProfile"]
+- ["So19UITableViewDelegateP", ""]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So19UITableViewDelegateP", "numberOfSections"]
@@ -1328,9 +1289,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "view"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
-- ["So19UITableViewDelegateP", ""]
 - !private ["SC16UITableViewStyleO", "plain"]
-- !private ["So18UITraitEnvironmentP", "Auth"]
 - !private ["So18UITraitEnvironmentP", "Database"]
 - ["So18UITraitEnvironmentP", "Post"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
@@ -1338,6 +1297,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UITableView"]
 - !private ["So18UITraitEnvironmentP", "URL"]
 - !private ["So18UITraitEnvironmentP", "UserProfile"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
 - !private ["So18UITraitEnvironmentP", "bottomAnchor"]
@@ -1381,7 +1341,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
-- ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "addSubview"]
 - !private ["So6UIViewC", "backgroundColor"]
 - !private ["So6UIViewC", "bottomAnchor"]
@@ -1399,7 +1358,6 @@ depends-member:
 - !private ["So6UIViewC", "topAnchor"]
 - !private ["So6UIViewC", "trailingAnchor"]
 - !private ["So6UIViewC", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["So16UIViewControllerC", "Auth"]
 - !private ["So16UIViewControllerC", "DataSnapshot"]
 - !private ["So16UIViewControllerC", "Database"]
 - !private ["So16UIViewControllerC", "Double"]
@@ -1415,7 +1373,7 @@ depends-member:
 - ["So16UIViewControllerC", "UITableViewCell"]
 - !private ["So16UIViewControllerC", "URL"]
 - !private ["So16UIViewControllerC", "UserProfile"]
-- ["So16UIViewControllerC", "handleLogout"]
+- ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So16UIViewControllerC", "init"]
@@ -1443,18 +1401,12 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
-- ["So16UIViewControllerC", ""]
 - !private ["10Foundation3URLV", "init"]
 - !private ["7HandsOn11UserProfileC", "init"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
 - ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "row"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bottomAnchor"]
@@ -1483,18 +1435,6 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "count"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "row"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "count"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "row"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Post"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
@@ -1502,8 +1442,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UserProfile"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bottomAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
@@ -1546,7 +1486,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitles"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitlesForTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "signOut"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "topAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "trailingAnchor"]
@@ -1556,30 +1495,14 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["s17_MutableIndexableP", "append"]
-- !private ["s17_MutableIndexableP", "count"]
-- ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "row"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "row"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "Sa"
-- !private "So4AuthC"
 - "s23BidirectionalCollectionP"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
@@ -1618,11 +1541,9 @@ depends-nominal:
 - !private "So18NSLayoutConstraintC"
 - !private "So19NSLayoutXAxisAnchorC"
 - !private "So19NSLayoutYAxisAnchorC"
-- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "7HandsOn4PostC"
 - !private "7HandsOn17PostTableViewCellC"
 - "s22RandomAccessCollectionP"
@@ -1665,7 +1586,6 @@ depends-nominal:
 - !private "10Foundation3URLV"
 - !private "7HandsOn11UserProfileC"
 - "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -1675,14 +1595,8 @@ depends-nominal:
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1699,90 +1613,100 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestore.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FirebaseFirestore.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRListenerRegistration.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTransaction.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSetOptions.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRGeoPoint.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuery.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/yosimycortes/Documents/Developer/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "f2e852123b915b0b4b128aee1120ece2"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestore.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FirebaseFirestore.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRListenerRegistration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTransaction.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSetOptions.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRGeoPoint.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuery.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "ad1fb1d5ea58afd83bcda83bc24d1694"

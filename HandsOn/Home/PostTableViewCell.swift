@@ -13,7 +13,8 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var postTextLabel: UILabel!
-    
+    @IBOutlet weak var moreButton: UIButton!
+    @IBOutlet weak var priceLabel: UILabel!
     
     
     override func awakeFromNib() {
@@ -37,6 +38,7 @@ class PostTableViewCell: UITableViewCell {
         
         usernameLabel.text = post.author.username
         postTextLabel.text = post.text
+        priceLabel.text = post.price
     }
     
 }

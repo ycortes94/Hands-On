@@ -384,7 +384,11 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
                 "photoURL": userProfile.photoURL.absoluteString
             ],
             "text": titleTextField.text!,
-            "timestamp": [".sv":"timestamp"]
+            "timestamp": [".sv":"timestamp"],
+            "price" : priceLabel.text!,
+            "location": locationLabel.text!,
+            "duration": durationLabel.text!,
+            "description": descTextField.text!
             ] as [String:Any]
         
         postRef.setValue(postObject, withCompletionBlock: { error, ref in

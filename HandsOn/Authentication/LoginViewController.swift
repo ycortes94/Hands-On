@@ -298,7 +298,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     }
     
     func resetForm() {
-        let alert = UIAlertController(title: "Error logging in", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Email or Password is incorrect", message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         

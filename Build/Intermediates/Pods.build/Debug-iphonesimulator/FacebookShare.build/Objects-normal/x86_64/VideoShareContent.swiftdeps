@@ -1,0 +1,348 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VideoShareContent"
+- "=="
+provides-nominal:
+- "13FacebookShare05VideoB7ContentV"
+provides-member:
+- ["13FacebookShare05VideoB7ContentV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "ContentProtocol"
+- "Equatable"
+- !private "FBSDKShareVideoContent"
+- "FBSDKSharingContent"
+- "Hashtag"
+- "Photo"
+- "PostSharingResult"
+- "SDKBridgedContent"
+- "String"
+- "URL"
+- "Video"
+- "VideoShareContent"
+depends-member:
+- !private ["s7CVarArgP", "contentURL"]
+- !private ["s7CVarArgP", "hashtag"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "peopleIDs"]
+- !private ["s7CVarArgP", "placeID"]
+- !private ["s7CVarArgP", "previewPhoto"]
+- !private ["s7CVarArgP", "ref"]
+- !private ["s7CVarArgP", "video"]
+- !private ["13FacebookShare15ContentProtocolP", "FBSDKShareVideoContent"]
+- ["13FacebookShare15ContentProtocolP", "Result"]
+- ["13FacebookShare15ContentProtocolP", ""]
+- ["13FacebookShare15ContentProtocolP", "hashtag"]
+- ["13FacebookShare15ContentProtocolP", "placeId"]
+- !private ["13FacebookShare15ContentProtocolP", "previewPhoto"]
+- ["13FacebookShare15ContentProtocolP", "referer"]
+- ["13FacebookShare15ContentProtocolP", "sdkSharingContentRepresentation"]
+- ["13FacebookShare15ContentProtocolP", "taggedPeopleIds"]
+- ["13FacebookShare15ContentProtocolP", "url"]
+- !private ["13FacebookShare15ContentProtocolP", "video"]
+- !private ["s28CustomDebugStringConvertibleP", "contentURL"]
+- !private ["s28CustomDebugStringConvertibleP", "hashtag"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "peopleIDs"]
+- !private ["s28CustomDebugStringConvertibleP", "placeID"]
+- !private ["s28CustomDebugStringConvertibleP", "previewPhoto"]
+- !private ["s28CustomDebugStringConvertibleP", "ref"]
+- !private ["s28CustomDebugStringConvertibleP", "video"]
+- !private ["s23CustomStringConvertibleP", "contentURL"]
+- !private ["s23CustomStringConvertibleP", "hashtag"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "peopleIDs"]
+- !private ["s23CustomStringConvertibleP", "placeID"]
+- !private ["s23CustomStringConvertibleP", "previewPhoto"]
+- !private ["s23CustomStringConvertibleP", "ref"]
+- !private ["s23CustomStringConvertibleP", "video"]
+- !private ["s9EquatableP", "FBSDKShareVideoContent"]
+- ["s9EquatableP", "Result"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "contentURL"]
+- ["s9EquatableP", "hashtag"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "peopleIDs"]
+- !private ["s9EquatableP", "placeID"]
+- ["s9EquatableP", "placeId"]
+- !private ["s9EquatableP", "previewPhoto"]
+- !private ["s9EquatableP", "ref"]
+- ["s9EquatableP", "referer"]
+- !private ["s9EquatableP", "sdkHashtagRepresentation"]
+- !private ["s9EquatableP", "sdkPhotoRepresentation"]
+- ["s9EquatableP", "sdkSharingContentRepresentation"]
+- !private ["s9EquatableP", "sdkVideoRepresentation"]
+- ["s9EquatableP", "taggedPeopleIds"]
+- ["s9EquatableP", "url"]
+- !private ["s9EquatableP", "video"]
+- !private ["So12FBSDKCopyingP", "contentURL"]
+- !private ["So12FBSDKCopyingP", "hashtag"]
+- !private ["So12FBSDKCopyingP", "init"]
+- !private ["So12FBSDKCopyingP", "isEqual"]
+- !private ["So12FBSDKCopyingP", "peopleIDs"]
+- !private ["So12FBSDKCopyingP", "placeID"]
+- !private ["So12FBSDKCopyingP", "previewPhoto"]
+- !private ["So12FBSDKCopyingP", "ref"]
+- !private ["So12FBSDKCopyingP", "video"]
+- !private ["So22FBSDKShareVideoContentC", "contentURL"]
+- !private ["So22FBSDKShareVideoContentC", "hashtag"]
+- !private ["So22FBSDKShareVideoContentC", "init"]
+- !private ["So22FBSDKShareVideoContentC", "peopleIDs"]
+- !private ["So22FBSDKShareVideoContentC", "placeID"]
+- !private ["So22FBSDKShareVideoContentC", "previewPhoto"]
+- !private ["So22FBSDKShareVideoContentC", "ref"]
+- !private ["So22FBSDKShareVideoContentC", "video"]
+- !private ["So19FBSDKSharingContentP", "contentURL"]
+- !private ["So19FBSDKSharingContentP", "hashtag"]
+- !private ["So19FBSDKSharingContentP", "init"]
+- !private ["So19FBSDKSharingContentP", "isEqual"]
+- !private ["So19FBSDKSharingContentP", "peopleIDs"]
+- !private ["So19FBSDKSharingContentP", "placeID"]
+- !private ["So19FBSDKSharingContentP", "previewPhoto"]
+- !private ["So19FBSDKSharingContentP", "ref"]
+- !private ["So19FBSDKSharingContentP", "video"]
+- !private ["s8HashableP", "contentURL"]
+- !private ["s8HashableP", "hashtag"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "peopleIDs"]
+- !private ["s8HashableP", "placeID"]
+- !private ["s8HashableP", "previewPhoto"]
+- !private ["s8HashableP", "ref"]
+- !private ["s8HashableP", "sdkHashtagRepresentation"]
+- !private ["s8HashableP", "video"]
+- ["13FacebookShare7HashtagV", "deinit"]
+- !private ["13FacebookShare7HashtagV", "sdkHashtagRepresentation"]
+- !private ["So8NSCodingP", "contentURL"]
+- !private ["So8NSCodingP", "hashtag"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isEqual"]
+- !private ["So8NSCodingP", "peopleIDs"]
+- !private ["So8NSCodingP", "placeID"]
+- !private ["So8NSCodingP", "previewPhoto"]
+- !private ["So8NSCodingP", "ref"]
+- !private ["So8NSCodingP", "video"]
+- !private ["So9NSCopyingP", "contentURL"]
+- !private ["So9NSCopyingP", "hashtag"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "isEqual"]
+- !private ["So9NSCopyingP", "peopleIDs"]
+- !private ["So9NSCopyingP", "placeID"]
+- !private ["So9NSCopyingP", "previewPhoto"]
+- !private ["So9NSCopyingP", "ref"]
+- !private ["So9NSCopyingP", "video"]
+- !private ["So8NSObjectC", "contentURL"]
+- !private ["So8NSObjectC", "hashtag"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "peopleIDs"]
+- !private ["So8NSObjectC", "placeID"]
+- !private ["So8NSObjectC", "previewPhoto"]
+- !private ["So8NSObjectC", "ref"]
+- !private ["So8NSObjectC", "video"]
+- !private ["So16NSObjectProtocolP", "contentURL"]
+- !private ["So16NSObjectProtocolP", "hashtag"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isEqual"]
+- !private ["So16NSObjectProtocolP", "peopleIDs"]
+- !private ["So16NSObjectProtocolP", "placeID"]
+- !private ["So16NSObjectProtocolP", "previewPhoto"]
+- !private ["So16NSObjectProtocolP", "ref"]
+- !private ["So16NSObjectProtocolP", "video"]
+- !private ["So14NSSecureCodingP", "contentURL"]
+- !private ["So14NSSecureCodingP", "hashtag"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "isEqual"]
+- !private ["So14NSSecureCodingP", "peopleIDs"]
+- !private ["So14NSSecureCodingP", "placeID"]
+- !private ["So14NSSecureCodingP", "previewPhoto"]
+- !private ["So14NSSecureCodingP", "ref"]
+- !private ["So14NSSecureCodingP", "video"]
+- !private ["13FacebookShare22OpenGraphPropertyValueP", "sdkPhotoRepresentation"]
+- ["13FacebookShare5PhotoV", "deinit"]
+- !private ["13FacebookShare5PhotoV", "sdkPhotoRepresentation"]
+- ["13FacebookShare17PostSharingResultV", "deinit"]
+- !private ["13FacebookShare17SDKBridgedContentP", "FBSDKShareVideoContent"]
+- ["13FacebookShare17SDKBridgedContentP", "Result"]
+- ["13FacebookShare17SDKBridgedContentP", ""]
+- ["13FacebookShare17SDKBridgedContentP", "hashtag"]
+- ["13FacebookShare17SDKBridgedContentP", "placeId"]
+- !private ["13FacebookShare17SDKBridgedContentP", "previewPhoto"]
+- ["13FacebookShare17SDKBridgedContentP", "referer"]
+- ["13FacebookShare17SDKBridgedContentP", "sdkSharingContentRepresentation"]
+- ["13FacebookShare17SDKBridgedContentP", "taggedPeopleIds"]
+- ["13FacebookShare17SDKBridgedContentP", "url"]
+- !private ["13FacebookShare17SDKBridgedContentP", "video"]
+- ["13FacebookShare5VideoV", "deinit"]
+- !private ["13FacebookShare5VideoV", "sdkVideoRepresentation"]
+- ["13FacebookShare05VideoB7ContentV", "=="]
+- ["13FacebookShare05VideoB7ContentV", "Bool"]
+- !private ["13FacebookShare05VideoB7ContentV", "FBSDKShareVideoContent"]
+- ["13FacebookShare05VideoB7ContentV", "FBSDKSharingContent"]
+- ["13FacebookShare05VideoB7ContentV", "Hashtag"]
+- ["13FacebookShare05VideoB7ContentV", "Photo"]
+- ["13FacebookShare05VideoB7ContentV", "PostSharingResult"]
+- ["13FacebookShare05VideoB7ContentV", "Result"]
+- ["13FacebookShare05VideoB7ContentV", "String"]
+- ["13FacebookShare05VideoB7ContentV", "URL"]
+- ["13FacebookShare05VideoB7ContentV", "Video"]
+- ["13FacebookShare05VideoB7ContentV", "VideoShareContent"]
+- ["13FacebookShare05VideoB7ContentV", "deinit"]
+- ["13FacebookShare05VideoB7ContentV", "hashtag"]
+- ["13FacebookShare05VideoB7ContentV", "init"]
+- ["13FacebookShare05VideoB7ContentV", "placeId"]
+- ["13FacebookShare05VideoB7ContentV", "previewPhoto"]
+- ["13FacebookShare05VideoB7ContentV", "referer"]
+- ["13FacebookShare05VideoB7ContentV", "sdkSharingContentRepresentation"]
+- ["13FacebookShare05VideoB7ContentV", "taggedPeopleIds"]
+- ["13FacebookShare05VideoB7ContentV", "url"]
+- ["13FacebookShare05VideoB7ContentV", "video"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentURL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hashtag"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "peopleIDs"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "placeID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "previewPhoto"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ref"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "video"]
+depends-nominal:
+- !private "s7CVarArgP"
+- "13FacebookShare15ContentProtocolP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- !private "So12FBSDKCopyingP"
+- !private "So22FBSDKShareVideoContentC"
+- !private "So19FBSDKSharingContentP"
+- !private "s8HashableP"
+- "13FacebookShare7HashtagV"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "13FacebookShare22OpenGraphPropertyValueP"
+- "13FacebookShare5PhotoV"
+- "13FacebookShare17PostSharingResultV"
+- "13FacebookShare17SDKBridgedContentP"
+- "13FacebookShare5VideoV"
+- "13FacebookShare05VideoB7ContentV"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Files/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareAPI.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFURL.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/FacebookShare/FacebookShare-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/FBSDKShareKit/FBSDKShareKit-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Target Support Files/FBSDKCoreKit/FBSDKCoreKit-umbrella.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFGeneric.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareDialogMode.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLikeObjectType.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKHashtag.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLiking.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharing.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkResolving.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMutableCopying.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppGroupAddDialog.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKMessageDialog.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareDialog.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppInviteDialog.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppGroupJoinDialog.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestDialog.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLink.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLikeControl.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFCancellationToken.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkNavigation.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphAction.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSendButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLikeButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharingButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerURLActionButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerActionButton.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareVideo.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharePhoto.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKTestUsersManager.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkReturnToRefererController.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphValueContainer.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkResolver.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFWebViewAppLinkResolver.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/BFExecutor.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKCameraEffectTextures.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/Common/Bolts.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareConstants.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKCameraEffectArguments.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppEvents.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphObject.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkTarget.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Files/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerGenericTemplateElement.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestDataAttachment.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMediaContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerMediaTemplateContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerGenericTemplateContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerOpenGraphMusicTemplateContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppInviteContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharingContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareLinkContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareVideoContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharePhotoContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppGroupContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareCameraEffectContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestContent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFMeasurementEvent.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequest.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfilePictureView.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Bolts/Bolts/iOS/BFAppLinkReturnToRefererView.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkUtility.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/FacebookShare.build/unextended-module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/FacebookCore.build/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKShareKit.build/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Build/Intermediates/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "9e7da956b56dd5c0e8cfc352878908ef"
