@@ -44,6 +44,7 @@ class HomeViewController:UIViewController, UITableViewDelegate, UITableViewDataS
         tableView.dataSource = self
         tableView.reloadData()
         
+        print("calling observe post")
         observePosts()
         
     }
@@ -73,6 +74,8 @@ class HomeViewController:UIViewController, UITableViewDelegate, UITableViewDataS
                     let userProfile = UserProfile(uid: uid, username: username, photoURL: url)
                     let post = Post(id: childSnapshot.key, author: userProfile, text: text, timestamp:timestamp, price: price, location: location, duration: duration, description: description)
                     tempPosts.append(post)
+                    
+                    print ("post added to task array")
                 }
             }
             

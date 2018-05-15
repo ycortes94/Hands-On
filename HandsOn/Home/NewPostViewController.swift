@@ -344,7 +344,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
         //textView.becomeFirstResponder()
         
         // Remove the nav shadow underline
-        navigationController?.navigationBar.shadowImage = UIImage()
+        //navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     @objc private func addImage(){
@@ -372,6 +372,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
     //handle post button so far only saves the title of the task
     @objc private func handlePostButton() {
         
+        print("post button clicked")
         guard let userProfile = UserService.currentUserProfile else { return }
         // Firebase code here
         
