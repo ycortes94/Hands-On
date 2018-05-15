@@ -14,12 +14,12 @@ class Post {
     var author:UserProfile
     var text:String
     var timestamp:Double
-    var price: String
+    var price: Int
     var location: String
     var duration: Int
     var description: String
     
-    init(id:String, author:UserProfile,text:String,timestamp:Double, price: String, location: String, duration: Int, description: String) {
+    init(id:String, author:UserProfile,text:String,timestamp:Double, price: Int, location: String, duration: Int, description: String) {
         self.id = id
         self.author = author
         self.text = text

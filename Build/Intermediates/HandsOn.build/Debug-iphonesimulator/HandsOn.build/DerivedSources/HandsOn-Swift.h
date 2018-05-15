@@ -330,6 +330,9 @@ SWIFT_CLASS("_TtC7HandsOn17PostTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified postTextLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified moreButton;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified priceLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified durationLabel;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);

@@ -65,7 +65,7 @@ class HomeViewController:UIViewController, UITableViewDelegate, UITableViewDataS
                     let url = URL(string:photoURL),
                     let text = dict["text"] as? String,
                     let timestamp = dict["timestamp"] as? Double,
-                    let price = dict["price"] as? String,
+                    let price = dict["price"] as? Int,
                     let location = dict["location"] as? String,
                     let duration = dict["duration"] as? Int,
                     let description = dict["description"] as? String{

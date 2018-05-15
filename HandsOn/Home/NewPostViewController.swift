@@ -385,9 +385,9 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
             ],
             "text": titleTextField.text!,
             "timestamp": [".sv":"timestamp"],
-            "price" : priceLabel.text!,
-            "location": locationLabel.text!,
-            "duration": durationLabel.text!,
+            "price" : priceTextField.text!,
+            "location": locationTextField.text!,
+            "duration": durationTextField.text!,
             "description": descTextField.text!
             ] as [String:Any]
         
