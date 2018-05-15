@@ -12,6 +12,7 @@ class TaskDetailsViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Tasks"
     }
     
 }

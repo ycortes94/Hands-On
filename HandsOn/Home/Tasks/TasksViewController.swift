@@ -23,8 +23,10 @@ class TasksViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        ///////////////////
         //test data, to be filled with data from firebase...
-        data = [CellData.init(profileImage: #imageLiteral(resourceName: "profileplaceholder"), taskImage: #imageLiteral(resourceName: "HandsOnBackground"), taskTitle: "Task Title", priceLabel: "$0", distanceLabel: "2.5 mi")]
+        data = [CellData.init(profileImage: #imageLiteral(resourceName: "profileplaceholder"), taskImage: #imageLiteral(resourceName: "HandsOnBackground"), taskTitle: "Task Title", priceLabel: "$0", distanceLabel: "2.5 mi"), CellData.init(profileImage: #imageLiteral(resourceName: "profileplaceholder"), taskImage: #imageLiteral(resourceName: "HandsOnBackground"), taskTitle: "Task Title", priceLabel: "$0", distanceLabel: "2.5 mi")]
         
         self.tableView.register(TasksCustomTableViewCell.self, forCellReuseIdentifier: "custom")
         self.tableView.rowHeight = UITableViewAutomaticDimension
@@ -41,7 +43,16 @@ class TasksViewController: UITableViewController{
         cell.priceLabel = data[indexPath.row].priceLabel
         cell.distanceLabel = data[indexPath.row].distanceLabel
         cell.layoutSubviews()
+    
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let taskDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TaskDetailsViewController") as! TaskDetailsViewController
+        if let navigator = navigationController{
+            navigator.pushViewController(taskDetailsVC, animated: false)
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
