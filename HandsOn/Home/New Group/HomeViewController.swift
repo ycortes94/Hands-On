@@ -10,42 +10,22 @@ import Foundation
 import UIKit
 import Firebase
 
-class HomeViewController:UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController:UITableViewController {
     
-    var tableView:UITableView!
+    //var tableView:UITableView!
     
     var posts = [Post]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView = UITableView(frame: view.bounds, style: .plain)
         
-        let cellNib = UINib(nibName: "PostTableViewCell", bundle: nil)
-        tableView.register(cellNib, forCellReuseIdentifier: "postCell")
-        tableView.backgroundColor = UIColor(white: 0.90,alpha:1.0)
-        view.addSubview(tableView)
-        
-        var layoutGuide:UILayoutGuide!
-        
-        if #available(iOS 11.0, *) {
-            layoutGuide = view.safeAreaLayoutGuide
-        } else {
-            // Fallback on earlier versions
-            layoutGuide = view.layoutMarginsGuide
-        }
-        
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor).isActive = true
-        tableView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
-        tableView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.reloadData()
-        
-        print("calling observe post")
+        self.view.backgroundColor = UIColor.white
+        self.tableView.separatorStyle = .none
         observePosts()
+        
+        self.tableView.register(PostTableViewCell.self, forCellReuseIdentifier: "posttableviewcell")
+        //self.tableView.rowHeight = UITableViewAutomaticDimension
+        //self.tableView.estimatedRowHeight = 500
         
     }
     
@@ -70,7 +50,7 @@ class HomeViewController:UIViewController, UITableViewDelegate, UITableViewDataS
                     let location = dict["location"] as? String,
                     let duration = dict["duration"] as? Int,
                     let description = dict["description"] as? String
-                    {
+                {
                     
                     let userProfile = UserProfile(uid: uid, username: username, photoURL: url)
                     let post = Post(id: childSnapshot.key, author: userProfile, text: text, timestamp:timestamp,price: price, location: location, duration: duration, description: description)
@@ -86,25 +66,40 @@ class HomeViewController:UIViewController, UITableViewDelegate, UITableViewDataS
         })
     }
     
-//    @IBAction func handleLogout(_ sender:Any) {
-//        try! Auth.auth().signOut()
-//    }
+    //    @IBAction func handleLogout(_ sender:Any) {
+    //        try! Auth.auth().signOut()
+    //    }
     
-   
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 430;//Choose your custom row height
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "posttableviewcell", for: indexPath) as! PostTableViewCell
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.contentView.backgroundColor = UIColor.clear
+        cell.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.70)
+        
+        let whiteRoundedView : UIView = UIView(frame: CGRect(x: 10, y: 8, width: self.view.frame.size.width - 20, height: 415))
+        
+        whiteRoundedView.layer.backgroundColor = UIColor(red: 0.972, green: 0.973, blue: 0.972, alpha: 1.0).cgColor
+        whiteRoundedView.layer.masksToBounds = false
+        whiteRoundedView.layer.cornerRadius = 8
+        //whiteRoundedView.layer.shadowOffset = CGSize(width: -1, height: 1)
+        //whiteRoundedView.layer.shadowOpacity = 0.2
+        
+        cell.contentView.addSubview(whiteRoundedView)
+        cell.contentView.sendSubview(toBack: whiteRoundedView)
+        
         cell.set(post: posts[indexPath.row])
+        cell.layoutSubviews()
         return cell
     }
 }
-
-
