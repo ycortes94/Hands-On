@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "ba7d8b8ac9d2fd0615aa129991a9c635"
-build_time: [1526477066, 663231000]
+build_time: [1526478734, 704390000]
 inputs:
   "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/HandsOn/Home/MoreVC/New Group/EditProfileViewController.swift": [1526431682, 0]
   "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/HandsOn/Models/UserProfile.swift": [1524035934, 0]
@@ -23,7 +23,7 @@ inputs:
   "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/HandsOn/Home/MoreVC/SettingsViewController.swift": [1526334487, 0]
   "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/HandsOn/Home/New Group/HomeViewController.swift": [1526463905, 0]
   "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/HandsOn/Home/MessagesViewController.swift": [1525897226, 0]
-  "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/HandsOn/Home/Tasks/TasksViewController.swift": [1526477052, 0]
+  "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/HandsOn/Home/Tasks/TasksViewController.swift": [1526478729, 0]
   "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/HandsOn/AppDelegate.swift": [1526473347, 0]
   "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/HandsOn/Home/New Group/PostTableViewCell.swift": [1526463168, 0]
   "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/HandsOn/Authentication/LoginViewController.swift": [1526431570, 0]

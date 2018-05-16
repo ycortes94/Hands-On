@@ -12,18 +12,18 @@ import Firebase
 class TasksViewController: UITableViewController{
     
     
-    var myTableView: UITableView!
+    var TableView: UITableView!
     var myPosts = [MyTaskPost]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //Adding posts
-        myTableView = UITableView(frame: view.bounds, style: .plain)
+        TableView = UITableView(frame: view.bounds, style: .plain)
         
         let cellNib = UINib(nibName: "MyTaskPostTableViewCell", bundle: nil)
-        myTableView.register(cellNib, forCellReuseIdentifier: "MyTaskPostTableViewCell")
-        myTableView.backgroundColor = UIColor(white: 0.90,alpha:1.0)
-        view.addSubview(myTableView)
+        TableView.register(cellNib, forCellReuseIdentifier: "MyTaskPostTableViewCell")
+        TableView.backgroundColor = UIColor(white: 0.90,alpha:1.0)
+        view.addSubview(TableView)
 
         var layoutGuide:UILayoutGuide!
 
@@ -34,15 +34,15 @@ class TasksViewController: UITableViewController{
             layoutGuide = view.layoutMarginsGuide
         }
 
-        myTableView.translatesAutoresizingMaskIntoConstraints = false
-        myTableView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor).isActive = true
-        myTableView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
-        myTableView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor).isActive = true
-        myTableView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
+        TableView.translatesAutoresizingMaskIntoConstraints = false
+        TableView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor).isActive = true
+        TableView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
+        TableView.trailingAnchor.constraint(equalTo:layoutGuide.trailingAnchor).isActive = true
+        TableView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
 
-        myTableView.delegate = self
-        myTableView.dataSource = self
-        myTableView.reloadData()
+        TableView.delegate = self
+        TableView.dataSource = self
+        TableView.reloadData()
 
         print("calling observe post")
         observeMyPosts()
@@ -86,7 +86,7 @@ class TasksViewController: UITableViewController{
             }
             
             self.myPosts = tempPosts
-            self.myTableView.reloadData()
+            self.TableView.reloadData()
             
         })
     }
