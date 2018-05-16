@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		KnzJuzNTFmIA6bzVFMjRBPXA64M=
+		VlbvpxqfEwoo9Bi8KxZAZdx8D9k=
 		</data>
 		<key>FirebaseAuthUI.bundle/FUIAccountSettingsViewController.nib</key>
 		<data>
@@ -5883,111 +5883,127 @@
 		</data>
 		<key>Main.storyboardc/0Hw-EF-rLz-view-M2P-0A-WHL.nib</key>
 		<data>
-		weZYzDyfTEau5tphqh6aZ1ryMd4=
+		BB0Bq7Yiezq7/DN5p/3Q6fipJ6s=
 		</data>
 		<key>Main.storyboardc/2cF-Wv-Sll-view-ECo-Pd-r6K.nib</key>
 		<data>
-		Y04FAYfZk6prXDijr4MkUGgf1wQ=
+		DBhNNLIuFbt4ZLjb2aeOgMPxxeE=
 		</data>
 		<key>Main.storyboardc/7je-8E-SBF-view-BHY-CB-wrN.nib</key>
 		<data>
-		gFEwM4GVQ8MdVmlF7nCI/cjuEKU=
+		6xwUsvWc0hTt9CxzT2BwnLsjbwU=
 		</data>
 		<key>Main.storyboardc/ActivityLogViewController.nib</key>
 		<data>
-		lpJdszp71FIFZNdo4EbAEhzcd2w=
+		CQ4Rj5gReuGCXMlPKlNlhKPRlsw=
+		</data>
+		<key>Main.storyboardc/EditProfileViewController.nib</key>
+		<data>
+		iBOxe2TZUWNpH86lqGOqon7KFdE=
 		</data>
 		<key>Main.storyboardc/Fw6-W0-Mjf-view-DOR-Uj-hhA.nib</key>
 		<data>
-		t4XOTNACvj8/zZSV4gL38608yRo=
+		Lu8Vq9sr7ApAPbjyMs1DTRRaOS8=
 		</data>
 		<key>Main.storyboardc/Gzf-aY-Irw-view-ROV-j0-jtL.nib</key>
 		<data>
-		J4NunVtMUD1JqAmYJwtF9F2uRE8=
+		f1/szNl4BWh025bp/IVMvUOjjDY=
 		</data>
 		<key>Main.storyboardc/HomeViewController.nib</key>
 		<data>
-		Is0b0A9aoUUhk4EO9k2Qsw5uzHE=
+		iqKh5+ia+AZvCWfKpNZKbkxiucw=
 		</data>
 		<key>Main.storyboardc/I0f-Y9-5pE-view-b6M-zH-PKk.nib</key>
 		<data>
-		V1e47uzeRAD2MPMdg4ecwjaZ2sQ=
+		Q9KQjvxVkT7xbzxdE51ktvXVizU=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
-		M7NqgXPJiiaIbIa51qVL3RBGO1M=
+		zEMz2XuBo8TkrQ+3Vu7H8es369U=
 		</data>
 		<key>Main.storyboardc/Kqj-ru-rjH-view-yra-FI-VLP.nib</key>
 		<data>
-		LUxTQEu2eHa3AhdCCiP/BzZwz5o=
+		pwHHiP0zKpOF9hPkmIF8i6+XlKM=
 		</data>
 		<key>Main.storyboardc/LoginViewController.nib</key>
 		<data>
-		sI0DteZ5928xtdPp8IBTn1JDn4M=
+		aGQpHHT1W0KKQr5xQZNzcjIK43o=
 		</data>
 		<key>Main.storyboardc/MenuViewController.nib</key>
 		<data>
-		cs6SU+/Rf8y+4tfeA4SbJlIEflM=
+		Zwc5nJ1HDLATS/y+p5eWsUDZXJI=
 		</data>
 		<key>Main.storyboardc/MessagesViewController.nib</key>
 		<data>
-		tJj7NfZL6ZTV6Xqz8wOy/ozYliQ=
+		ohGSOHOAa5CoZRkUTXRHrIMQcdA=
 		</data>
 		<key>Main.storyboardc/MoreViewController.nib</key>
 		<data>
-		p2LJ3/LC8n+LZvMSk3DF7EGZMlQ=
+		nemeNQpn2Fzpq9Rf3SYtQItnBYc=
 		</data>
 		<key>Main.storyboardc/NewPostViewController.nib</key>
 		<data>
-		ZAQsiEfjm2OWobFX5R3ODyDt73g=
+		3Yd8vILO5vmLZTu8yBN5y5d/3P8=
+		</data>
+		<key>Main.storyboardc/OL7-06-FcZ-view-UDa-58-vl4.nib</key>
+		<data>
+		s4fw8CKH1oEAkHA7lOlFcHGq1O0=
 		</data>
 		<key>Main.storyboardc/ProfileViewController.nib</key>
 		<data>
-		JT/3+Cpv0Ew+AfNutTqaB5uIhsk=
+		Bypk0L1aVavJWpmZCe+6Mx58SN4=
 		</data>
 		<key>Main.storyboardc/RS0-E1-HX3-view-55k-17-8Ho.nib</key>
 		<data>
-		jEAJD/1FU14klNJq/heOpxdw/iI=
+		9SZe9A/45dOjjuqn8gWdjf/RPPo=
 		</data>
 		<key>Main.storyboardc/SettingsViewController.nib</key>
 		<data>
-		iC/IUAS7OTq65xwzsg0PpwLTmBY=
+		qUVzvHUSmLtlqb1YsM6MC0HjRK0=
 		</data>
 		<key>Main.storyboardc/SignUpViewController.nib</key>
 		<data>
-		HXAIwAA7URVb3fuxkpNe+PqhXyU=
+		5i7pFXVAJtGsNesbFa3pJAV+j9I=
+		</data>
+		<key>Main.storyboardc/TaskDetailsViewController.nib</key>
+		<data>
+		Au+8kAJMzmMPTYTqdHrtMjWWUUU=
 		</data>
 		<key>Main.storyboardc/TasksViewController.nib</key>
 		<data>
-		eSSdvjq+ZWTpGbgsWhqoW7lVLnI=
+		S8d6w+CnQUTKaBQ2ltC4JNvUfHE=
 		</data>
 		<key>Main.storyboardc/UIViewController-2cF-Wv-Sll.nib</key>
 		<data>
-		1MyAoX7t5Z600DNOuyDmU9ziVBo=
+		Qh/85j0gfYp0noR+1k0I8FOPEd8=
 		</data>
 		<key>Main.storyboardc/VerificationViewController.nib</key>
 		<data>
-		Jw60d5ccrc12/iyBS6+VqfRDR5M=
+		Bg7KJilemPiHrDBz8LPkXv8ND7E=
 		</data>
 		<key>Main.storyboardc/cFD-Ey-IVX-view-euH-Br-Dca.nib</key>
 		<data>
-		ucKKALlcmvqYp2lSs72p9sJ7Pqw=
+		zCitT4/6XbWmUVbwdOQL2gBDJzc=
 		</data>
 		<key>Main.storyboardc/hv0-ic-cX5-view-6Ub-tw-sxk.nib</key>
 		<data>
-		12jy80p+n6Yt4AjhbkFHNKy0QVI=
+		RjpAPhx/AlwTrwgkwiOfRzd6RKs=
 		</data>
 		<key>Main.storyboardc/l4V-Ec-EX8-view-j86-z9-jw3.nib</key>
 		<data>
-		G536vQ+08Et2tycHv+bQ+ves3zM=
+		R8qrH5+DhIl7GgUty4RZA2G32LM=
+		</data>
+		<key>Main.storyboardc/tdF-nb-bkH-view-CFg-Tn-jl1.nib</key>
+		<data>
+		U58OQOl9Yl37GsznHDFqgEv2Z2A=
 		</data>
 		<key>Main.storyboardc/tx0-cZ-uig-view-75y-zB-2qS.nib</key>
 		<data>
-		WdFHNkjH+aJtmfBumG4M1MmLkDQ=
+		NHjjT8CGTOwCWRZv1fggaHGVltg=
 		</data>
 		<key>Main.storyboardc/wie-nZ-YWG-view-039-am-QbD.nib</key>
 		<data>
-		fbyI/jmYfk7q8OilwjL1aaZvKXM=
+		m5cUxwdnr+s7CyeYoYg90CWTOjk=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -5995,7 +6011,7 @@
 		</data>
 		<key>PostTableViewCell.nib</key>
 		<data>
-		CwJTHbkLpgw5f8Ad7vb9ADC9aaM=
+		xMCVu0PA47QuDHttLG73p0nO+zo=
 		</data>
 		<key>TwitterKitResources.bundle/TFSScribe.momd/TFSScribe.mom</key>
 		<data>
@@ -6717,11 +6733,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KnzJuzNTFmIA6bzVFMjRBPXA64M=
+			VlbvpxqfEwoo9Bi8KxZAZdx8D9k=
 			</data>
 			<key>hash2</key>
 			<data>
-			e/Qt6jZ4TuC+tzOAbpSVDd2eR5oh8h22ql5jYx6fDtk=
+			7m/e8cF+5rzSGuQN2jwCG1bAt8GIrmJwkMZvB7NVlYc=
 			</data>
 		</dict>
 		<key>FirebaseAuthUI.bundle/FUIAccountSettingsViewController.nib</key>
@@ -16464,308 +16480,352 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			weZYzDyfTEau5tphqh6aZ1ryMd4=
+			BB0Bq7Yiezq7/DN5p/3Q6fipJ6s=
 			</data>
 			<key>hash2</key>
 			<data>
-			QXNNKRPWYUykmN5XN2vKqHMFAIS3+XkhYZPt/g5V7us=
+			R+1q4S7oZVQ9Y3MoMlLr628XgWhZj+am8Qs76T4Bquw=
 			</data>
 		</dict>
 		<key>Main.storyboardc/2cF-Wv-Sll-view-ECo-Pd-r6K.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y04FAYfZk6prXDijr4MkUGgf1wQ=
+			DBhNNLIuFbt4ZLjb2aeOgMPxxeE=
 			</data>
 			<key>hash2</key>
 			<data>
-			WMDGxCUL3i0OYYtyl8a6dkSUv+wJ81b7YY1TBR1n2hY=
+			u1R5z6yCkamzhIYKcxrdhPyDmHfPA93ntk8CCqna3iU=
 			</data>
 		</dict>
 		<key>Main.storyboardc/7je-8E-SBF-view-BHY-CB-wrN.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gFEwM4GVQ8MdVmlF7nCI/cjuEKU=
+			6xwUsvWc0hTt9CxzT2BwnLsjbwU=
 			</data>
 			<key>hash2</key>
 			<data>
-			n5JF1HOyug/FJmqsyGwMek0xOijHOpFhnYP6BUSfyhs=
+			ogwmsjv2qtivbaB4y6oAZGoa7AblZ4wdIu3EyIgwhV4=
 			</data>
 		</dict>
 		<key>Main.storyboardc/ActivityLogViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lpJdszp71FIFZNdo4EbAEhzcd2w=
+			CQ4Rj5gReuGCXMlPKlNlhKPRlsw=
 			</data>
 			<key>hash2</key>
 			<data>
-			mombH/YXLQ0+8ThxlbE20q6xuyd9489i5b4oSytFFFA=
+			AXGlS6F1WKC88oJQ74KqL9wrOTIMVowIJq4QE6nyKvU=
+			</data>
+		</dict>
+		<key>Main.storyboardc/EditProfileViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iBOxe2TZUWNpH86lqGOqon7KFdE=
+			</data>
+			<key>hash2</key>
+			<data>
+			6W9bVHhaDDQI/ADUl5arQzHsz6/B+9TJzRbvEviL5r4=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Fw6-W0-Mjf-view-DOR-Uj-hhA.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			t4XOTNACvj8/zZSV4gL38608yRo=
+			Lu8Vq9sr7ApAPbjyMs1DTRRaOS8=
 			</data>
 			<key>hash2</key>
 			<data>
-			OLVoPJbluojiOf3zE8cZG8j6s6G2m0sienEEvjSZcsI=
+			nYP976ENoiFWcfE/5copgfwj0Nu+w6hyxlLXfhwQkso=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Gzf-aY-Irw-view-ROV-j0-jtL.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J4NunVtMUD1JqAmYJwtF9F2uRE8=
+			f1/szNl4BWh025bp/IVMvUOjjDY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ck0bvk0/M0FBXCWHnHSDj2gbeN9KucY30sVWNhroWeY=
+			PfUKelyuC3039sXrulTw51CLet1VchlMbFD1BV1E/Gw=
 			</data>
 		</dict>
 		<key>Main.storyboardc/HomeViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Is0b0A9aoUUhk4EO9k2Qsw5uzHE=
+			iqKh5+ia+AZvCWfKpNZKbkxiucw=
 			</data>
 			<key>hash2</key>
 			<data>
-			rzLGqQy64aoh+kMcBfE4CEQzvvEGlwXeyZzLkyvPH8Y=
+			N8XzvZbZG+zzA0H9M7FHrR4x+bkZZRg+uWd/kX1Qb/0=
 			</data>
 		</dict>
 		<key>Main.storyboardc/I0f-Y9-5pE-view-b6M-zH-PKk.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V1e47uzeRAD2MPMdg4ecwjaZ2sQ=
+			Q9KQjvxVkT7xbzxdE51ktvXVizU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZQvSRZGEgrUnVj3BmPomH7XsNPFvl78BOeK+xNhf22w=
+			Pm9P6uROvXHuI7opvo0OoUcWklCaSEktvZYX9WGB6cI=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M7NqgXPJiiaIbIa51qVL3RBGO1M=
+			zEMz2XuBo8TkrQ+3Vu7H8es369U=
 			</data>
 			<key>hash2</key>
 			<data>
-			N6NdSl+8JjxPo5g/gvklcLXbMINxmCjhM3VLGiojs/Q=
+			Ws8ZbK+xNm56ERxd8uqy59u0OedqiaKdeGEi+L1jdJw=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Kqj-ru-rjH-view-yra-FI-VLP.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LUxTQEu2eHa3AhdCCiP/BzZwz5o=
+			pwHHiP0zKpOF9hPkmIF8i6+XlKM=
 			</data>
 			<key>hash2</key>
 			<data>
-			EwlVEXDAATCgyPJXttbbLkIXZ0f056myK5w2vgF8G3U=
+			H98hVO9Q/wm2NbQUmNT8lmlR6k0SgTfgfyCSbBNzLlc=
 			</data>
 		</dict>
 		<key>Main.storyboardc/LoginViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sI0DteZ5928xtdPp8IBTn1JDn4M=
+			aGQpHHT1W0KKQr5xQZNzcjIK43o=
 			</data>
 			<key>hash2</key>
 			<data>
-			9BVIRcJkcVwNhb6FLtyt1KTWEFow9DYXqsZJmhIGRhM=
+			1Ijk/mkjVZFvhcicPFgabhEpBHegmMQHvDQhpLzT4qk=
 			</data>
 		</dict>
 		<key>Main.storyboardc/MenuViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cs6SU+/Rf8y+4tfeA4SbJlIEflM=
+			Zwc5nJ1HDLATS/y+p5eWsUDZXJI=
 			</data>
 			<key>hash2</key>
 			<data>
-			v1HvhcTeo6DoZyd/nG8NBjiV8Tz9TF44OtR5bBaGl90=
+			FTi9wN7sor6r5IuJUchSzq0GQTmH31wpau35oH1grfM=
 			</data>
 		</dict>
 		<key>Main.storyboardc/MessagesViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tJj7NfZL6ZTV6Xqz8wOy/ozYliQ=
+			ohGSOHOAa5CoZRkUTXRHrIMQcdA=
 			</data>
 			<key>hash2</key>
 			<data>
-			GN9eboIJF9wZelgfRS/J61u/pANxE0ngtuZV719l6YI=
+			LUukF7zR/RIWtqKecJxLNKl/iBvjWtrID5HhhDlgRO0=
 			</data>
 		</dict>
 		<key>Main.storyboardc/MoreViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			p2LJ3/LC8n+LZvMSk3DF7EGZMlQ=
+			nemeNQpn2Fzpq9Rf3SYtQItnBYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			pa+M3D12l1UsUOAVTash+VsSb0+fHCnqw1uY8218zwI=
+			E4OIpnxFAQyV8BCgGM7XIWFCt7FA2fee37aSXRI9yJg=
 			</data>
 		</dict>
 		<key>Main.storyboardc/NewPostViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZAQsiEfjm2OWobFX5R3ODyDt73g=
+			3Yd8vILO5vmLZTu8yBN5y5d/3P8=
 			</data>
 			<key>hash2</key>
 			<data>
-			nZam3okw/GooacJuNvzu8Caj2dJv993zHg/Fau6es3A=
+			GTKhVAK/9MXGwxD3YB7IUmKWcx3XFO/0vmQPlDwI7Y4=
+			</data>
+		</dict>
+		<key>Main.storyboardc/OL7-06-FcZ-view-UDa-58-vl4.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s4fw8CKH1oEAkHA7lOlFcHGq1O0=
+			</data>
+			<key>hash2</key>
+			<data>
+			1VzwdLSRz2jmzRxBojsSzF+Mh92axEwmcEJt97JzJdA=
 			</data>
 		</dict>
 		<key>Main.storyboardc/ProfileViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JT/3+Cpv0Ew+AfNutTqaB5uIhsk=
+			Bypk0L1aVavJWpmZCe+6Mx58SN4=
 			</data>
 			<key>hash2</key>
 			<data>
-			uHYC4SjsDg+Vr9ami6peKwYYqlZ5C3havcnU+gpwte0=
+			u2MNWfpSWDh8US1RCaKzwrNtvAjyfxb1zXw0YGbLQOU=
 			</data>
 		</dict>
 		<key>Main.storyboardc/RS0-E1-HX3-view-55k-17-8Ho.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jEAJD/1FU14klNJq/heOpxdw/iI=
+			9SZe9A/45dOjjuqn8gWdjf/RPPo=
 			</data>
 			<key>hash2</key>
 			<data>
-			jhCS8WSjWPpTu09n7/a8VVphrfUZQ/Rhjho0vOp3qA8=
+			7YvjWDS6D9hCEwaOXPibqvBvv83f7tB1Km1lMDATInc=
 			</data>
 		</dict>
 		<key>Main.storyboardc/SettingsViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iC/IUAS7OTq65xwzsg0PpwLTmBY=
+			qUVzvHUSmLtlqb1YsM6MC0HjRK0=
 			</data>
 			<key>hash2</key>
 			<data>
-			JLcnpR/fLUcz+3AS99kEJK1O0xRVmqKJzSWLL+IC520=
+			LFJkcWA0Rjsvnyh6lDSxrSXd7wmLknBcD0SKCNiKA2A=
 			</data>
 		</dict>
 		<key>Main.storyboardc/SignUpViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HXAIwAA7URVb3fuxkpNe+PqhXyU=
+			5i7pFXVAJtGsNesbFa3pJAV+j9I=
 			</data>
 			<key>hash2</key>
 			<data>
-			HC8T4gntvFxEY9zkcfOprp9UPDxLCu6meVHAMqyrHMw=
+			VChS6P0YhP69DnsmXQsUx3MddhQBV+ocTD3wiKQVRak=
+			</data>
+		</dict>
+		<key>Main.storyboardc/TaskDetailsViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Au+8kAJMzmMPTYTqdHrtMjWWUUU=
+			</data>
+			<key>hash2</key>
+			<data>
+			DL6tGmG8dT1BJXAr0Eq6hpQAEfAVvn2itWptQS9uWYc=
 			</data>
 		</dict>
 		<key>Main.storyboardc/TasksViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eSSdvjq+ZWTpGbgsWhqoW7lVLnI=
+			S8d6w+CnQUTKaBQ2ltC4JNvUfHE=
 			</data>
 			<key>hash2</key>
 			<data>
-			N6PJGWC7GLq1MlYf0AfW56ACSOplZYP4w9oQ4+mqYj8=
+			WK4dJ7qMBeJuu+gnI/3zxFAzjUbCA16VL6uMmV/1u6s=
 			</data>
 		</dict>
 		<key>Main.storyboardc/UIViewController-2cF-Wv-Sll.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1MyAoX7t5Z600DNOuyDmU9ziVBo=
+			Qh/85j0gfYp0noR+1k0I8FOPEd8=
 			</data>
 			<key>hash2</key>
 			<data>
-			tzpl1hsAkwL9DR9ET3XSoJEqK+gDH0s+t7ze77dACrI=
+			kdghUXCkbuFBm8O7apxYix25pTqSfWWMTPYc+lq0kOY=
 			</data>
 		</dict>
 		<key>Main.storyboardc/VerificationViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jw60d5ccrc12/iyBS6+VqfRDR5M=
+			Bg7KJilemPiHrDBz8LPkXv8ND7E=
 			</data>
 			<key>hash2</key>
 			<data>
-			a6smOzzPIq5EyOPrbDniLNS1sLOmDJzboA2edFZ52tM=
+			4G6PX8A5ckgtAdG6mI8YW51GUWaulrl8Qrpw0tC9uBk=
 			</data>
 		</dict>
 		<key>Main.storyboardc/cFD-Ey-IVX-view-euH-Br-Dca.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ucKKALlcmvqYp2lSs72p9sJ7Pqw=
+			zCitT4/6XbWmUVbwdOQL2gBDJzc=
 			</data>
 			<key>hash2</key>
 			<data>
-			5PuwUN3OTWMWPFO2S3WV/qFDaIBFfzMb8GBE+CNExT8=
+			mPEqac+8HZWHe3wEo3JlQDAW9W14fdhfeBIqfEueFlk=
 			</data>
 		</dict>
 		<key>Main.storyboardc/hv0-ic-cX5-view-6Ub-tw-sxk.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			12jy80p+n6Yt4AjhbkFHNKy0QVI=
+			RjpAPhx/AlwTrwgkwiOfRzd6RKs=
 			</data>
 			<key>hash2</key>
 			<data>
-			5PIy4jZ2J71sfZxsQ4T6lCIr28k0EzYSij5P+tCLBso=
+			XXrXHkrs+Dn9rKCNumN7xDR8SYe20kbr+FZancErB6Q=
 			</data>
 		</dict>
 		<key>Main.storyboardc/l4V-Ec-EX8-view-j86-z9-jw3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			G536vQ+08Et2tycHv+bQ+ves3zM=
+			R8qrH5+DhIl7GgUty4RZA2G32LM=
 			</data>
 			<key>hash2</key>
 			<data>
-			oy7QS2s3tJ1MyuO845wmLks/CsuFSY5k0sYZqov4z2Y=
+			J4OW6Rfi1KJoU2RJz5Y+YWdCDc4F/4L6hWzJkimjOgU=
+			</data>
+		</dict>
+		<key>Main.storyboardc/tdF-nb-bkH-view-CFg-Tn-jl1.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U58OQOl9Yl37GsznHDFqgEv2Z2A=
+			</data>
+			<key>hash2</key>
+			<data>
+			jz6PcZvRhYKeTdXgpLtAmM5pNicDYxw+yxTpklyYx3E=
 			</data>
 		</dict>
 		<key>Main.storyboardc/tx0-cZ-uig-view-75y-zB-2qS.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WdFHNkjH+aJtmfBumG4M1MmLkDQ=
+			NHjjT8CGTOwCWRZv1fggaHGVltg=
 			</data>
 			<key>hash2</key>
 			<data>
-			n1fp09uYSQfy8Hb5kOsJ6eDWeuNwUAEXjL53CIgyNo8=
+			N+m8zmWlQ5QQBzmzUfc4/FsQOhxgck2o/LzmunSG2EM=
 			</data>
 		</dict>
 		<key>Main.storyboardc/wie-nZ-YWG-view-039-am-QbD.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fbyI/jmYfk7q8OilwjL1aaZvKXM=
+			m5cUxwdnr+s7CyeYoYg90CWTOjk=
 			</data>
 			<key>hash2</key>
 			<data>
-			GEhrBS04GluAHFATZWnG2QFwiH/bsqMYimkN8kXk3Dw=
+			ul+UiVeJVF0RvBiCxyfwlHRO4I28apJS5A3NQBAiNa8=
 			</data>
 		</dict>
 		<key>PostTableViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CwJTHbkLpgw5f8Ad7vb9ADC9aaM=
+			xMCVu0PA47QuDHttLG73p0nO+zo=
 			</data>
 			<key>hash2</key>
 			<data>
-			pTz2zwm82fmLNiotvvSIt8Jn637LpObYk3LgdizrIek=
+			udX7mDJ96+jtfP4JDhiZiu+3x4lWSn+O/dqPq/JYKvU=
 			</data>
 		</dict>
 		<key>TwitterKitResources.bundle/TFSScribe.momd/TFSScribe.mom</key>

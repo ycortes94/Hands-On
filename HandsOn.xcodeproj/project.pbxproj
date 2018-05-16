@@ -11,6 +11,8 @@
 		D0557CD320A51DB900E08F6C /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0557CD220A51DB900E08F6C /* VerificationViewController.swift */; };
 		D0557CD520A51DCA00E08F6C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0557CD420A51DCA00E08F6C /* SettingsViewController.swift */; };
 		D059DC2B20A798B000E8C932 /* TaskDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D059DC2A20A798B000E8C932 /* TaskDetailsViewController.swift */; };
+		D059FD5220AB47F200F4C849 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D059FD5120AB47F200F4C849 /* EditProfileViewController.swift */; };
+		D059FD5520AB74C200F4C849 /* TasksCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D059FD5420AB74C200F4C849 /* TasksCustomTableViewCell.swift */; };
 		D06449902094D310005B8BF2 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064498F2094D310005B8BF2 /* CustomTabBarController.swift */; };
 		D06449922094ECBB005B8BF2 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06449912094ECBB005B8BF2 /* TasksViewController.swift */; };
 		D06449942094EE80005B8BF2 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06449932094EE80005B8BF2 /* MessagesViewController.swift */; };
@@ -47,6 +49,8 @@
 		D0557CD220A51DB900E08F6C /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		D0557CD420A51DCA00E08F6C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D059DC2A20A798B000E8C932 /* TaskDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewController.swift; sourceTree = "<group>"; };
+		D059FD5120AB47F200F4C849 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		D059FD5420AB74C200F4C849 /* TasksCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksCustomTableViewCell.swift; sourceTree = "<group>"; };
 		D064498F2094D310005B8BF2 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		D06449912094ECBB005B8BF2 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		D06449932094EE80005B8BF2 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -107,11 +111,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D059FD5320AB47F900F4C849 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */,
+				D059FD5120AB47F200F4C849 /* EditProfileViewController.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		D059FD5620AB74CD00F4C849 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				D06449912094ECBB005B8BF2 /* TasksViewController.swift */,
+				D059FD5420AB74C200F4C849 /* TasksCustomTableViewCell.swift */,
+				D059DC2A20A798B000E8C932 /* TaskDetailsViewController.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		D059FD5720AB74F100F4C849 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				FFE861EF207630F300C5B8DD /* HomeViewController.swift */,
+				FFE861F0207630F300C5B8DD /* PostTableViewCell.swift */,
+				FFE861F1207630F300C5B8DD /* PostTableViewCell.xib */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		D083594920A3D93700A1B7C8 /* MoreVC */ = {
 			isa = PBXGroup;
 			children = (
 				D083594520A3C47200A1B7C8 /* MoreViewController.swift */,
-				D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */,
+				D059FD5320AB47F900F4C849 /* New Group */,
 				D0557CD020A51DA000E08F6C /* ActivityLogViewController.swift */,
 				D0557CD220A51DB900E08F6C /* VerificationViewController.swift */,
 				D0557CD420A51DCA00E08F6C /* SettingsViewController.swift */,
@@ -180,13 +213,10 @@
 			isa = PBXGroup;
 			children = (
 				D064498F2094D310005B8BF2 /* CustomTabBarController.swift */,
-				FFE861EF207630F300C5B8DD /* HomeViewController.swift */,
 				FFE861F2207630F300C5B8DD /* NewPostViewController.swift */,
-				FFE861F0207630F300C5B8DD /* PostTableViewCell.swift */,
-				FFE861F1207630F300C5B8DD /* PostTableViewCell.xib */,
-				D06449912094ECBB005B8BF2 /* TasksViewController.swift */,
+				D059FD5720AB74F100F4C849 /* New Group */,
+				D059FD5620AB74CD00F4C849 /* Tasks */,
 				D06449932094EE80005B8BF2 /* MessagesViewController.swift */,
-				D059DC2A20A798B000E8C932 /* TaskDetailsViewController.swift */,
 				D083594920A3D93700A1B7C8 /* MoreVC */,
 			);
 			path = Home;
@@ -360,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D059FD5220AB47F200F4C849 /* EditProfileViewController.swift in Sources */,
 				FFE861E2207630E000C5B8DD /* UserProfile.swift in Sources */,
 				FFE8620C207632F000C5B8DD /* InitialViewController.swift in Sources */,
 				D083594820A3D92F00A1B7C8 /* ProfileViewController.swift in Sources */,
@@ -385,6 +416,7 @@
 				FFE8620B207632F000C5B8DD /* LoginViewController.swift in Sources */,
 				FF974A8F20AA3AD90073EB11 /* LogoutViewController.swift in Sources */,
 				FFE861FA2076310300C5B8DD /* RoundedWhiteButton.swift in Sources */,
+				D059FD5520AB74C200F4C849 /* TasksCustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

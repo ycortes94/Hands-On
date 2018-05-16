@@ -25,6 +25,7 @@ depends-top-level:
 - !private "Database"
 - !private "Dictionary"
 - !private "DispatchQueue"
+- !private "Int"
 - "NewPostViewController"
 - "String"
 - "StringLiteralType"
@@ -53,6 +54,7 @@ depends-top-level:
 - !private "print"
 depends-member:
 - ["s23BidirectionalCollectionP", "init"]
+- !private ["s13BinaryIntegerP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["So7CALayerC", "borderColor"]
 - ["So7CALayerC", "borderWidth"]
@@ -87,7 +89,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "sendSubview"]
 - !private ["So15CALayerDelegateP", "setCustomSpacing"]
 - ["So15CALayerDelegateP", "setTitle"]
-- !private ["So15CALayerDelegateP", "shadowImage"]
 - !private ["So15CALayerDelegateP", "spacing"]
 - ["So15CALayerDelegateP", "text"]
 - ["So15CALayerDelegateP", "textColor"]
@@ -103,6 +104,7 @@ depends-member:
 - ["s7CVarArgP", "CGRect"]
 - !private ["s7CVarArgP", "Database"]
 - !private ["s7CVarArgP", "DispatchQueue"]
+- !private ["s7CVarArgP", "Int"]
 - !private ["s7CVarArgP", "UIBlurEffect"]
 - ["s7CVarArgP", "UIButton"]
 - ["s7CVarArgP", "UIColor"]
@@ -179,7 +181,6 @@ depends-member:
 - !private ["s7CVarArgP", "locationLabel"]
 - !private ["s7CVarArgP", "locationTextField"]
 - !private ["s7CVarArgP", "main"]
-- !private ["s7CVarArgP", "navigationBar"]
 - ["s7CVarArgP", "navigationController"]
 - ["s7CVarArgP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s7CVarArgP", "navigationControllerSupportedInterfaceOrientations"]
@@ -214,7 +215,6 @@ depends-member:
 - ["s7CVarArgP", "setTitle"]
 - !private ["s7CVarArgP", "setUpLayout"]
 - !private ["s7CVarArgP", "setValue"]
-- !private ["s7CVarArgP", "shadowImage"]
 - !private ["s7CVarArgP", "sourceType"]
 - !private ["s7CVarArgP", "spacing"]
 - !private ["s7CVarArgP", "stackView"]
@@ -248,6 +248,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "CGRect"]
 - !private ["s28CustomDebugStringConvertibleP", "Database"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "UIBlurEffect"]
 - ["s28CustomDebugStringConvertibleP", "UIButton"]
 - ["s28CustomDebugStringConvertibleP", "UIColor"]
@@ -325,7 +326,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "locationLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "locationTextField"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
-- !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
 - ["s28CustomDebugStringConvertibleP", "navigationController"]
 - ["s28CustomDebugStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s28CustomDebugStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
@@ -360,7 +360,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "setTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "setUpLayout"]
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
-- !private ["s28CustomDebugStringConvertibleP", "shadowImage"]
 - !private ["s28CustomDebugStringConvertibleP", "sourceType"]
 - !private ["s28CustomDebugStringConvertibleP", "spacing"]
 - !private ["s28CustomDebugStringConvertibleP", "stackView"]
@@ -396,6 +395,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "CGRect"]
 - !private ["s23CustomStringConvertibleP", "Database"]
 - !private ["s23CustomStringConvertibleP", "DispatchQueue"]
+- !private ["s23CustomStringConvertibleP", "Int"]
 - !private ["s23CustomStringConvertibleP", "UIBlurEffect"]
 - ["s23CustomStringConvertibleP", "UIButton"]
 - ["s23CustomStringConvertibleP", "UIColor"]
@@ -473,7 +473,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "locationLabel"]
 - !private ["s23CustomStringConvertibleP", "locationTextField"]
 - !private ["s23CustomStringConvertibleP", "main"]
-- !private ["s23CustomStringConvertibleP", "navigationBar"]
 - ["s23CustomStringConvertibleP", "navigationController"]
 - ["s23CustomStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s23CustomStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
@@ -508,7 +507,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "setTitle"]
 - !private ["s23CustomStringConvertibleP", "setUpLayout"]
 - !private ["s23CustomStringConvertibleP", "setValue"]
-- !private ["s23CustomStringConvertibleP", "shadowImage"]
 - !private ["s23CustomStringConvertibleP", "sourceType"]
 - !private ["s23CustomStringConvertibleP", "spacing"]
 - !private ["s23CustomStringConvertibleP", "stackView"]
@@ -560,6 +558,7 @@ depends-member:
 - ["s9EquatableP", "CGRect"]
 - !private ["s9EquatableP", "Database"]
 - !private ["s9EquatableP", "DispatchQueue"]
+- !private ["s9EquatableP", "Int"]
 - !private ["s9EquatableP", "UIBlurEffect"]
 - ["s9EquatableP", "UIButton"]
 - ["s9EquatableP", "UIColor"]
@@ -641,7 +640,6 @@ depends-member:
 - !private ["s9EquatableP", "locationLabel"]
 - !private ["s9EquatableP", "locationTextField"]
 - !private ["s9EquatableP", "main"]
-- !private ["s9EquatableP", "navigationBar"]
 - ["s9EquatableP", "navigationController"]
 - ["s9EquatableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s9EquatableP", "navigationControllerSupportedInterfaceOrientations"]
@@ -682,7 +680,6 @@ depends-member:
 - ["s9EquatableP", "setTitle"]
 - !private ["s9EquatableP", "setUpLayout"]
 - !private ["s9EquatableP", "setValue"]
-- !private ["s9EquatableP", "shadowImage"]
 - !private ["s9EquatableP", "sourceType"]
 - !private ["s9EquatableP", "spacing"]
 - !private ["s9EquatableP", "stackView"]
@@ -714,11 +711,14 @@ depends-member:
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
 - ["s8HashableP", "CGRect"]
 - !private ["s8HashableP", "Database"]
 - !private ["s8HashableP", "DispatchQueue"]
+- !private ["s8HashableP", "Int"]
 - !private ["s8HashableP", "UIBlurEffect"]
 - ["s8HashableP", "UIButton"]
 - ["s8HashableP", "UIColor"]
@@ -799,7 +799,6 @@ depends-member:
 - !private ["s8HashableP", "locationLabel"]
 - !private ["s8HashableP", "locationTextField"]
 - !private ["s8HashableP", "main"]
-- !private ["s8HashableP", "navigationBar"]
 - ["s8HashableP", "navigationController"]
 - ["s8HashableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s8HashableP", "navigationControllerSupportedInterfaceOrientations"]
@@ -838,7 +837,6 @@ depends-member:
 - ["s8HashableP", "setTitle"]
 - !private ["s8HashableP", "setUpLayout"]
 - !private ["s8HashableP", "setValue"]
-- !private ["s8HashableP", "shadowImage"]
 - !private ["s8HashableP", "sourceType"]
 - !private ["s8HashableP", "spacing"]
 - !private ["s8HashableP", "stackView"]
@@ -863,12 +861,14 @@ depends-member:
 - ["s8HashableP", "viewForZoomingInScrollView"]
 - !private ["s8HashableP", "viewWillAppear"]
 - !private ["s8HashableP", "widthAnchor"]
+- !private ["Si", "init"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", "CGRect"]
 - !private ["So8NSCodingP", "Database"]
 - !private ["So8NSCodingP", "DispatchQueue"]
+- !private ["So8NSCodingP", "Int"]
 - !private ["So8NSCodingP", "UIBlurEffect"]
 - ["So8NSCodingP", "UIButton"]
 - ["So8NSCodingP", "UIColor"]
@@ -936,7 +936,6 @@ depends-member:
 - ["So8NSCodingP", "lightGray"]
 - !private ["So8NSCodingP", "locationLabel"]
 - !private ["So8NSCodingP", "locationTextField"]
-- !private ["So8NSCodingP", "navigationBar"]
 - ["So8NSCodingP", "navigationController"]
 - ["So8NSCodingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So8NSCodingP", "navigationControllerSupportedInterfaceOrientations"]
@@ -969,7 +968,6 @@ depends-member:
 - !private ["So8NSCodingP", "setCustomSpacing"]
 - ["So8NSCodingP", "setTitle"]
 - !private ["So8NSCodingP", "setUpLayout"]
-- !private ["So8NSCodingP", "shadowImage"]
 - !private ["So8NSCodingP", "sourceType"]
 - !private ["So8NSCodingP", "spacing"]
 - !private ["So8NSCodingP", "stackView"]
@@ -1003,6 +1001,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "CGRect"]
 - !private ["So26NSExtensionRequestHandlingP", "Database"]
 - !private ["So26NSExtensionRequestHandlingP", "DispatchQueue"]
+- !private ["So26NSExtensionRequestHandlingP", "Int"]
 - !private ["So26NSExtensionRequestHandlingP", "UIBlurEffect"]
 - ["So26NSExtensionRequestHandlingP", "UIButton"]
 - ["So26NSExtensionRequestHandlingP", "UIColor"]
@@ -1041,7 +1040,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "locationLabel"]
 - !private ["So26NSExtensionRequestHandlingP", "locationTextField"]
-- !private ["So26NSExtensionRequestHandlingP", "navigationBar"]
 - ["So26NSExtensionRequestHandlingP", "navigationController"]
 - ["So26NSExtensionRequestHandlingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So26NSExtensionRequestHandlingP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1104,6 +1102,7 @@ depends-member:
 - ["So8NSObjectC", "CGRect"]
 - !private ["So8NSObjectC", "Database"]
 - !private ["So8NSObjectC", "DispatchQueue"]
+- !private ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "UIBlurEffect"]
 - ["So8NSObjectC", "UIButton"]
@@ -1180,7 +1179,6 @@ depends-member:
 - ["So8NSObjectC", "locationLabel"]
 - ["So8NSObjectC", "locationTextField"]
 - !private ["So8NSObjectC", "main"]
-- !private ["So8NSObjectC", "navigationBar"]
 - ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So8NSObjectC", "navigationControllerSupportedInterfaceOrientations"]
@@ -1215,7 +1213,6 @@ depends-member:
 - ["So8NSObjectC", "setTitle"]
 - ["So8NSObjectC", "setUpLayout"]
 - !private ["So8NSObjectC", "setValue"]
-- !private ["So8NSObjectC", "shadowImage"]
 - !private ["So8NSObjectC", "sourceType"]
 - !private ["So8NSObjectC", "spacing"]
 - ["So8NSObjectC", "stackView"]
@@ -1242,6 +1239,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "CGRect"]
 - !private ["So16NSObjectProtocolP", "Database"]
 - !private ["So16NSObjectProtocolP", "DispatchQueue"]
+- !private ["So16NSObjectProtocolP", "Int"]
 - !private ["So16NSObjectProtocolP", "UIBlurEffect"]
 - ["So16NSObjectProtocolP", "UIButton"]
 - ["So16NSObjectProtocolP", "UIColor"]
@@ -1317,7 +1315,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "locationLabel"]
 - !private ["So16NSObjectProtocolP", "locationTextField"]
 - !private ["So16NSObjectProtocolP", "main"]
-- !private ["So16NSObjectProtocolP", "navigationBar"]
 - ["So16NSObjectProtocolP", "navigationController"]
 - ["So16NSObjectProtocolP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So16NSObjectProtocolP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1352,7 +1349,6 @@ depends-member:
 - ["So16NSObjectProtocolP", "setTitle"]
 - !private ["So16NSObjectProtocolP", "setUpLayout"]
 - !private ["So16NSObjectProtocolP", "setValue"]
-- !private ["So16NSObjectProtocolP", "shadowImage"]
 - !private ["So16NSObjectProtocolP", "sourceType"]
 - !private ["So16NSObjectProtocolP", "spacing"]
 - !private ["So16NSObjectProtocolP", "stackView"]
@@ -1392,6 +1388,7 @@ depends-member:
 - ["7HandsOn21NewPostViewControllerC", "CGRect"]
 - !private ["7HandsOn21NewPostViewControllerC", "Database"]
 - !private ["7HandsOn21NewPostViewControllerC", "DispatchQueue"]
+- !private ["7HandsOn21NewPostViewControllerC", "Int"]
 - ["7HandsOn21NewPostViewControllerC", "String"]
 - !private ["7HandsOn21NewPostViewControllerC", "UIBlurEffect"]
 - ["7HandsOn21NewPostViewControllerC", "UIButton"]
@@ -1469,6 +1466,7 @@ depends-member:
 - ["7HandsOn21NewPostViewControllerC", "viewForZooming"]
 - ["7HandsOn21NewPostViewControllerC", "viewForZoomingInScrollView"]
 - ["7HandsOn21NewPostViewControllerC", "viewWillAppear"]
+- !private ["s7NumericP", "init"]
 - !private ["So9OS_objectC", "asyncAfter"]
 - !private ["So9OS_objectC", "main"]
 - ["s9OptionSetP", "normal"]
@@ -1489,6 +1487,9 @@ depends-member:
 - !private ["s8SequenceP", "subscript"]
 - ["s10SetAlgebraP", "normal"]
 - ["s10SetAlgebraP", "touchUpInside"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s10StrideableP", "init"]
 - ["SS", "init"]
 - ["s14StringProtocolP", "init"]
 - ["s16TextOutputStreamP", "init"]
@@ -1539,7 +1540,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "sendSubview"]
 - !private ["So29UIAccessibilityIdentificationP", "setCustomSpacing"]
 - ["So29UIAccessibilityIdentificationP", "setTitle"]
-- !private ["So29UIAccessibilityIdentificationP", "shadowImage"]
 - !private ["So29UIAccessibilityIdentificationP", "spacing"]
 - ["So29UIAccessibilityIdentificationP", "text"]
 - ["So29UIAccessibilityIdentificationP", "textColor"]
@@ -1577,7 +1577,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "sendSubview"]
 - !private ["So12UIAppearanceP", "setCustomSpacing"]
 - ["So12UIAppearanceP", "setTitle"]
-- !private ["So12UIAppearanceP", "shadowImage"]
 - !private ["So12UIAppearanceP", "spacing"]
 - ["So12UIAppearanceP", "text"]
 - ["So12UIAppearanceP", "textColor"]
@@ -1588,6 +1587,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "CGRect"]
 - !private ["So21UIAppearanceContainerP", "Database"]
 - !private ["So21UIAppearanceContainerP", "DispatchQueue"]
+- !private ["So21UIAppearanceContainerP", "Int"]
 - !private ["So21UIAppearanceContainerP", "UIBlurEffect"]
 - ["So21UIAppearanceContainerP", "UIButton"]
 - ["So21UIAppearanceContainerP", "UIColor"]
@@ -1647,7 +1647,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "leftViewMode"]
 - !private ["So21UIAppearanceContainerP", "locationLabel"]
 - !private ["So21UIAppearanceContainerP", "locationTextField"]
-- !private ["So21UIAppearanceContainerP", "navigationBar"]
 - ["So21UIAppearanceContainerP", "navigationController"]
 - ["So21UIAppearanceContainerP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So21UIAppearanceContainerP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1680,7 +1679,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "setCustomSpacing"]
 - ["So21UIAppearanceContainerP", "setTitle"]
 - !private ["So21UIAppearanceContainerP", "setUpLayout"]
-- !private ["So21UIAppearanceContainerP", "shadowImage"]
 - !private ["So21UIAppearanceContainerP", "sourceType"]
 - !private ["So21UIAppearanceContainerP", "spacing"]
 - !private ["So21UIAppearanceContainerP", "stackView"]
@@ -1703,7 +1701,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
 - !private ["So21UIAppearanceContainerP", "widthAnchor"]
-- !private ["So16UIBarPositioningP", "shadowImage"]
 - !private ["So12UIBlurEffectC", "init"]
 - !private ["SC17UIBlurEffectStyleO", "dark"]
 - ["So8UIButtonC", "addTarget"]
@@ -1725,6 +1722,7 @@ depends-member:
 - ["So18UIContentContainerP", "CGRect"]
 - !private ["So18UIContentContainerP", "Database"]
 - !private ["So18UIContentContainerP", "DispatchQueue"]
+- !private ["So18UIContentContainerP", "Int"]
 - !private ["So18UIContentContainerP", "UIBlurEffect"]
 - ["So18UIContentContainerP", "UIButton"]
 - ["So18UIContentContainerP", "UIColor"]
@@ -1763,7 +1761,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "locationLabel"]
 - !private ["So18UIContentContainerP", "locationTextField"]
-- !private ["So18UIContentContainerP", "navigationBar"]
 - ["So18UIContentContainerP", "navigationController"]
 - ["So18UIContentContainerP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So18UIContentContainerP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1875,7 +1872,6 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "sendSubview"]
 - !private ["So17UICoordinateSpaceP", "setCustomSpacing"]
 - ["So17UICoordinateSpaceP", "setTitle"]
-- !private ["So17UICoordinateSpaceP", "shadowImage"]
 - !private ["So17UICoordinateSpaceP", "spacing"]
 - ["So17UICoordinateSpaceP", "text"]
 - ["So17UICoordinateSpaceP", "textColor"]
@@ -1913,7 +1909,6 @@ depends-member:
 - !private ["So13UIDynamicItemP", "sendSubview"]
 - !private ["So13UIDynamicItemP", "setCustomSpacing"]
 - ["So13UIDynamicItemP", "setTitle"]
-- !private ["So13UIDynamicItemP", "shadowImage"]
 - !private ["So13UIDynamicItemP", "spacing"]
 - ["So13UIDynamicItemP", "text"]
 - ["So13UIDynamicItemP", "textColor"]
@@ -1924,6 +1919,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "CGRect"]
 - !private ["So18UIFocusEnvironmentP", "Database"]
 - !private ["So18UIFocusEnvironmentP", "DispatchQueue"]
+- !private ["So18UIFocusEnvironmentP", "Int"]
 - !private ["So18UIFocusEnvironmentP", "UIBlurEffect"]
 - ["So18UIFocusEnvironmentP", "UIButton"]
 - ["So18UIFocusEnvironmentP", "UIColor"]
@@ -1983,7 +1979,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "leftViewMode"]
 - !private ["So18UIFocusEnvironmentP", "locationLabel"]
 - !private ["So18UIFocusEnvironmentP", "locationTextField"]
-- !private ["So18UIFocusEnvironmentP", "navigationBar"]
 - ["So18UIFocusEnvironmentP", "navigationController"]
 - ["So18UIFocusEnvironmentP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So18UIFocusEnvironmentP", "navigationControllerSupportedInterfaceOrientations"]
@@ -2016,7 +2011,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "setCustomSpacing"]
 - ["So18UIFocusEnvironmentP", "setTitle"]
 - !private ["So18UIFocusEnvironmentP", "setUpLayout"]
-- !private ["So18UIFocusEnvironmentP", "shadowImage"]
 - !private ["So18UIFocusEnvironmentP", "sourceType"]
 - !private ["So18UIFocusEnvironmentP", "spacing"]
 - !private ["So18UIFocusEnvironmentP", "stackView"]
@@ -2069,7 +2063,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "sendSubview"]
 - !private ["So11UIFocusItemP", "setCustomSpacing"]
 - ["So11UIFocusItemP", "setTitle"]
-- !private ["So11UIFocusItemP", "shadowImage"]
 - !private ["So11UIFocusItemP", "spacing"]
 - ["So11UIFocusItemP", "text"]
 - ["So11UIFocusItemP", "textColor"]
@@ -2087,6 +2080,7 @@ depends-member:
 - ["So31UIImagePickerControllerDelegateP", "CGRect"]
 - !private ["So31UIImagePickerControllerDelegateP", "Database"]
 - !private ["So31UIImagePickerControllerDelegateP", "DispatchQueue"]
+- !private ["So31UIImagePickerControllerDelegateP", "Int"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIBlurEffect"]
 - ["So31UIImagePickerControllerDelegateP", "UIButton"]
 - ["So31UIImagePickerControllerDelegateP", "UIColor"]
@@ -2202,15 +2196,14 @@ depends-member:
 - !private ["SC22UILayoutConstraintAxisO", "vertical"]
 - !private ["So13UILayoutGuideC", "bottomAnchor"]
 - !private ["So13UILayoutGuideC", "topAnchor"]
-- !private ["So15UINavigationBarC", "shadowImage"]
 - !private ["So22UINavigationControllerC", "allowsEditing"]
 - !private ["So22UINavigationControllerC", "delegate"]
 - !private ["So22UINavigationControllerC", "init"]
-- !private ["So22UINavigationControllerC", "navigationBar"]
 - !private ["So22UINavigationControllerC", "sourceType"]
 - ["So30UINavigationControllerDelegateP", "CGRect"]
 - !private ["So30UINavigationControllerDelegateP", "Database"]
 - !private ["So30UINavigationControllerDelegateP", "DispatchQueue"]
+- !private ["So30UINavigationControllerDelegateP", "Int"]
 - !private ["So30UINavigationControllerDelegateP", "UIBlurEffect"]
 - ["So30UINavigationControllerDelegateP", "UIButton"]
 - ["So30UINavigationControllerDelegateP", "UIColor"]
@@ -2286,6 +2279,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "CGRect"]
 - !private ["So30UIPasteConfigurationSupportingP", "Database"]
 - !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
+- !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIBlurEffect"]
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
 - ["So30UIPasteConfigurationSupportingP", "UIColor"]
@@ -2345,7 +2339,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "leftViewMode"]
 - !private ["So30UIPasteConfigurationSupportingP", "locationLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "locationTextField"]
-- !private ["So30UIPasteConfigurationSupportingP", "navigationBar"]
 - ["So30UIPasteConfigurationSupportingP", "navigationController"]
 - ["So30UIPasteConfigurationSupportingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So30UIPasteConfigurationSupportingP", "navigationControllerSupportedInterfaceOrientations"]
@@ -2378,7 +2371,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "setCustomSpacing"]
 - ["So30UIPasteConfigurationSupportingP", "setTitle"]
 - !private ["So30UIPasteConfigurationSupportingP", "setUpLayout"]
-- !private ["So30UIPasteConfigurationSupportingP", "shadowImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "sourceType"]
 - !private ["So30UIPasteConfigurationSupportingP", "spacing"]
 - !private ["So30UIPasteConfigurationSupportingP", "stackView"]
@@ -2406,6 +2398,7 @@ depends-member:
 - ["So11UIResponderC", "CGRect"]
 - !private ["So11UIResponderC", "Database"]
 - !private ["So11UIResponderC", "DispatchQueue"]
+- !private ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "UIBlurEffect"]
 - ["So11UIResponderC", "UIButton"]
@@ -2466,7 +2459,6 @@ depends-member:
 - ["So11UIResponderC", "leftViewMode"]
 - ["So11UIResponderC", "locationLabel"]
 - ["So11UIResponderC", "locationTextField"]
-- !private ["So11UIResponderC", "navigationBar"]
 - ["So11UIResponderC", "navigationController"]
 - ["So11UIResponderC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So11UIResponderC", "navigationControllerSupportedInterfaceOrientations"]
@@ -2499,7 +2491,6 @@ depends-member:
 - !private ["So11UIResponderC", "setCustomSpacing"]
 - ["So11UIResponderC", "setTitle"]
 - ["So11UIResponderC", "setUpLayout"]
-- !private ["So11UIResponderC", "shadowImage"]
 - !private ["So11UIResponderC", "sourceType"]
 - !private ["So11UIResponderC", "spacing"]
 - ["So11UIResponderC", "stackView"]
@@ -2525,6 +2516,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "CGRect"]
 - !private ["So30UIResponderStandardEditActionsP", "Database"]
 - !private ["So30UIResponderStandardEditActionsP", "DispatchQueue"]
+- !private ["So30UIResponderStandardEditActionsP", "Int"]
 - !private ["So30UIResponderStandardEditActionsP", "UIBlurEffect"]
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
 - ["So30UIResponderStandardEditActionsP", "UIColor"]
@@ -2584,7 +2576,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "leftViewMode"]
 - !private ["So30UIResponderStandardEditActionsP", "locationLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "locationTextField"]
-- !private ["So30UIResponderStandardEditActionsP", "navigationBar"]
 - ["So30UIResponderStandardEditActionsP", "navigationController"]
 - ["So30UIResponderStandardEditActionsP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So30UIResponderStandardEditActionsP", "navigationControllerSupportedInterfaceOrientations"]
@@ -2617,7 +2608,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "setCustomSpacing"]
 - ["So30UIResponderStandardEditActionsP", "setTitle"]
 - !private ["So30UIResponderStandardEditActionsP", "setUpLayout"]
-- !private ["So30UIResponderStandardEditActionsP", "shadowImage"]
 - !private ["So30UIResponderStandardEditActionsP", "sourceType"]
 - !private ["So30UIResponderStandardEditActionsP", "spacing"]
 - !private ["So30UIResponderStandardEditActionsP", "stackView"]
@@ -2645,11 +2635,13 @@ depends-member:
 - !private ["So12UIScrollViewC", "heightAnchor"]
 - ["So12UIScrollViewC", "init"]
 - ["So12UIScrollViewC", "layer"]
+- !private ["So12UIScrollViewC", "text"]
 - ["So12UIScrollViewC", "textColor"]
 - ["So12UIScrollViewC", "translatesAutoresizingMaskIntoConstraints"]
 - ["So20UIScrollViewDelegateP", "CGRect"]
 - !private ["So20UIScrollViewDelegateP", "Database"]
 - !private ["So20UIScrollViewDelegateP", "DispatchQueue"]
+- !private ["So20UIScrollViewDelegateP", "Int"]
 - !private ["So20UIScrollViewDelegateP", "UIBlurEffect"]
 - ["So20UIScrollViewDelegateP", "UIButton"]
 - ["So20UIScrollViewDelegateP", "UIColor"]
@@ -2746,6 +2738,7 @@ depends-member:
 - ["So16UIStateRestoringP", "CGRect"]
 - !private ["So16UIStateRestoringP", "Database"]
 - !private ["So16UIStateRestoringP", "DispatchQueue"]
+- !private ["So16UIStateRestoringP", "Int"]
 - !private ["So16UIStateRestoringP", "UIBlurEffect"]
 - ["So16UIStateRestoringP", "UIButton"]
 - ["So16UIStateRestoringP", "UIColor"]
@@ -2784,7 +2777,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "locationLabel"]
 - !private ["So16UIStateRestoringP", "locationTextField"]
-- !private ["So16UIStateRestoringP", "navigationBar"]
 - ["So16UIStateRestoringP", "navigationController"]
 - ["So16UIStateRestoringP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So16UIStateRestoringP", "navigationControllerSupportedInterfaceOrientations"]
@@ -2933,11 +2925,13 @@ depends-member:
 - !private ["So10UITextViewC", "heightAnchor"]
 - ["So10UITextViewC", "init"]
 - ["So10UITextViewC", "layer"]
+- !private ["So10UITextViewC", "text"]
 - ["So10UITextViewC", "textColor"]
 - ["So10UITextViewC", "translatesAutoresizingMaskIntoConstraints"]
 - ["So18UITextViewDelegateP", "CGRect"]
 - !private ["So18UITextViewDelegateP", "Database"]
 - !private ["So18UITextViewDelegateP", "DispatchQueue"]
+- !private ["So18UITextViewDelegateP", "Int"]
 - !private ["So18UITextViewDelegateP", "UIBlurEffect"]
 - ["So18UITextViewDelegateP", "UIButton"]
 - ["So18UITextViewDelegateP", "UIColor"]
@@ -3013,6 +3007,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "CGRect"]
 - !private ["So18UITraitEnvironmentP", "Database"]
 - !private ["So18UITraitEnvironmentP", "DispatchQueue"]
+- !private ["So18UITraitEnvironmentP", "Int"]
 - !private ["So18UITraitEnvironmentP", "UIBlurEffect"]
 - ["So18UITraitEnvironmentP", "UIButton"]
 - ["So18UITraitEnvironmentP", "UIColor"]
@@ -3072,7 +3067,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "leftViewMode"]
 - !private ["So18UITraitEnvironmentP", "locationLabel"]
 - !private ["So18UITraitEnvironmentP", "locationTextField"]
-- !private ["So18UITraitEnvironmentP", "navigationBar"]
 - ["So18UITraitEnvironmentP", "navigationController"]
 - ["So18UITraitEnvironmentP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So18UITraitEnvironmentP", "navigationControllerSupportedInterfaceOrientations"]
@@ -3105,7 +3099,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "setCustomSpacing"]
 - ["So18UITraitEnvironmentP", "setTitle"]
 - !private ["So18UITraitEnvironmentP", "setUpLayout"]
-- !private ["So18UITraitEnvironmentP", "shadowImage"]
 - !private ["So18UITraitEnvironmentP", "sourceType"]
 - !private ["So18UITraitEnvironmentP", "spacing"]
 - !private ["So18UITraitEnvironmentP", "stackView"]
@@ -3158,7 +3151,6 @@ depends-member:
 - !private ["So6UIViewC", "sendSubview"]
 - !private ["So6UIViewC", "setCustomSpacing"]
 - ["So6UIViewC", "setTitle"]
-- !private ["So6UIViewC", "shadowImage"]
 - !private ["So6UIViewC", "spacing"]
 - ["So6UIViewC", "text"]
 - ["So6UIViewC", "textColor"]
@@ -3172,6 +3164,7 @@ depends-member:
 - ["So16UIViewControllerC", "CGRect"]
 - !private ["So16UIViewControllerC", "Database"]
 - !private ["So16UIViewControllerC", "DispatchQueue"]
+- !private ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "UIBlurEffect"]
 - ["So16UIViewControllerC", "UIButton"]
@@ -3212,7 +3205,6 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "locationLabel"]
 - ["So16UIViewControllerC", "locationTextField"]
-- !private ["So16UIViewControllerC", "navigationBar"]
 - ["So16UIViewControllerC", "navigationController"]
 - ["So16UIViewControllerC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So16UIViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
@@ -3264,6 +3256,7 @@ depends-member:
 - !private ["7HandsOn11UserServiceC", "currentUserProfile"]
 - ["So6UIFontC6WeightV", "regular"]
 - ["So6UIFontC6WeightV", "semibold"]
+- !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "addTarget"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "alpha"]
@@ -3294,7 +3287,6 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "sendSubview"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setCustomSpacing"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "setTitle"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "shadowImage"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "spacing"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
@@ -3304,6 +3296,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "widthAnchor"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
@@ -3319,6 +3312,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBlurEffect"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
@@ -3394,7 +3388,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locationLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locationTextField"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBar"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerSupportedInterfaceOrientations"]
@@ -3429,7 +3422,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "setTitle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setUpLayout"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sourceType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "spacing"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "stackView"]
@@ -3467,6 +3459,7 @@ depends-member:
 - ["5UIKit01_A23NumericRawRepresentableP", "semibold"]
 depends-nominal:
 - "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
 - !private "Sb"
 - "So7CALayerC"
 - "So15CALayerDelegateP"
@@ -3493,9 +3486,12 @@ depends-nominal:
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
 - "s8HashableP"
+- !private "Si"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
 - "So8NSCodingP"
@@ -3512,6 +3508,7 @@ depends-nominal:
 - "So16NSObjectProtocolP"
 - "So14NSSecureCodingP"
 - "7HandsOn21NewPostViewControllerC"
+- !private "s7NumericP"
 - !private "So9OS_objectC"
 - "s9OptionSetP"
 - "s26RangeReplaceableCollectionP"
@@ -3519,6 +3516,9 @@ depends-nominal:
 - !private "10Foundation20ReferenceConvertibleP"
 - "s8SequenceP"
 - "s10SetAlgebraP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
 - "SS"
 - "s14StringProtocolP"
 - "s16TextOutputStreamP"
@@ -3527,7 +3527,6 @@ depends-nominal:
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
-- !private "So16UIBarPositioningP"
 - !private "So12UIBlurEffectC"
 - !private "SC17UIBlurEffectStyleO"
 - "So8UIButtonC"
@@ -3552,7 +3551,6 @@ depends-nominal:
 - "So7UILabelC"
 - !private "SC22UILayoutConstraintAxisO"
 - !private "So13UILayoutGuideC"
-- !private "So15UINavigationBarC"
 - !private "So22UINavigationControllerC"
 - "So30UINavigationControllerDelegateP"
 - "So30UIPasteConfigurationSupportingP"
@@ -3583,9 +3581,11 @@ depends-nominal:
 - !private "7HandsOn11UserProfileC"
 - !private "7HandsOn11UserServiceC"
 - "So6UIFontC6WeightV"
+- !private "s18_BitwiseOperationsP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
