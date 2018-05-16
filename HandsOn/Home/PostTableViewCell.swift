@@ -15,9 +15,9 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var postTextLabel: UILabel!
     @IBOutlet weak var moreButton: UIButton!
     @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var durationLabel: UILabel!
+//    @IBOutlet weak var descriptionLabel: UILabel!
+//    @IBOutlet weak var locationLabel: UILabel!
+//    @IBOutlet weak var durationLabel: UILabel!
     
     
     override func awakeFromNib() {
@@ -39,13 +39,12 @@ class PostTableViewCell: UITableViewCell {
             self.profileImageView.image = image
         }
         
-        
         usernameLabel.text = post.author.username
         postTextLabel.text = post.text
-        priceLabel.text = String(post.price)
-        descriptionLabel.text = post.description
-        locationLabel.text = post.location
-        durationLabel.text = String(post.duration)
+//        priceLabel.text = String(post.price)
+//        descriptionLabel.text = post.description
+//        locationLabel.text = post.location
+//        durationLabel.text = String(post.duration)
     }
     
 }

@@ -384,11 +384,11 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
                 "photoURL": userProfile.photoURL.absoluteString
             ],
             "text": titleTextField.text!,
-            "timestamp": [".sv":"timestamp"],
-            "price" : priceTextField.text!,
-            "location": locationTextField.text!,
-            "duration": durationTextField.text!,
-            "description": descTextField.text!
+            "timestamp": [".sv":"timestamp"]
+//            "price" : priceTextField.text!,
+//            "location": locationTextField.text!,
+//            "duration": durationTextField.text!,
+//            "description": descTextField.text!
             ] as [String:Any]
         
         postRef.setValue(postObject, withCompletionBlock: { error, ref in
@@ -396,6 +396,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
                 self.dismiss(animated: true, completion: nil)
             } else {
                 // Handle the error
+                print("Error saving post")
             }
         })
     }

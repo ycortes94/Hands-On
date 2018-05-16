@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let authListener = Auth.auth().addStateDidChangeListener { auth, user in
             
+            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             
             if user != nil {

@@ -379,7 +379,9 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
 //            self.isValidEmail(email: email)
 //            self.isValidPassword(password: pass)
             
-            if error == nil && user != nil && self.isValidEmail(email: email) != true && self.isValidPassword(password: pass) != true{
+            if error == nil && user != nil
+//                && self.isValidEmail(email: email) != true && self.isValidPassword(password: pass) != true
+            {
                 print("User created!")
                 
             
@@ -401,6 +403,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                                         self.dismiss(animated: true, completion: nil)
                                     } else {
                                         self.resetForm()
+                                        print("Error saving profile")
                                     }
                                 }
                                 

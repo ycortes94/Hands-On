@@ -9,23 +9,17 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "Double"
-- "Int"
 - "Post"
 - "String"
 - "UserProfile"
 depends-member:
 - ["7HandsOn4PostC", "Double"]
-- ["7HandsOn4PostC", "Int"]
 - ["7HandsOn4PostC", "String"]
 - ["7HandsOn4PostC", "UserProfile"]
 - ["7HandsOn4PostC", "author"]
 - ["7HandsOn4PostC", "deinit"]
-- ["7HandsOn4PostC", "description"]
-- ["7HandsOn4PostC", "duration"]
 - ["7HandsOn4PostC", "id"]
 - ["7HandsOn4PostC", "init"]
-- ["7HandsOn4PostC", "location"]
-- ["7HandsOn4PostC", "price"]
 - ["7HandsOn4PostC", "text"]
 - ["7HandsOn4PostC", "timestamp"]
 depends-nominal:
@@ -141,4 +135,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "69c653b24ba19ab29e727a3c38220ba8"
+interface-hash: "ba086c606c620f4e1b33d0028fb7268e"
