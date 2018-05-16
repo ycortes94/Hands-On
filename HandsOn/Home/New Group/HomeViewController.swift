@@ -83,7 +83,7 @@ class HomeViewController:UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "posttableviewcell", for: indexPath) as! PostTableViewCell
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        //cell.selectionStyle = UITableViewCellSelectionStyle.none
         cell.contentView.backgroundColor = UIColor.clear
         cell.backgroundColor = UIColor(red: 0.659, green: 0.659, blue: 0.659, alpha: 0.70)
         
@@ -92,14 +92,20 @@ class HomeViewController:UITableViewController {
         whiteRoundedView.layer.backgroundColor = UIColor(red: 0.972, green: 0.973, blue: 0.972, alpha: 1.0).cgColor
         whiteRoundedView.layer.masksToBounds = false
         whiteRoundedView.layer.cornerRadius = 8
-        //whiteRoundedView.layer.shadowOffset = CGSize(width: -1, height: 1)
-        //whiteRoundedView.layer.shadowOpacity = 0.2
         
         cell.contentView.addSubview(whiteRoundedView)
         cell.contentView.sendSubview(toBack: whiteRoundedView)
         
+        
         cell.set(post: posts[indexPath.row])
         cell.layoutSubviews()
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let taskDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TaskDetailsViewController") as! TaskDetailsViewController
+        if let navigator = navigationController{
+            navigator.pushViewController(taskDetailsVC, animated: true)
+        }
     }
 }

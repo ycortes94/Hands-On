@@ -33,7 +33,6 @@
 		FFE861E6207630E600C5B8DD /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE861E4207630E500C5B8DD /* UserService.swift */; };
 		FFE861F3207630F300C5B8DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE861EF207630F300C5B8DD /* HomeViewController.swift */; };
 		FFE861F4207630F300C5B8DD /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE861F0207630F300C5B8DD /* PostTableViewCell.swift */; };
-		FFE861F5207630F300C5B8DD /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFE861F1207630F300C5B8DD /* PostTableViewCell.xib */; };
 		FFE861F6207630F300C5B8DD /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE861F2207630F300C5B8DD /* NewPostViewController.swift */; };
 		FFE861F8207630FA00C5B8DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE861F7207630FA00C5B8DD /* Main.storyboard */; };
 		FFE861FA2076310300C5B8DD /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE861F92076310300C5B8DD /* RoundedWhiteButton.swift */; };
@@ -77,7 +76,6 @@
 		FFE861E4207630E500C5B8DD /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		FFE861EF207630F300C5B8DD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FFE861F0207630F300C5B8DD /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
-		FFE861F1207630F300C5B8DD /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		FFE861F2207630F300C5B8DD /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		FFE861F7207630FA00C5B8DD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FFE861F92076310300C5B8DD /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 			children = (
 				FFE861EF207630F300C5B8DD /* HomeViewController.swift */,
 				FFE861F0207630F300C5B8DD /* PostTableViewCell.swift */,
-				FFE861F1207630F300C5B8DD /* PostTableViewCell.xib */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -320,7 +317,6 @@
 				FFE862182076359300C5B8DD /* GoogleService-Info.plist in Resources */,
 				FFE862102076334300C5B8DD /* LaunchScreen.storyboard in Resources */,
 				FF34F3FD20AC3B6800A55596 /* MyTaskPostTableViewCell.xib in Resources */,
-				FFE861F5207630F300C5B8DD /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

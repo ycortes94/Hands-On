@@ -45,6 +45,7 @@ class PostTableViewCell: UITableViewCell {
     var bookmarkButton : UIButton = {
         var button = UIButton()
         button.setImage(UIImage(named: "bookmark"), for: .normal)
+        button.addTarget(self, action: #selector(handleViewDetailsButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
