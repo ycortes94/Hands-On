@@ -48,4 +48,14 @@ class PostTableViewCell: UITableViewCell {
         durationLabel.text = String(post.duration)
     }
     
+    func setMyTasks(post:MyTaskPost) {
+        ImageService.getImage(withURL: post.author.photoURL) { image in
+            self.profileImageView.image = image
+        }
+        
+        usernameLabel.text = post.author.username
+        postTextLabel.text = post.text
+        subtitleLabel.text = String(post.timestamp)
+        priceLabel.text = String(post.price)
+    }
 }

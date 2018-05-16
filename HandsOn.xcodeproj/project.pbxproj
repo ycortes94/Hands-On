@@ -19,6 +19,10 @@
 		D083594620A3C47200A1B7C8 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083594520A3C47200A1B7C8 /* MoreViewController.swift */; };
 		D083594820A3D92F00A1B7C8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */; };
 		E285F6383885579EF6B6206C /* Pods_HandsOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47116C8283DB21B4DAB8E8B4 /* Pods_HandsOn.framework */; };
+		FF34F3F120AC313600A55596 /* MyTaskPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF34F3F020AC313600A55596 /* MyTaskPost.swift */; };
+		FF34F3FC20AC3B6800A55596 /* MyTaskPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF34F3FA20AC3B6800A55596 /* MyTaskPostTableViewCell.swift */; };
+		FF34F3FD20AC3B6800A55596 /* MyTaskPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF34F3FB20AC3B6800A55596 /* MyTaskPostTableViewCell.xib */; };
+		FF34F3FF20AC560F00A55596 /* MyUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF34F3FE20AC560F00A55596 /* MyUserService.swift */; };
 		FF974A8F20AA3AD90073EB11 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF974A8E20AA3AD90073EB11 /* LogoutViewController.swift */; };
 		FFE861A7207618E600C5B8DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE861A6207618E600C5B8DD /* AppDelegate.swift */; };
 		FFE861AF207618E600C5B8DD /* HandsOn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFE861AD207618E600C5B8DD /* HandsOn.xcdatamodeld */; };
@@ -57,6 +61,10 @@
 		D083594520A3C47200A1B7C8 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DBB7B8D3C6922A35ECA5EB88 /* Pods-HandsOn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsOn.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandsOn/Pods-HandsOn.release.xcconfig"; sourceTree = "<group>"; };
+		FF34F3F020AC313600A55596 /* MyTaskPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaskPost.swift; sourceTree = "<group>"; };
+		FF34F3FA20AC3B6800A55596 /* MyTaskPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaskPostTableViewCell.swift; sourceTree = "<group>"; };
+		FF34F3FB20AC3B6800A55596 /* MyTaskPostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTaskPostTableViewCell.xib; sourceTree = "<group>"; };
+		FF34F3FE20AC560F00A55596 /* MyUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUserService.swift; sourceTree = "<group>"; };
 		FF974A8E20AA3AD90073EB11 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		FFE861A3207618E600C5B8DD /* HandsOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandsOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE861A6207618E600C5B8DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +134,8 @@
 				D06449912094ECBB005B8BF2 /* TasksViewController.swift */,
 				D059FD5420AB74C200F4C849 /* TasksCustomTableViewCell.swift */,
 				D059DC2A20A798B000E8C932 /* TaskDetailsViewController.swift */,
+				FF34F3FA20AC3B6800A55596 /* MyTaskPostTableViewCell.swift */,
+				FF34F3FB20AC3B6800A55596 /* MyTaskPostTableViewCell.xib */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 			children = (
 				FFE861DF207630DF00C5B8DD /* Post.swift */,
 				FFE861E0207630DF00C5B8DD /* UserProfile.swift */,
+				FF34F3F020AC313600A55596 /* MyTaskPost.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +216,7 @@
 			children = (
 				FFE861E3207630E500C5B8DD /* ImageService.swift */,
 				FFE861E4207630E500C5B8DD /* UserService.swift */,
+				FF34F3FE20AC560F00A55596 /* MyUserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -307,6 +319,7 @@
 				FFE861B1207618E600C5B8DD /* Assets.xcassets in Resources */,
 				FFE862182076359300C5B8DD /* GoogleService-Info.plist in Resources */,
 				FFE862102076334300C5B8DD /* LaunchScreen.storyboard in Resources */,
+				FF34F3FD20AC3B6800A55596 /* MyTaskPostTableViewCell.xib in Resources */,
 				FFE861F5207630F300C5B8DD /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,8 +410,10 @@
 				D06449902094D310005B8BF2 /* CustomTabBarController.swift in Sources */,
 				D0557CD320A51DB900E08F6C /* VerificationViewController.swift in Sources */,
 				FFE861F6207630F300C5B8DD /* NewPostViewController.swift in Sources */,
+				FF34F3FC20AC3B6800A55596 /* MyTaskPostTableViewCell.swift in Sources */,
 				FFE861E1207630E000C5B8DD /* Post.swift in Sources */,
 				FFE861E6207630E600C5B8DD /* UserService.swift in Sources */,
+				FF34F3F120AC313600A55596 /* MyTaskPost.swift in Sources */,
 				FFE861AF207618E600C5B8DD /* HandsOn.xcdatamodeld in Sources */,
 				FFE861E5207630E600C5B8DD /* ImageService.swift in Sources */,
 				D059DC2B20A798B000E8C932 /* TaskDetailsViewController.swift in Sources */,
@@ -414,6 +429,7 @@
 				FFE861A7207618E600C5B8DD /* AppDelegate.swift in Sources */,
 				FFE861F4207630F300C5B8DD /* PostTableViewCell.swift in Sources */,
 				FFE8620B207632F000C5B8DD /* LoginViewController.swift in Sources */,
+				FF34F3FF20AC560F00A55596 /* MyUserService.swift in Sources */,
 				FF974A8F20AA3AD90073EB11 /* LogoutViewController.swift in Sources */,
 				FFE861FA2076310300C5B8DD /* RoundedWhiteButton.swift in Sources */,
 				D059FD5520AB74C200F4C849 /* TasksCustomTableViewCell.swift in Sources */,

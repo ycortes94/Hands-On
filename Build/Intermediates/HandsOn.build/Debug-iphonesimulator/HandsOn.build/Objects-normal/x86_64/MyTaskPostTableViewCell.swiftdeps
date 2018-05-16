@@ -1,0 +1,688 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MyTaskPostTableViewCell"
+provides-nominal:
+- "7HandsOn23MyTaskPostTableViewCellC"
+provides-member:
+- ["7HandsOn23MyTaskPostTableViewCellC", ""]
+provides-dynamic-lookup:
+- "awakeFromNib"
+- "mypostTextLabel"
+- "mypriceLabel"
+- "myprofileImageView"
+- "mysubtitleLabel"
+- "myusernameLabel"
+- "setSelected"
+depends-top-level:
+- !private "/"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "ImageService"
+- "MyTaskPost"
+- "MyTaskPostTableViewCell"
+- !private "String"
+- "UIImageView"
+- "UILabel"
+- "UITableViewCell"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["So7CALayerC", "cornerRadius"]
+- !private ["So15CALayerDelegateP", "ImageService"]
+- !private ["So15CALayerDelegateP", "String"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "awakeFromNib"]
+- !private ["So15CALayerDelegateP", "bounds"]
+- !private ["So15CALayerDelegateP", "clipsToBounds"]
+- !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "layer"]
+- !private ["So15CALayerDelegateP", "mypostTextLabel"]
+- !private ["So15CALayerDelegateP", "mypriceLabel"]
+- !private ["So15CALayerDelegateP", "myprofileImageView"]
+- !private ["So15CALayerDelegateP", "mysubtitleLabel"]
+- !private ["So15CALayerDelegateP", "myusernameLabel"]
+- !private ["So15CALayerDelegateP", "setSelected"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
+- !private ["SC6CGRectV", "height"]
+- !private ["s7CVarArgP", "ImageService"]
+- !private ["s7CVarArgP", "String"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "awakeFromNib"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "clipsToBounds"]
+- !private ["s7CVarArgP", "cornerRadius"]
+- !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "mypostTextLabel"]
+- !private ["s7CVarArgP", "mypriceLabel"]
+- !private ["s7CVarArgP", "myprofileImageView"]
+- !private ["s7CVarArgP", "mysubtitleLabel"]
+- !private ["s7CVarArgP", "myusernameLabel"]
+- !private ["s7CVarArgP", "setSelected"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "ImageService"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "clipsToBounds"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "mypostTextLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "mypriceLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "myprofileImageView"]
+- !private ["s28CustomDebugStringConvertibleP", "mysubtitleLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "myusernameLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "setSelected"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s29CustomPlaygroundQuickLookableP", "height"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "ImageService"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "awakeFromNib"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "clipsToBounds"]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
+- !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "mypostTextLabel"]
+- !private ["s23CustomStringConvertibleP", "mypriceLabel"]
+- !private ["s23CustomStringConvertibleP", "myprofileImageView"]
+- !private ["s23CustomStringConvertibleP", "mysubtitleLabel"]
+- !private ["s23CustomStringConvertibleP", "myusernameLabel"]
+- !private ["s23CustomStringConvertibleP", "setSelected"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s9DecodableP", "height"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "height"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "ImageService"]
+- !private ["s9EquatableP", "String"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "awakeFromNib"]
+- !private ["s9EquatableP", "bounds"]
+- !private ["s9EquatableP", "clipsToBounds"]
+- !private ["s9EquatableP", "cornerRadius"]
+- !private ["s9EquatableP", "height"]
+- !private ["s9EquatableP", "image"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "layer"]
+- !private ["s9EquatableP", "mypostTextLabel"]
+- !private ["s9EquatableP", "mypriceLabel"]
+- !private ["s9EquatableP", "myprofileImageView"]
+- !private ["s9EquatableP", "mysubtitleLabel"]
+- !private ["s9EquatableP", "myusernameLabel"]
+- !private ["s9EquatableP", "setSelected"]
+- !private ["s9EquatableP", "text"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "ImageService"]
+- !private ["s8HashableP", "String"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "awakeFromNib"]
+- !private ["s8HashableP", "bounds"]
+- !private ["s8HashableP", "clipsToBounds"]
+- !private ["s8HashableP", "cornerRadius"]
+- !private ["s8HashableP", "image"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "layer"]
+- !private ["s8HashableP", "mypostTextLabel"]
+- !private ["s8HashableP", "mypriceLabel"]
+- !private ["s8HashableP", "myprofileImageView"]
+- !private ["s8HashableP", "mysubtitleLabel"]
+- !private ["s8HashableP", "myusernameLabel"]
+- !private ["s8HashableP", "setSelected"]
+- !private ["s8HashableP", "text"]
+- !private ["7HandsOn12ImageServiceC", "getImage"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["7HandsOn10MyTaskPostC", "author"]
+- !private ["7HandsOn10MyTaskPostC", "price"]
+- !private ["7HandsOn10MyTaskPostC", "text"]
+- !private ["7HandsOn10MyTaskPostC", "timestamp"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "Bool"]
+- !private ["7HandsOn23MyTaskPostTableViewCellC", "ImageService"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "MyTaskPost"]
+- !private ["7HandsOn23MyTaskPostTableViewCellC", "String"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "UIImageView"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "UILabel"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "awakeFromNib"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "deinit"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "init"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "mypostTextLabel"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "mypriceLabel"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "myprofileImageView"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "mysubtitleLabel"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "myusernameLabel"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "setMyTasks"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "setSelected"]
+- !private ["So8NSCodingP", "ImageService"]
+- !private ["So8NSCodingP", "String"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "awakeFromNib"]
+- !private ["So8NSCodingP", "bounds"]
+- !private ["So8NSCodingP", "clipsToBounds"]
+- !private ["So8NSCodingP", "cornerRadius"]
+- !private ["So8NSCodingP", "image"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "mypostTextLabel"]
+- !private ["So8NSCodingP", "mypriceLabel"]
+- !private ["So8NSCodingP", "myprofileImageView"]
+- !private ["So8NSCodingP", "mysubtitleLabel"]
+- !private ["So8NSCodingP", "myusernameLabel"]
+- !private ["So8NSCodingP", "setSelected"]
+- !private ["So8NSCodingP", "text"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "ImageService"]
+- ["So8NSObjectC", "MyTaskPost"]
+- !private ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "awakeFromNib"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "clipsToBounds"]
+- !private ["So8NSObjectC", "cornerRadius"]
+- !private ["So8NSObjectC", "image"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "layer"]
+- ["So8NSObjectC", "mypostTextLabel"]
+- ["So8NSObjectC", "mypriceLabel"]
+- ["So8NSObjectC", "myprofileImageView"]
+- ["So8NSObjectC", "mysubtitleLabel"]
+- ["So8NSObjectC", "myusernameLabel"]
+- ["So8NSObjectC", "setMyTasks"]
+- ["So8NSObjectC", "setSelected"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So16NSObjectProtocolP", "ImageService"]
+- !private ["So16NSObjectProtocolP", "String"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "awakeFromNib"]
+- !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["So16NSObjectProtocolP", "clipsToBounds"]
+- !private ["So16NSObjectProtocolP", "cornerRadius"]
+- !private ["So16NSObjectProtocolP", "image"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "layer"]
+- !private ["So16NSObjectProtocolP", "mypostTextLabel"]
+- !private ["So16NSObjectProtocolP", "mypriceLabel"]
+- !private ["So16NSObjectProtocolP", "myprofileImageView"]
+- !private ["So16NSObjectProtocolP", "mysubtitleLabel"]
+- !private ["So16NSObjectProtocolP", "myusernameLabel"]
+- !private ["So16NSObjectProtocolP", "setSelected"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "bounds"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "clipsToBounds"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "ImageService"]
+- !private ["So29UIAccessibilityIdentificationP", "String"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
+- !private ["So29UIAccessibilityIdentificationP", "bounds"]
+- !private ["So29UIAccessibilityIdentificationP", "clipsToBounds"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "mypostTextLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "mypriceLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "myprofileImageView"]
+- !private ["So29UIAccessibilityIdentificationP", "mysubtitleLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "myusernameLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "setSelected"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "ImageService"]
+- !private ["So12UIAppearanceP", "String"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "awakeFromNib"]
+- !private ["So12UIAppearanceP", "bounds"]
+- !private ["So12UIAppearanceP", "clipsToBounds"]
+- !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "layer"]
+- !private ["So12UIAppearanceP", "mypostTextLabel"]
+- !private ["So12UIAppearanceP", "mypriceLabel"]
+- !private ["So12UIAppearanceP", "myprofileImageView"]
+- !private ["So12UIAppearanceP", "mysubtitleLabel"]
+- !private ["So12UIAppearanceP", "myusernameLabel"]
+- !private ["So12UIAppearanceP", "setSelected"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "ImageService"]
+- !private ["So21UIAppearanceContainerP", "String"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "awakeFromNib"]
+- !private ["So21UIAppearanceContainerP", "bounds"]
+- !private ["So21UIAppearanceContainerP", "clipsToBounds"]
+- !private ["So21UIAppearanceContainerP", "image"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "mypostTextLabel"]
+- !private ["So21UIAppearanceContainerP", "mypriceLabel"]
+- !private ["So21UIAppearanceContainerP", "myprofileImageView"]
+- !private ["So21UIAppearanceContainerP", "mysubtitleLabel"]
+- !private ["So21UIAppearanceContainerP", "myusernameLabel"]
+- !private ["So21UIAppearanceContainerP", "setSelected"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "ImageService"]
+- !private ["So17UICoordinateSpaceP", "String"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "awakeFromNib"]
+- !private ["So17UICoordinateSpaceP", "bounds"]
+- !private ["So17UICoordinateSpaceP", "clipsToBounds"]
+- !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- !private ["So17UICoordinateSpaceP", "mypostTextLabel"]
+- !private ["So17UICoordinateSpaceP", "mypriceLabel"]
+- !private ["So17UICoordinateSpaceP", "myprofileImageView"]
+- !private ["So17UICoordinateSpaceP", "mysubtitleLabel"]
+- !private ["So17UICoordinateSpaceP", "myusernameLabel"]
+- !private ["So17UICoordinateSpaceP", "setSelected"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "ImageService"]
+- !private ["So13UIDynamicItemP", "String"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "awakeFromNib"]
+- !private ["So13UIDynamicItemP", "bounds"]
+- !private ["So13UIDynamicItemP", "clipsToBounds"]
+- !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "layer"]
+- !private ["So13UIDynamicItemP", "mypostTextLabel"]
+- !private ["So13UIDynamicItemP", "mypriceLabel"]
+- !private ["So13UIDynamicItemP", "myprofileImageView"]
+- !private ["So13UIDynamicItemP", "mysubtitleLabel"]
+- !private ["So13UIDynamicItemP", "myusernameLabel"]
+- !private ["So13UIDynamicItemP", "setSelected"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "ImageService"]
+- !private ["So18UIFocusEnvironmentP", "String"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
+- !private ["So18UIFocusEnvironmentP", "bounds"]
+- !private ["So18UIFocusEnvironmentP", "clipsToBounds"]
+- !private ["So18UIFocusEnvironmentP", "image"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "mypostTextLabel"]
+- !private ["So18UIFocusEnvironmentP", "mypriceLabel"]
+- !private ["So18UIFocusEnvironmentP", "myprofileImageView"]
+- !private ["So18UIFocusEnvironmentP", "mysubtitleLabel"]
+- !private ["So18UIFocusEnvironmentP", "myusernameLabel"]
+- !private ["So18UIFocusEnvironmentP", "setSelected"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So11UIFocusItemP", "ImageService"]
+- !private ["So11UIFocusItemP", "String"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "awakeFromNib"]
+- !private ["So11UIFocusItemP", "bounds"]
+- !private ["So11UIFocusItemP", "clipsToBounds"]
+- !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "layer"]
+- !private ["So11UIFocusItemP", "mypostTextLabel"]
+- !private ["So11UIFocusItemP", "mypriceLabel"]
+- !private ["So11UIFocusItemP", "myprofileImageView"]
+- !private ["So11UIFocusItemP", "mysubtitleLabel"]
+- !private ["So11UIFocusItemP", "myusernameLabel"]
+- !private ["So11UIFocusItemP", "setSelected"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So27UIGestureRecognizerDelegateP", "ImageService"]
+- !private ["So27UIGestureRecognizerDelegateP", "String"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "mypostTextLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "mypriceLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "myprofileImageView"]
+- !private ["So27UIGestureRecognizerDelegateP", "mysubtitleLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "myusernameLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
+- !private ["So11UIImageViewC", "bounds"]
+- !private ["So11UIImageViewC", "clipsToBounds"]
+- !private ["So11UIImageViewC", "image"]
+- !private ["So11UIImageViewC", "layer"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "ImageService"]
+- !private ["So30UIPasteConfigurationSupportingP", "String"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
+- !private ["So30UIPasteConfigurationSupportingP", "bounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "clipsToBounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "mypostTextLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "mypriceLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "myprofileImageView"]
+- !private ["So30UIPasteConfigurationSupportingP", "mysubtitleLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "myusernameLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "ImageService"]
+- ["So11UIResponderC", "MyTaskPost"]
+- !private ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "awakeFromNib"]
+- !private ["So11UIResponderC", "bounds"]
+- !private ["So11UIResponderC", "clipsToBounds"]
+- !private ["So11UIResponderC", "image"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "mypostTextLabel"]
+- ["So11UIResponderC", "mypriceLabel"]
+- ["So11UIResponderC", "myprofileImageView"]
+- ["So11UIResponderC", "mysubtitleLabel"]
+- ["So11UIResponderC", "myusernameLabel"]
+- ["So11UIResponderC", "setMyTasks"]
+- ["So11UIResponderC", "setSelected"]
+- !private ["So11UIResponderC", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "ImageService"]
+- !private ["So30UIResponderStandardEditActionsP", "String"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
+- !private ["So30UIResponderStandardEditActionsP", "bounds"]
+- !private ["So30UIResponderStandardEditActionsP", "clipsToBounds"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "mypostTextLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "mypriceLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "myprofileImageView"]
+- !private ["So30UIResponderStandardEditActionsP", "mysubtitleLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "myusernameLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "setSelected"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- ["So15UITableViewCellC", "Bool"]
+- !private ["So15UITableViewCellC", "ImageService"]
+- ["So15UITableViewCellC", "MyTaskPost"]
+- !private ["So15UITableViewCellC", "String"]
+- ["So15UITableViewCellC", "UIImageView"]
+- ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", ""]
+- ["So15UITableViewCellC", "awakeFromNib"]
+- ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "mypostTextLabel"]
+- ["So15UITableViewCellC", "mypriceLabel"]
+- ["So15UITableViewCellC", "myprofileImageView"]
+- ["So15UITableViewCellC", "mysubtitleLabel"]
+- ["So15UITableViewCellC", "myusernameLabel"]
+- ["So15UITableViewCellC", "setMyTasks"]
+- ["So15UITableViewCellC", "setSelected"]
+- !private ["So18UITraitEnvironmentP", "ImageService"]
+- !private ["So18UITraitEnvironmentP", "String"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "awakeFromNib"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "clipsToBounds"]
+- !private ["So18UITraitEnvironmentP", "image"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "mypostTextLabel"]
+- !private ["So18UITraitEnvironmentP", "mypriceLabel"]
+- !private ["So18UITraitEnvironmentP", "myprofileImageView"]
+- !private ["So18UITraitEnvironmentP", "mysubtitleLabel"]
+- !private ["So18UITraitEnvironmentP", "myusernameLabel"]
+- !private ["So18UITraitEnvironmentP", "setSelected"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- ["So6UIViewC", "Bool"]
+- !private ["So6UIViewC", "ImageService"]
+- ["So6UIViewC", "MyTaskPost"]
+- !private ["So6UIViewC", "String"]
+- ["So6UIViewC", "UIImageView"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "awakeFromNib"]
+- !private ["So6UIViewC", "bounds"]
+- !private ["So6UIViewC", "clipsToBounds"]
+- !private ["So6UIViewC", "image"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "layer"]
+- ["So6UIViewC", "mypostTextLabel"]
+- ["So6UIViewC", "mypriceLabel"]
+- ["So6UIViewC", "myprofileImageView"]
+- ["So6UIViewC", "mysubtitleLabel"]
+- ["So6UIViewC", "myusernameLabel"]
+- ["So6UIViewC", "setMyTasks"]
+- ["So6UIViewC", "setSelected"]
+- !private ["So6UIViewC", "text"]
+- !private ["7HandsOn11UserProfileC", "photoURL"]
+- !private ["7HandsOn11UserProfileC", "username"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "ImageService"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "String"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "clipsToBounds"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "mypostTextLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "mypriceLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "myprofileImageView"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "mysubtitleLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "myusernameLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setSelected"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ImageService"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "clipsToBounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mypostTextLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mypriceLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "myprofileImageView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mysubtitleLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "myusernameLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "So7CALayerC"
+- "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
+- !private "SC6CGRectV"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "7HandsOn12ImageServiceC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "7HandsOn10MyTaskPostC"
+- "7HandsOn23MyTaskPostTableViewCellC"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So27UIGestureRecognizerDelegateP"
+- !private "So11UIImageViewC"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So15UITableViewCellC"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- !private "7HandsOn11UserProfileC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestore.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FirebaseFirestore.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRListenerRegistration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTransaction.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSetOptions.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRGeoPoint.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuery.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/yosimycortes/Documents/Developer/Swift/Hands-On/Hands-On/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "a9ed8f87b969f079183e2871447b357e"

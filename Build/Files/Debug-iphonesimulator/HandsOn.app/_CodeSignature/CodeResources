@@ -6005,13 +6005,17 @@
 		<data>
 		m5cUxwdnr+s7CyeYoYg90CWTOjk=
 		</data>
+		<key>MyTaskPostTableViewCell.nib</key>
+		<data>
+		lA+63u985V3Ub2Cbj/lONLFwmWA=
+		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
 		<key>PostTableViewCell.nib</key>
 		<data>
-		xMCVu0PA47QuDHttLG73p0nO+zo=
+		wTZHVK12CtCorNsuxLtMHS2ns3E=
 		</data>
 		<key>TwitterKitResources.bundle/TFSScribe.momd/TFSScribe.mom</key>
 		<data>
@@ -16817,15 +16821,26 @@
 			ul+UiVeJVF0RvBiCxyfwlHRO4I28apJS5A3NQBAiNa8=
 			</data>
 		</dict>
+		<key>MyTaskPostTableViewCell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lA+63u985V3Ub2Cbj/lONLFwmWA=
+			</data>
+			<key>hash2</key>
+			<data>
+			LBDbQiCjf8qGCoACIs/yPD0ClJdMwJn7Od7Pe7YtBUQ=
+			</data>
+		</dict>
 		<key>PostTableViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xMCVu0PA47QuDHttLG73p0nO+zo=
+			wTZHVK12CtCorNsuxLtMHS2ns3E=
 			</data>
 			<key>hash2</key>
 			<data>
-			udX7mDJ96+jtfP4JDhiZiu+3x4lWSn+O/dqPq/JYKvU=
+			HL7fsa/4nfEFk2CPIv1mkQKk76PFheIw1RXdgZoxR9U=
 			</data>
 		</dict>
 		<key>TwitterKitResources.bundle/TFSScribe.momd/TFSScribe.mom</key>

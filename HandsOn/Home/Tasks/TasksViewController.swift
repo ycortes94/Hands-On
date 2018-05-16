@@ -7,56 +7,102 @@
 //
 
 import UIKit
-
-struct CellData {
-    let profileImage : UIImage
-    let taskImage : UIImage
-    let taskTitle : String
-    let priceLabel : String
-    let distanceLabel : String
-}
+import Firebase
 
 class TasksViewController: UITableViewController{
     
-    var data = [CellData]()
+    
+    var myTableView: UITableView!
+    var myPosts = [MyTaskPost]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Adding posts
+        myTableView = UITableView(frame: view.bounds, style: .plain)
         
+        let cellNib = UINib(nibName: "MyTaskPostTableViewCell", bundle: nil)
+        myTableView.register(cellNib, forCellReuseIdentifier: "MyTaskPostTableViewCell")
+        myTableView.backgroundColor = UIColor(white: 0.90,alpha:1.0)
+        view.addSubview(myTableView)
+
+        var layoutGuide:UILayoutGuide!
+
+        if #available(iOS 11.0, *) {
+            layoutGuide = view.safeAreaLayoutGuide
+        } else {
+            // Fallback on earlier versions
+            layoutGuide = view.layoutMarginsGuide
+        }
+
+        myTableView.translatesAutoresizingMaskIntoConstraints = false
+        myTableView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor).isActive = true
+        myTableView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
+        myTableView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor).isActive = true
+        myTableView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
+
+        myTableView.delegate = self
+        myTableView.dataSource = self
+        myTableView.reloadData()
+
+        print("calling observe post")
+        observeMyPosts()
+//        print("Hello")
+    }
+    
+    func observeMyPosts() {
+        let uid = (Auth.auth().currentUser?.uid)!
+        print("Current user ID is " + uid)
         
-        ///////////////////
-        //test data, to be filled with data from firebase...
-        data = [CellData.init(profileImage: #imageLiteral(resourceName: "profileplaceholder"), taskImage: #imageLiteral(resourceName: "HandsOnBackground"), taskTitle: "Task Title", priceLabel: "$0", distanceLabel: "2.5 mi"), CellData.init(profileImage: #imageLiteral(resourceName: "profileplaceholder"), taskImage: #imageLiteral(resourceName: "HandsOnBackground"), taskTitle: "Task Title", priceLabel: "$0", distanceLabel: "2.5 mi")]
+        let postsRef = Database.database().reference().child("posts").queryOrdered(byChild: "timestamp")
         
-        self.tableView.register(TasksCustomTableViewCell.self, forCellReuseIdentifier: "custom")
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 200
-        
-        tableView.tableFooterView = UIView()
+        postsRef.observe(.value, with: { snapshot in
+            var userID:String = (Auth.auth().currentUser?.uid)!
+            var tempPosts = [MyTaskPost]()
+            
+            for child in snapshot.children {
+                if let childSnapshot = child as? DataSnapshot,
+                    let dict = childSnapshot.value as? [String:Any],
+                    let author = dict["author"] as? [String:Any],
+                    let uid = author["uid"] as? String,
+                    let username = author["username"] as? String,
+                    let photoURL = author["photoURL"] as? String,
+                    let url = URL(string:photoURL),
+                    let text = dict["text"] as? String,
+                    let timestamp = dict["timestamp"] as? Double,
+                    let price = dict["price"] as? Int
+                {
+                    if uid == userID {
+                        let userProfile1 = UserProfile(uid: uid, username: username, photoURL: url)
+                        let post1 = MyTaskPost(id: childSnapshot.key, author: userProfile1, text: text, timestamp:timestamp,price: price)
+                        tempPosts.append(post1)
+                        print ("Displaying " + userID + " posts")
+                    } else {
+                        print("No Posts!")
+                    }
+                    
+                    
+                    
+                }
+            }
+            
+            self.myPosts = tempPosts
+            self.myTableView.reloadData()
+            
+        })
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return myPosts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! TasksCustomTableViewCell
-        cell.profileImage = data[indexPath.row].profileImage
-        cell.taskImage = data[indexPath.row].taskImage
-        cell.taskTitle = data[indexPath.row].taskTitle
-        cell.priceLabel = data[indexPath.row].priceLabel
-        cell.distanceLabel = data[indexPath.row].distanceLabel
-        cell.layoutSubviews()
-    
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyTaskPostTableViewCell", for: indexPath) as! MyTaskPostTableViewCell
+        cell.setMyTasks(myPost: myPosts[indexPath.row])
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let taskDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TaskDetailsViewController") as! TaskDetailsViewController
-        if let navigator = navigationController{
-            navigator.pushViewController(taskDetailsVC, animated: false)
-        }
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return data.count
     }
     
 }

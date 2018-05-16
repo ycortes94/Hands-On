@@ -76,7 +76,7 @@ class HomeViewController:UIViewController, UITableViewDelegate, UITableViewDataS
                     let post = Post(id: childSnapshot.key, author: userProfile, text: text, timestamp:timestamp,price: price, location: location, duration: duration, description: description)
                     tempPosts.append(post)
                     
-                    print ("post added to task array")
+                    print ("post added to newsfeed")
                 }
             }
             

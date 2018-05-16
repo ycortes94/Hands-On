@@ -28,6 +28,7 @@ depends-top-level:
 - !private "FirebaseApp"
 - !private "Firestore"
 - !private "MenuViewController"
+- !private "MyUserService"
 - "StringLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
@@ -46,6 +47,7 @@ depends-member:
 - !private ["7HandsOn11AppDelegateC", "FirebaseApp"]
 - !private ["7HandsOn11AppDelegateC", "Firestore"]
 - !private ["7HandsOn11AppDelegateC", "MenuViewController"]
+- !private ["7HandsOn11AppDelegateC", "MyUserService"]
 - ["7HandsOn11AppDelegateC", "UIApplication"]
 - ["7HandsOn11AppDelegateC", "UIApplicationLaunchOptionsKey"]
 - !private ["7HandsOn11AppDelegateC", "UIStoryboard"]
@@ -76,6 +78,7 @@ depends-member:
 - !private ["s7CVarArgP", "CustomTabBarController"]
 - !private ["s7CVarArgP", "FirebaseApp"]
 - !private ["s7CVarArgP", "Firestore"]
+- !private ["s7CVarArgP", "MyUserService"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "UserService"]
 - ["s7CVarArgP", ""]
@@ -108,6 +111,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "CustomTabBarController"]
 - !private ["s28CustomDebugStringConvertibleP", "FirebaseApp"]
 - !private ["s28CustomDebugStringConvertibleP", "Firestore"]
+- !private ["s28CustomDebugStringConvertibleP", "MyUserService"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "UserService"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -141,6 +145,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "CustomTabBarController"]
 - !private ["s23CustomStringConvertibleP", "FirebaseApp"]
 - !private ["s23CustomStringConvertibleP", "Firestore"]
+- !private ["s23CustomStringConvertibleP", "MyUserService"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "UserService"]
 - ["s23CustomStringConvertibleP", ""]
@@ -176,6 +181,7 @@ depends-member:
 - !private ["s9EquatableP", "CustomTabBarController"]
 - !private ["s9EquatableP", "FirebaseApp"]
 - !private ["s9EquatableP", "Firestore"]
+- !private ["s9EquatableP", "MyUserService"]
 - !private ["s9EquatableP", "UIStoryboard"]
 - !private ["s9EquatableP", "UserService"]
 - ["s9EquatableP", ""]
@@ -212,6 +218,7 @@ depends-member:
 - !private ["s8HashableP", "CustomTabBarController"]
 - !private ["s8HashableP", "FirebaseApp"]
 - !private ["s8HashableP", "Firestore"]
+- !private ["s8HashableP", "MyUserService"]
 - !private ["s8HashableP", "UIStoryboard"]
 - !private ["s8HashableP", "UserService"]
 - ["s8HashableP", ""]
@@ -241,6 +248,8 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["7HandsOn13MyUserServiceC", "currentUserProfile"]
+- !private ["7HandsOn13MyUserServiceC", "observeMyUserProfile"]
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "makeKeyAndVisible"]
 - !private ["So8NSCodingP", "rootViewController"]
@@ -254,6 +263,7 @@ depends-member:
 - !private ["So8NSObjectC", "FirebaseApp"]
 - !private ["So8NSObjectC", "Firestore"]
 - !private ["So8NSObjectC", "MenuViewController"]
+- !private ["So8NSObjectC", "MyUserService"]
 - ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "UIApplicationLaunchOptionsKey"]
 - !private ["So8NSObjectC", "UIStoryboard"]
@@ -285,6 +295,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "CustomTabBarController"]
 - !private ["So16NSObjectProtocolP", "FirebaseApp"]
 - !private ["So16NSObjectProtocolP", "Firestore"]
+- !private ["So16NSObjectProtocolP", "MyUserService"]
 - !private ["So16NSObjectProtocolP", "UIStoryboard"]
 - !private ["So16NSObjectProtocolP", "UserService"]
 - ["So16NSObjectProtocolP", ""]
@@ -328,6 +339,7 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "CustomTabBarController"]
 - !private ["So21UIApplicationDelegateP", "FirebaseApp"]
 - !private ["So21UIApplicationDelegateP", "Firestore"]
+- !private ["So21UIApplicationDelegateP", "MyUserService"]
 - !private ["So21UIApplicationDelegateP", "UIStoryboard"]
 - !private ["So21UIApplicationDelegateP", "UserService"]
 - ["So21UIApplicationDelegateP", ""]
@@ -359,6 +371,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "CustomTabBarController"]
 - !private ["So30UIPasteConfigurationSupportingP", "FirebaseApp"]
 - !private ["So30UIPasteConfigurationSupportingP", "Firestore"]
+- !private ["So30UIPasteConfigurationSupportingP", "MyUserService"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "UserService"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -384,6 +397,7 @@ depends-member:
 - !private ["So11UIResponderC", "FirebaseApp"]
 - !private ["So11UIResponderC", "Firestore"]
 - !private ["So11UIResponderC", "MenuViewController"]
+- !private ["So11UIResponderC", "MyUserService"]
 - ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "UIApplicationLaunchOptionsKey"]
 - !private ["So11UIResponderC", "UIStoryboard"]
@@ -410,6 +424,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "CustomTabBarController"]
 - !private ["So30UIResponderStandardEditActionsP", "FirebaseApp"]
 - !private ["So30UIResponderStandardEditActionsP", "Firestore"]
+- !private ["So30UIResponderStandardEditActionsP", "MyUserService"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - !private ["So30UIResponderStandardEditActionsP", "UserService"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -459,6 +474,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CustomTabBarController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseApp"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Firestore"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MyUserService"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UserService"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -513,6 +529,7 @@ depends-nominal:
 - "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
+- !private "7HandsOn13MyUserServiceC"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - !private "So26NSExtensionRequestHandlingP"

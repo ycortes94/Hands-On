@@ -27,22 +27,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let authListener = Auth.auth().addStateDidChangeListener { auth, user in
             
-            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             
             if user != nil {
                 UserService.observeUserProfile(user!.uid) { userProfile in
                     UserService.currentUserProfile = userProfile
                 }
+                
+                MyUserService.observeMyUserProfile(user!.uid) { UserProfile in
+                    MyUserService.currentUserProfile = UserProfile
+                }
 
-                //let controller = storyboard.instantiateViewController(withIdentifier: "HomeNavigationController")
                 self.window?.rootViewController = CustomTabBarController()
                 self.window?.makeKeyAndVisible()
             } else {
                 
                 
                 UserService.currentUserProfile = nil
-                
+                MyUserService.currentUserProfile = nil
                 // menu screen
                 let controller = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
                 self.window?.rootViewController = controller

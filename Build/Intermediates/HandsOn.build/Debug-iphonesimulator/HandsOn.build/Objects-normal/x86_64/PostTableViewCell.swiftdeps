@@ -23,6 +23,7 @@ depends-top-level:
 - "Bool"
 - !private "BooleanLiteralType"
 - !private "ImageService"
+- "MyTaskPost"
 - "Post"
 - "PostTableViewCell"
 - !private "String"
@@ -172,6 +173,10 @@ depends-member:
 - !private ["7HandsOn12ImageServiceC", "getImage"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["7HandsOn10MyTaskPostC", "author"]
+- !private ["7HandsOn10MyTaskPostC", "price"]
+- !private ["7HandsOn10MyTaskPostC", "text"]
+- !private ["7HandsOn10MyTaskPostC", "timestamp"]
 - !private ["So8NSCodingP", "ImageService"]
 - !private ["So8NSCodingP", "String"]
 - ["So8NSCodingP", ""]
@@ -194,6 +199,7 @@ depends-member:
 - !private ["So8NSCodingP", "usernameLabel"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "ImageService"]
+- ["So8NSObjectC", "MyTaskPost"]
 - ["So8NSObjectC", "Post"]
 - !private ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIButton"]
@@ -214,6 +220,7 @@ depends-member:
 - ["So8NSObjectC", "priceLabel"]
 - ["So8NSObjectC", "profileImageView"]
 - ["So8NSObjectC", "set"]
+- ["So8NSObjectC", "setMyTasks"]
 - ["So8NSObjectC", "setSelected"]
 - ["So8NSObjectC", "subtitleLabel"]
 - !private ["So8NSObjectC", "text"]
@@ -248,6 +255,7 @@ depends-member:
 - !private ["7HandsOn4PostC", "timestamp"]
 - ["7HandsOn17PostTableViewCellC", "Bool"]
 - !private ["7HandsOn17PostTableViewCellC", "ImageService"]
+- ["7HandsOn17PostTableViewCellC", "MyTaskPost"]
 - ["7HandsOn17PostTableViewCellC", "Post"]
 - !private ["7HandsOn17PostTableViewCellC", "String"]
 - ["7HandsOn17PostTableViewCellC", "UIButton"]
@@ -264,6 +272,7 @@ depends-member:
 - ["7HandsOn17PostTableViewCellC", "priceLabel"]
 - ["7HandsOn17PostTableViewCellC", "profileImageView"]
 - ["7HandsOn17PostTableViewCellC", "set"]
+- ["7HandsOn17PostTableViewCellC", "setMyTasks"]
 - ["7HandsOn17PostTableViewCellC", "setSelected"]
 - ["7HandsOn17PostTableViewCellC", "subtitleLabel"]
 - ["7HandsOn17PostTableViewCellC", "usernameLabel"]
@@ -451,6 +460,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "usernameLabel"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "ImageService"]
+- ["So11UIResponderC", "MyTaskPost"]
 - ["So11UIResponderC", "Post"]
 - !private ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIButton"]
@@ -470,6 +480,7 @@ depends-member:
 - ["So11UIResponderC", "priceLabel"]
 - ["So11UIResponderC", "profileImageView"]
 - ["So11UIResponderC", "set"]
+- ["So11UIResponderC", "setMyTasks"]
 - ["So11UIResponderC", "setSelected"]
 - ["So11UIResponderC", "subtitleLabel"]
 - !private ["So11UIResponderC", "text"]
@@ -495,6 +506,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "usernameLabel"]
 - ["So15UITableViewCellC", "Bool"]
 - !private ["So15UITableViewCellC", "ImageService"]
+- ["So15UITableViewCellC", "MyTaskPost"]
 - ["So15UITableViewCellC", "Post"]
 - !private ["So15UITableViewCellC", "String"]
 - ["So15UITableViewCellC", "UIButton"]
@@ -511,6 +523,7 @@ depends-member:
 - ["So15UITableViewCellC", "priceLabel"]
 - ["So15UITableViewCellC", "profileImageView"]
 - ["So15UITableViewCellC", "set"]
+- ["So15UITableViewCellC", "setMyTasks"]
 - ["So15UITableViewCellC", "setSelected"]
 - ["So15UITableViewCellC", "subtitleLabel"]
 - ["So15UITableViewCellC", "usernameLabel"]
@@ -535,6 +548,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "usernameLabel"]
 - ["So6UIViewC", "Bool"]
 - !private ["So6UIViewC", "ImageService"]
+- ["So6UIViewC", "MyTaskPost"]
 - ["So6UIViewC", "Post"]
 - !private ["So6UIViewC", "String"]
 - ["So6UIViewC", "UIButton"]
@@ -554,6 +568,7 @@ depends-member:
 - ["So6UIViewC", "priceLabel"]
 - ["So6UIViewC", "profileImageView"]
 - ["So6UIViewC", "set"]
+- ["So6UIViewC", "setMyTasks"]
 - ["So6UIViewC", "setSelected"]
 - ["So6UIViewC", "subtitleLabel"]
 - !private ["So6UIViewC", "text"]
@@ -630,6 +645,7 @@ depends-nominal:
 - !private "7HandsOn12ImageServiceC"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
+- !private "7HandsOn10MyTaskPostC"
 - "So8NSCodingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
@@ -781,4 +797,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "5879a8f0e96d5f8ecd81081d6abe461f"
+interface-hash: "8156f1df968b01917c534ee5478bd6a9"
