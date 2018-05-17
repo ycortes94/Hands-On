@@ -176,12 +176,14 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
     }()
     
     let postButton : UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle("Preview and Post", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.setBackgroundColor(color: UIColor(red: 0.737, green: 0.737, blue: 0.737, alpha: 1.0), forUIControlState: .normal)
+        button.setBackgroundColor(color: UIColor(red: 0.737, green: 0.737, blue: 0.737, alpha: 0.5), forUIControlState: .selected)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14.0, weight: UIFont.Weight.semibold)
         button.titleLabel?.textColor = UIColor.black
-        button.backgroundColor = UIColor(red: 0.737, green: 0.737, blue: 0.737, alpha: 1.0)
-        button.layer.cornerRadius = 3
+        button.layer.cornerRadius = 5
         button.addTarget(self, action: #selector(handlePostButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
@@ -369,10 +371,8 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
     }
     
     
-    //handle post button so far only saves the title of the task
     @objc private func handlePostButton() {
         
-        print("post button clicked")
         guard let userProfile = UserService.currentUserProfile else { return }
         // Firebase code here
         
@@ -400,6 +400,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
                 print("Error saving post")
             }
         })
+
     }
     
     
