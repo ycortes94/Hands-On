@@ -94,6 +94,8 @@ class TaskDetailsViewController : UIViewController {
         button.layer.borderWidth = 3
         button.layer.cornerRadius = 2
         
+        button.addTarget(self, action: #selector(handleOfferButton), for: .touchUpInside)
+        
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -194,6 +196,11 @@ class TaskDetailsViewController : UIViewController {
         durationLabel.widthAnchor.constraint(equalToConstant: 75).isActive = true
         durationLabel.heightAnchor.constraint(equalToConstant: 75).isActive = true
         
+    }
+    
+    @objc private func handleOfferButton(){
+        let offerPopUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "OfferPricePopUpViewController") as! OfferPricePopUpViewControlelr
+        self.present(offerPopUpVC, animated: true, completion: nil)
     }
     
 }

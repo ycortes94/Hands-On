@@ -18,6 +18,7 @@
 		D06449942094EE80005B8BF2 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06449932094EE80005B8BF2 /* MessagesViewController.swift */; };
 		D083594620A3C47200A1B7C8 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083594520A3C47200A1B7C8 /* MoreViewController.swift */; };
 		D083594820A3D92F00A1B7C8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */; };
+		D0F8D74C20AD34D9007C674C /* OfferPricePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F8D74B20AD34D9007C674C /* OfferPricePopUpViewController.swift */; };
 		E285F6383885579EF6B6206C /* Pods_HandsOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47116C8283DB21B4DAB8E8B4 /* Pods_HandsOn.framework */; };
 		FF34F3F120AC313600A55596 /* MyTaskPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF34F3F020AC313600A55596 /* MyTaskPost.swift */; };
 		FF34F3FC20AC3B6800A55596 /* MyTaskPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF34F3FA20AC3B6800A55596 /* MyTaskPostTableViewCell.swift */; };
@@ -59,6 +60,7 @@
 		D06449932094EE80005B8BF2 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		D083594520A3C47200A1B7C8 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D0F8D74B20AD34D9007C674C /* OfferPricePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferPricePopUpViewController.swift; sourceTree = "<group>"; };
 		DBB7B8D3C6922A35ECA5EB88 /* Pods-HandsOn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsOn.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandsOn/Pods-HandsOn.release.xcconfig"; sourceTree = "<group>"; };
 		FF34F3F020AC313600A55596 /* MyTaskPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaskPost.swift; sourceTree = "<group>"; };
 		FF34F3FA20AC3B6800A55596 /* MyTaskPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaskPostTableViewCell.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				D06449912094ECBB005B8BF2 /* TasksViewController.swift */,
 				D059FD5420AB74C200F4C849 /* TasksCustomTableViewCell.swift */,
 				D059DC2A20A798B000E8C932 /* TaskDetailsViewController.swift */,
+				D0F8D74B20AD34D9007C674C /* OfferPricePopUpViewController.swift */,
 				FF34F3FA20AC3B6800A55596 /* MyTaskPostTableViewCell.swift */,
 				FF34F3FB20AC3B6800A55596 /* MyTaskPostTableViewCell.xib */,
 			);
@@ -404,6 +407,7 @@
 				FFE8620C207632F000C5B8DD /* InitialViewController.swift in Sources */,
 				D083594820A3D92F00A1B7C8 /* ProfileViewController.swift in Sources */,
 				D06449902094D310005B8BF2 /* CustomTabBarController.swift in Sources */,
+				D0F8D74C20AD34D9007C674C /* OfferPricePopUpViewController.swift in Sources */,
 				D0557CD320A51DB900E08F6C /* VerificationViewController.swift in Sources */,
 				FFE861F6207630F300C5B8DD /* NewPostViewController.swift in Sources */,
 				FF34F3FC20AC3B6800A55596 /* MyTaskPostTableViewCell.swift in Sources */,
