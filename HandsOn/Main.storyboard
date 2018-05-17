@@ -304,7 +304,7 @@
                     <view key="view" contentMode="scaleToFill" id="UDa-58-vl4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99992352724075317" green="1" blue="0.99988299608230591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ju8-qV-Qoy"/>
                     </view>
                 </viewController>
@@ -315,7 +315,7 @@
         <!--Offered Price Pop Up View Controller-->
         <scene sceneID="QmK-cD-HPp">
             <objects>
-                <viewController storyboardIdentifier="OfferPricePopUpViewController" title="Offered Price Pop Up View Controller" id="llp-Wo-ZVK" customClass="OfferPricePopUpViewControlelr" customModule="HandsOn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OfferPricePopUpViewController" title="Offered Price Pop Up View Controller" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="llp-Wo-ZVK" customClass="OfferPricePopUpViewControlelr" customModule="HandsOn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VEY-sJ-69U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
