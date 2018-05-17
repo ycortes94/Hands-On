@@ -26,6 +26,8 @@
 	<string>Main</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>HandsOn uses this to help people find tasks.</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

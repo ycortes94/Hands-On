@@ -17,6 +17,14 @@ class TasksViewController: UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let btn1 = UIButton(type: .custom)
+        btn1.setImage(UIImage(named: "map"), for: .normal)
+        btn1.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        btn1.addTarget(self, action: #selector(handleMapButton), for: .touchUpInside)
+        let item1 = UIBarButtonItem(customView: btn1)
+        self.navigationItem.setRightBarButton(item1, animated: true)
+    
         //Adding posts
         TableView = UITableView(frame: view.bounds, style: .plain)
         
@@ -103,6 +111,15 @@ class TasksViewController: UITableViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyTaskPostTableViewCell", for: indexPath) as! MyTaskPostTableViewCell
         cell.setMyTasks(myPost: myPosts[indexPath.row])
         return cell
+    }
+    
+    @objc private func handleMapButton(){
+        
+        let mapView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
+        if let navigator = navigationController{
+            navigator.pushViewController(mapView, animated: false)
+        }
+        
     }
     
 }
