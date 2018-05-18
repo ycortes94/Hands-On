@@ -166,6 +166,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 @import Foundation;
 @import CoreGraphics;
+@import CoreLocation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -237,11 +238,13 @@ SWIFT_CLASS("_TtC7HandsOn25EditProfileViewController")
 @class UITableViewCell;
 
 SWIFT_CLASS("_TtC7HandsOn18HomeViewController")
-@interface HomeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface HomeViewController : UITableViewController
 - (void)viewDidLoad;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -279,6 +282,17 @@ SWIFT_CLASS("_TtC7HandsOn19LoginViewController")
 SWIFT_CLASS("_TtC7HandsOn20LogoutViewController")
 @interface LogoutViewController : UIViewController
 - (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CLLocationManager;
+@class CLLocation;
+
+SWIFT_CLASS("_TtC7HandsOn17MapViewController")
+@interface MapViewController : UIViewController <CLLocationManagerDelegate>
+- (void)viewDidLoad;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -349,23 +363,21 @@ SWIFT_CLASS("_TtC7HandsOn21NewPostViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
+
+SWIFT_CLASS("_TtC7HandsOn29OfferPricePopUpViewControlelr")
+@interface OfferPricePopUpViewControlelr : UIViewController
+- (void)viewDidLoad;
+- (void)myTextFieldDidChange:(UITextField * _Nonnull)textField;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7HandsOn17PostTableViewCell")
 @interface PostTableViewCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImageView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified subtitleLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified postTextLabel;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified moreButton;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified priceLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified durationLabel;
-- (void)awakeFromNib;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
-- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)handleViewDetailsButton;
 @end
 
 
