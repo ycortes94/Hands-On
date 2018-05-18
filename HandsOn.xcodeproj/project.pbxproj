@@ -125,14 +125,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D059FD5320AB47F900F4C849 /* New Group */ = {
+		D059FD5320AB47F900F4C849 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */,
 				D059FD5120AB47F200F4C849 /* EditProfileViewController.swift */,
 				FF74976020AEAB5700B66565 /* ProfileViewCell.swift */,
 			);
-			path = "New Group";
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		D059FD5620AB74CD00F4C849 /* Tasks */ = {
@@ -161,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				D083594520A3C47200A1B7C8 /* MoreViewController.swift */,
-				D059FD5320AB47F900F4C849 /* New Group */,
+				D059FD5320AB47F900F4C849 /* Profile */,
 				D0557CD020A51DA000E08F6C /* ActivityLogViewController.swift */,
 				D0557CD220A51DB900E08F6C /* VerificationViewController.swift */,
 				D0557CD420A51DCA00E08F6C /* SettingsViewController.swift */,

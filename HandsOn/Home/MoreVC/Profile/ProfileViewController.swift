@@ -34,8 +34,7 @@ class ProfileViewController : UIViewController{
     let nameLabel : UILabel = {
         
         let label = UILabel()
-        label.backgroundColor = UIColor.lightGray
-//        label.text = "Rich Chau"
+        label.backgroundColor = UIColor.clear
         label.font = UIFont.systemFont(ofSize: 25, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -57,8 +56,8 @@ class ProfileViewController : UIViewController{
     let locationLabel : UILabel = {
         
         let label = UILabel()
-        label.backgroundColor = UIColor.lightGray
         label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.textColor = UIColor.gray
 //        label.text = "San Jose, CA"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -91,7 +90,7 @@ class ProfileViewController : UIViewController{
                     self.profileImageView.image = image
                 }
                 self.nameLabel.text = userProfile.username
-                self.descriptionTextView.text = Auth.auth().currentUser?.email
+                self.locationLabel.text = Auth.auth().currentUser?.email
             }
         })
     }
@@ -113,8 +112,10 @@ class ProfileViewController : UIViewController{
         nameLabel.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 15).isActive = true
         nameLabel.topAnchor.constraint(equalTo: backgroundImageView.bottomAnchor, constant: 12).isActive = true
         
-        locationLabel.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 15).isActive = true
-        locationLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 2).isActive = true
+        locationLabel.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 18).isActive = true
+        locationLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 0).isActive = true
+        locationLabel.heightAnchor.constraint(equalToConstant: 15).isActive = true
+        locationLabel.widthAnchor.constraint(equalToConstant: 150).isActive = true
         
         descriptionTextView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         descriptionTextView.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 20).isActive = true
