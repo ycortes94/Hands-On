@@ -13,7 +13,7 @@ class TasksViewController: UITableViewController{
     
     
     //var TableView: UITableView!
-    var myPosts = [MyTaskPost]()
+    var posts = [Post]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +25,13 @@ class TasksViewController: UITableViewController{
         let item1 = UIBarButtonItem(customView: btn1)
         self.navigationItem.setRightBarButton(item1, animated: true)
     
-        observeMyPosts()
+        observePosts()
         
         self.tableView.register(MyTaskPostTableViewCell.self, forCellReuseIdentifier: "taskpostcell")
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 100
     }
+    /*
     func observeMyPosts() {
         let uid = (Auth.auth().currentUser?.uid)!
         print("Current user ID is " + uid)
@@ -72,24 +73,66 @@ class TasksViewController: UITableViewController{
             
         })
     }
+ */
+    
+    func observePosts() {
+        let postsRef = Database.database().reference().child("posts")
+        
+        postsRef.observe(.value, with: { snapshot in
+            
+            var tempPosts = [Post]()
+            
+            for child in snapshot.children {
+                if let childSnapshot = child as? DataSnapshot,
+                    let dict = childSnapshot.value as? [String:Any],
+                    let author = dict["author"] as? [String:Any],
+                    let uid = author["uid"] as? String,
+                    let username = author["username"] as? String,
+                    let photoURL = author["photoURL"] as? String,
+                    let url = URL(string:photoURL),
+                    let text = dict["text"] as? String,
+                    let timestamp = dict["timestamp"] as? Double,
+                    let price = dict["price"] as? Int,
+                    let location = dict["location"] as? String,
+                    let duration = dict["duration"] as? Int,
+                    let description = dict["description"] as? String
+                {
+                    
+                    let userProfile = UserProfile(uid: uid, username: username, photoURL: url)
+                    let post = Post(id: childSnapshot.key, author: userProfile, text: text, timestamp:timestamp,price: price, location: location, duration: duration, description: description)
+                    tempPosts.append(post)
+                    
+                    print ("post added to newsfeed")
+                }
+            }
+            
+            self.posts = tempPosts
+            self.tableView.reloadData()
+            
+        })
+    }
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myPosts.count
+        return posts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskpostcell", for: indexPath) as! MyTaskPostTableViewCell
-        cell.setMyTasks(myPost: myPosts[indexPath.row])
+        cell.set(post: posts[indexPath.row])
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let taskDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TaskDetailsViewController") as! TaskDetailsViewController
+        
+        taskDetailsVC.set(post: posts[indexPath.row])
+        
         if let navigator = navigationController{
             navigator.pushViewController(taskDetailsVC, animated: true)
         }
     }
+    
     
     @objc private func handleMapButton(){
         

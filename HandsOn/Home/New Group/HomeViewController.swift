@@ -104,6 +104,9 @@ class HomeViewController:UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let taskDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TaskDetailsViewController") as! TaskDetailsViewController
+        
+        taskDetailsVC.set(post: posts[indexPath.row])
+        
         if let navigator = navigationController{
             navigator.pushViewController(taskDetailsVC, animated: true)
         }

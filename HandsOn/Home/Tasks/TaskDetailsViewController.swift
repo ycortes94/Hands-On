@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TaskDetailsViewController : UIViewController, UITableViewDelegate {
     
     var posts = [Post]()
     var scrollView: UIScrollView = {
@@ -21,7 +21,7 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
     var titleTextView : UITextView = {
         let textView = UITextView()
         textView.isEditable = false
-        textView.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        textView.font = UIFont.systemFont(ofSize: 25, weight: .semibold)
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.isScrollEnabled = false
         return textView
@@ -31,6 +31,7 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
         let textView = UITextView()
         textView.isEditable = false
         textView.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        textView.textColor = UIColor.gray
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.isScrollEnabled = false
         return textView
@@ -38,7 +39,7 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
     
     var addressLabel : UILabel = {
         var label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         label.textColor = UIColor.lightGray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -66,15 +67,15 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
         label.font = UIFont.systemFont(ofSize: 25, weight: .thin)
         label.text = "Offering Price:"
         label.textAlignment = .right
-        label.textColor = UIColor.gray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     var priceLabel : UILabel = {
         var label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont.systemFont(ofSize: 30, weight: .regular)
         label.textColor = UIColor.lightGray
+        label.textAlignment = .right
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -112,6 +113,16 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
         return label
     }()
     
+    var line : UIView = {
+        
+        var lineView = UIView()
+        lineView.backgroundColor = UIColor.lightGray
+        lineView.translatesAutoresizingMaskIntoConstraints = false
+        return lineView
+        
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Task Details"
@@ -133,10 +144,11 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
         scrollView.addSubview(offerPriceButton)
         scrollView.addSubview(profileImageView)
         scrollView.addSubview(durationLabel)
+        scrollView.addSubview(line)
         
         
         setUpLayout()
-        observePosts()
+        //observePosts()
         
     }
     
@@ -145,12 +157,14 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
         titleTextView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 15).isActive = true
         titleTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15).isActive = true
         titleTextView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -100).isActive = true
-        titleTextView.heightAnchor.constraint(equalToConstant: 75).isActive = true
+        //titleTextView.heightAnchor.constraint(equalToConstant: 45).isActive = true
         //titleTextView.widthAnchor.constraint(equalToConstant: 200).isActive = true
-    
+        let fixedWidth = titleTextView.frame.size.width
+        let newSize = titleTextView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+        titleTextView.frame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
         
-        addressLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15).isActive = true
-        addressLabel.topAnchor.constraint(equalTo: titleTextView.bottomAnchor, constant: 3).isActive = true
+        addressLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 22).isActive = true
+        addressLabel.topAnchor.constraint(equalTo: titleTextView.bottomAnchor, constant: -10).isActive = true
         addressLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
         addressLabel.widthAnchor.constraint(equalToConstant: 150).isActive = true
         
@@ -167,15 +181,18 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
         descTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15).isActive = true
         descTextView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -15).isActive = true
         descTextView.topAnchor.constraint(equalTo: taskImageView.bottomAnchor, constant: 10).isActive = true
-        descTextView.heightAnchor.constraint(equalToConstant: 85).isActive = true
+        //descTextView.heightAnchor.constraint(equalToConstant: 85).isActive = true
+        let fixedWidth1 = descTextView.frame.size.width
+        let newSize1 = descTextView.sizeThatFits(CGSize(width: fixedWidth1, height: CGFloat.greatestFiniteMagnitude))
+        descTextView.frame.size = CGSize(width: max(newSize1.width, fixedWidth), height: newSize1.height)
         
-        offeredPriceLabel.topAnchor.constraint(equalTo: descTextView.bottomAnchor, constant: 20).isActive = true
+        offeredPriceLabel.topAnchor.constraint(equalTo: descTextView.bottomAnchor, constant: 5).isActive = true
         //offeredPriceLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
         offeredPriceLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -15).isActive = true
         offeredPriceLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
         offeredPriceLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
-        priceLabel.topAnchor.constraint(equalTo: offeredPriceLabel.bottomAnchor, constant: 10).isActive = true
+        priceLabel.topAnchor.constraint(equalTo: offeredPriceLabel.bottomAnchor, constant: -15).isActive = true
         //priceLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
         priceLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -15).isActive = true
         priceLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
@@ -191,8 +208,14 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
         durationLabel.widthAnchor.constraint(equalToConstant: 75).isActive = true
         durationLabel.heightAnchor.constraint(equalToConstant: 75).isActive = true
         
+        line.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 25).isActive = true
+        line.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -25).isActive = true
+        line.topAnchor.constraint(equalTo: descTextView.bottomAnchor, constant: 3).isActive = true
+        line.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        
     }
     
+    /*
     func observePosts() {
         let postID = UUID().uuidString
         let postsRef = Database.database().reference().child("posts").child(postID)
@@ -222,7 +245,7 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
                     let post = Post(id: childSnapshot.key, author: userProfile, text: text, timestamp:timestamp,price: price, location: location, duration: duration, description: description)
                     self.set(post: post)
                     tempPosts.append(post)
-                    self.tableView.reloadData()
+                    //self.tableView.reloadData()
 
                     
 //                    let cell = tableView.dequeueReusableCell(withIdentifier: "posttableviewcell", for: IndexPath) as! PostTableViewCell
@@ -245,6 +268,7 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
             self.posts = tempPosts
         })
     }
+    /*
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return 430;//Choose your custom row height
@@ -274,7 +298,9 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
         cell.layoutSubviews()
         return cell
     }
-    
+ */
+ 
+ */
     func set(post:Post) {
         ImageService.getImage(withURL: post.author.photoURL) { image in
             self.profileImageView.image = image
@@ -290,6 +316,7 @@ class TaskDetailsViewController : UIViewController, UITableViewDataSource, UITab
         durationLabel.text = String(post.duration)
     }
     
+
     
     @objc private func handleOfferButton(){
         let offerPopUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "OfferPricePopUpViewController") as! OfferPricePopUpViewControlelr

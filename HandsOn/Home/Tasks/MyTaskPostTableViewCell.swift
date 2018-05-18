@@ -112,15 +112,15 @@ class MyTaskPostTableViewCell: UITableViewCell {
     
    
     
-    func setMyTasks(myPost:MyTaskPost) {
-        ImageService.getImage(withURL: myPost.author.photoURL) { image in
+    func set(post:Post) {
+        ImageService.getImage(withURL: post.author.photoURL) { image in
             self.profileImageView.image = image
         }
         
         //myusernameLabel.text = myPost.author.username
-        taskTitleLabel.text = myPost.text
+        taskTitleLabel.text = post.text
         //mysubtitleLabel.text = String(myPost.timestamp)
-        priceLabel.text = "$" + String(myPost.price)
+        priceLabel.text = "$" + String(post.price)
         
     }
  
