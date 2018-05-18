@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import MapKit
+import CoreLocation
 
 
 class Post {
@@ -18,8 +20,10 @@ class Post {
     var location: String
     var duration: Int
     var description: String
+    var latitude: CLLocationDegrees
+    var longitude: CLLocationDegrees
     
-    init(id:String, author:UserProfile,text:String,timestamp:Double, price: Int, location: String, duration: Int, description: String) {
+    init(id:String, author:UserProfile,text:String,timestamp:Double, price: Int, location: String, duration: Int, description: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         self.id = id
         self.author = author
         self.text = text
@@ -28,5 +32,7 @@ class Post {
         self.duration = duration
         self.description = description
         self.location = location
+        self.latitude = latitude
+        self.longitude = longitude
     }
 }

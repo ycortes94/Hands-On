@@ -6,6 +6,8 @@
 //  Copyright © 2018 Yosimy Cortes. All rights reserved.
 //
 import UIKit
+import MapKit
+import CoreLocation
 
 class PostTableViewCell: UITableViewCell {
     
@@ -189,8 +191,39 @@ class PostTableViewCell: UITableViewCell {
         dateLabel.text = String(post.timestamp)
         priceLabel.text = "$" + String(post.price)
         descTextView.text = post.description
-        addressLabel.text = post.location
+        //addressLabel.text = post.location
         taskImageView.image = UIImage(named: "HandsOnBackground.jpg")
+        
+        
+        let location = CLLocation(latitude: post.latitude, longitude: post.longitude)
+        CLGeocoder().reverseGeocodeLocation(location) { (placemarks, error) in
+            guard let addressDict = placemarks?[0].addressDictionary else {
+                return
+            }
+            
+            // Print each key-value pair in a new row
+            addressDict.forEach { print($0) }
+            
+            // Print fully formatted address
+            if let formattedAddress = addressDict["FormattedAddressLines"] as? [String] {
+                print(formattedAddress.joined(separator: ", "))
+            }
+            
+            var address : String = ""
+            // Access each element manually
+
+            if let city = addressDict["City"] as? String {
+                address = address + city + ", "
+            }
+            if let state = addressDict["State"] as? String{
+                address = address + state
+            }
+            
+            self.addressLabel.text = address
+        }
+        
+        
+        
         //durationLabel.text = String(post.duration)
     }
     

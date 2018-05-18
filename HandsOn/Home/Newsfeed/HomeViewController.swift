@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 import Firebase
+import MapKit
+import CoreLocation
+
 
 class HomeViewController:UITableViewController {
     
@@ -49,11 +52,14 @@ class HomeViewController:UITableViewController {
                     let price = dict["price"] as? Int,
                     let location = dict["location"] as? String,
                     let duration = dict["duration"] as? Int,
-                    let description = dict["description"] as? String
+                    let description = dict["description"] as? String,
+                    let latitude = dict["coordLat"] as? CLLocationDegrees,
+                    let longitude = dict["coordLong"] as? CLLocationDegrees
+ 
                 {
                     
                     let userProfile = UserProfile(uid: uid, username: username, photoURL: url)
-                    let post = Post(id: childSnapshot.key, author: userProfile, text: text, timestamp:timestamp,price: price, location: location, duration: duration, description: description)
+                    let post = Post(id: childSnapshot.key, author: userProfile, text: text, timestamp:timestamp,price: price, location: location, duration: duration, description: description, latitude: latitude, longitude: longitude)
                     tempPosts.append(post)
                     
                     print ("post added to newsfeed")

@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import MapKit
+import CoreLocation
 
 class TaskDetailsViewController : UIViewController, UITableViewDelegate {
     
@@ -311,9 +313,36 @@ class TaskDetailsViewController : UIViewController, UITableViewDelegate {
         //        dateLabel.text = String(post.timestamp)
         priceLabel.text = "$" + String(post.price)
         descTextView.text = post.description
-        addressLabel.text = post.location
+        //addressLabel.text = post.location
         taskImageView.image = UIImage(named: "HandsOnBackground.jpg")
         durationLabel.text = String(post.duration)
+        
+        let location = CLLocation(latitude: post.latitude, longitude: post.longitude)
+        CLGeocoder().reverseGeocodeLocation(location) { (placemarks, error) in
+            guard let addressDict = placemarks?[0].addressDictionary else {
+                return
+            }
+            
+            // Print each key-value pair in a new row
+            addressDict.forEach { print($0) }
+            
+            // Print fully formatted address
+            if let formattedAddress = addressDict["FormattedAddressLines"] as? [String] {
+                print(formattedAddress.joined(separator: ", "))
+            }
+            
+            var address : String = ""
+            // Access each element manually
+            
+            if let city = addressDict["City"] as? String {
+                address = address + city + ", "
+            }
+            if let state = addressDict["State"] as? String{
+                address = address + state
+            }
+            
+            self.addressLabel.text = address
+        }
     }
     
 

@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import Firebase
+import MapKit
+import CoreLocation
 
 class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
@@ -216,7 +218,8 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
         
     }()
     
-    
+    var firstCoordinates : CLLocationCoordinate2D!
+    var firstCoordinatesSet = false
     
     
     override func viewDidLoad() {
@@ -370,36 +373,60 @@ class NewPostViewController:UIViewController, UITextViewDelegate, UIImagePickerC
         self.dismiss(animated: true)
     }
     
+    @objc private func convertCoords(){
+        
+        CLGeocoder().geocodeAddressString(locationTextField.text!) { (placemarks, error) in
+            if !(error != nil){
+                if let placemark = placemarks?.first {
+                    let coordinate = placemark.location?.coordinate
+                    self.firstCoordinates = coordinate
+                    print(self.firstCoordinates)
+                    self.firstCoordinatesSet = true
+                    
+                }
+            } else{
+                print("couldn't fetch coordinates of location")
+                //tell user that location is invalid
+            }
+        }
+        
+    }
     
     @objc private func handlePostButton() {
         
-        guard let userProfile = UserService.currentUserProfile else { return }
-        // Firebase code here
+        convertCoords()
         
-        let postRef = Database.database().reference().child("posts").childByAutoId()
-        
-        let postObject = [
-            "author": [
-                "uid": userProfile.uid,
-                "username": userProfile.username,
-                "photoURL": userProfile.photoURL.absoluteString
-            ],
-            "text": titleTextField.text!,
-            "timestamp": [".sv":"timestamp"],
-            "price" : Int(priceTextField.text!)!,
-            "location": locationTextField.text!,
-            "duration": Int(durationTextField.text!)!,
-            "description": descTextField.text!
-            ] as [String:Any]
-        
-        postRef.setValue(postObject, withCompletionBlock: { error, ref in
-            if error == nil {
-                self.dismiss(animated: true, completion: nil)
-            } else {
-                // Handle the error
-                print("Error saving post")
-            }
-        })
+        if firstCoordinatesSet == true {
+            guard let userProfile = UserService.currentUserProfile else { return }
+            // Firebase code here
+            
+            let postRef = Database.database().reference().child("posts").childByAutoId()
+            
+            let postObject = [
+                "author": [
+                    "uid": userProfile.uid,
+                    "username": userProfile.username,
+                    "photoURL": userProfile.photoURL.absoluteString
+                ],
+                "text": titleTextField.text!,
+                "timestamp": [".sv":"timestamp"],
+                "price" : Int(priceTextField.text!)!,
+                "location": locationTextField.text!,
+                "duration": Int(durationTextField.text!)!,
+                "description": descTextField.text!,
+                "coordLat": firstCoordinates.latitude,
+                "coordLong": firstCoordinates.longitude
+                ] as [String:Any]
+            
+            postRef.setValue(postObject, withCompletionBlock: { error, ref in
+                if error == nil {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    // Handle the error
+                    print("Error saving post")
+                }
+            })
+        }
 
     }
     

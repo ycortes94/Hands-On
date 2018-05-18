@@ -148,13 +148,13 @@
 			path = Tasks;
 			sourceTree = "<group>";
 		};
-		D059FD5720AB74F100F4C849 /* New Group */ = {
+		D059FD5720AB74F100F4C849 /* Newsfeed */ = {
 			isa = PBXGroup;
 			children = (
 				FFE861EF207630F300C5B8DD /* HomeViewController.swift */,
 				FFE861F0207630F300C5B8DD /* PostTableViewCell.swift */,
 			);
-			path = "New Group";
+			path = Newsfeed;
 			sourceTree = "<group>";
 		};
 		D083594920A3D93700A1B7C8 /* MoreVC */ = {
@@ -233,7 +233,7 @@
 			children = (
 				D064498F2094D310005B8BF2 /* CustomTabBarController.swift */,
 				FFE861F2207630F300C5B8DD /* NewPostViewController.swift */,
-				D059FD5720AB74F100F4C849 /* New Group */,
+				D059FD5720AB74F100F4C849 /* Newsfeed */,
 				D059FD5620AB74CD00F4C849 /* Tasks */,
 				D06449932094EE80005B8BF2 /* MessagesViewController.swift */,
 				D083594920A3D93700A1B7C8 /* MoreVC */,
