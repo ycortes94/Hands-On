@@ -11,9 +11,9 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "BooleanLiteralType"
 - !private "ImageService"
-- "MyTaskPost"
 - "MyTaskPostTableViewCell"
 - "NSCoder"
+- "Post"
 - "String"
 - !private "StringLiteralType"
 - "UIColor"
@@ -292,12 +292,9 @@ depends-member:
 - !private ["7HandsOn12ImageServiceC", "getImage"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["7HandsOn10MyTaskPostC", "author"]
-- !private ["7HandsOn10MyTaskPostC", "price"]
-- !private ["7HandsOn10MyTaskPostC", "text"]
 - !private ["7HandsOn23MyTaskPostTableViewCellC", "ImageService"]
-- ["7HandsOn23MyTaskPostTableViewCellC", "MyTaskPost"]
 - ["7HandsOn23MyTaskPostTableViewCellC", "NSCoder"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "Post"]
 - ["7HandsOn23MyTaskPostTableViewCellC", "String"]
 - ["7HandsOn23MyTaskPostTableViewCellC", "UIColor"]
 - ["7HandsOn23MyTaskPostTableViewCellC", "UIFont"]
@@ -316,7 +313,7 @@ depends-member:
 - ["7HandsOn23MyTaskPostTableViewCellC", "priceLabel"]
 - ["7HandsOn23MyTaskPostTableViewCellC", "profileImageView"]
 - !private ["7HandsOn23MyTaskPostTableViewCellC", "rightAnchor"]
-- ["7HandsOn23MyTaskPostTableViewCellC", "setMyTasks"]
+- ["7HandsOn23MyTaskPostTableViewCellC", "set"]
 - !private ["7HandsOn23MyTaskPostTableViewCellC", "setUpLayout"]
 - ["7HandsOn23MyTaskPostTableViewCellC", "taskImageView"]
 - ["7HandsOn23MyTaskPostTableViewCellC", "taskTitleLabel"]
@@ -375,8 +372,8 @@ depends-member:
 - !private ["So19NSLayoutXAxisAnchorC", "constraint"]
 - !private ["So19NSLayoutYAxisAnchorC", "constraint"]
 - !private ["So8NSObjectC", "ImageService"]
-- ["So8NSObjectC", "MyTaskPost"]
 - ["So8NSObjectC", "NSCoder"]
+- ["So8NSObjectC", "Post"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UIFont"]
@@ -408,7 +405,7 @@ depends-member:
 - ["So8NSObjectC", "priceLabel"]
 - ["So8NSObjectC", "profileImageView"]
 - !private ["So8NSObjectC", "rightAnchor"]
-- ["So8NSObjectC", "setMyTasks"]
+- ["So8NSObjectC", "set"]
 - ["So8NSObjectC", "setUpLayout"]
 - ["So8NSObjectC", "systemFont"]
 - ["So8NSObjectC", "taskImageView"]
@@ -465,6 +462,9 @@ depends-member:
 - ["So14NSSecureCodingP", "lightGray"]
 - ["So14NSSecureCodingP", "masksToBounds"]
 - ["SC15NSTextAlignmentO", "center"]
+- !private ["7HandsOn4PostC", "author"]
+- !private ["7HandsOn4PostC", "price"]
+- !private ["7HandsOn4PostC", "text"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - ["s16RawRepresentableP", "bold"]
 - ["s16RawRepresentableP", "center"]
@@ -829,8 +829,8 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So30UIPasteConfigurationSupportingP", "widthAnchor"]
 - !private ["So11UIResponderC", "ImageService"]
-- ["So11UIResponderC", "MyTaskPost"]
 - ["So11UIResponderC", "NSCoder"]
+- ["So11UIResponderC", "Post"]
 - ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIColor"]
 - ["So11UIResponderC", "UIFont"]
@@ -855,7 +855,7 @@ depends-member:
 - ["So11UIResponderC", "priceLabel"]
 - ["So11UIResponderC", "profileImageView"]
 - !private ["So11UIResponderC", "rightAnchor"]
-- ["So11UIResponderC", "setMyTasks"]
+- ["So11UIResponderC", "set"]
 - ["So11UIResponderC", "setUpLayout"]
 - ["So11UIResponderC", "taskImageView"]
 - ["So11UIResponderC", "taskTitleLabel"]
@@ -908,8 +908,8 @@ depends-member:
 - ["So12UIScrollViewC", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So12UIScrollViewC", "widthAnchor"]
 - !private ["So15UITableViewCellC", "ImageService"]
-- ["So15UITableViewCellC", "MyTaskPost"]
 - ["So15UITableViewCellC", "NSCoder"]
+- ["So15UITableViewCellC", "Post"]
 - ["So15UITableViewCellC", "String"]
 - ["So15UITableViewCellC", "UIColor"]
 - ["So15UITableViewCellC", "UIFont"]
@@ -928,7 +928,7 @@ depends-member:
 - ["So15UITableViewCellC", "priceLabel"]
 - ["So15UITableViewCellC", "profileImageView"]
 - !private ["So15UITableViewCellC", "rightAnchor"]
-- ["So15UITableViewCellC", "setMyTasks"]
+- ["So15UITableViewCellC", "set"]
 - ["So15UITableViewCellC", "setUpLayout"]
 - ["So15UITableViewCellC", "taskImageView"]
 - ["So15UITableViewCellC", "taskTitleLabel"]
@@ -1027,8 +1027,8 @@ depends-member:
 - ["So18UITraitEnvironmentP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So18UITraitEnvironmentP", "widthAnchor"]
 - !private ["So6UIViewC", "ImageService"]
-- ["So6UIViewC", "MyTaskPost"]
 - ["So6UIViewC", "NSCoder"]
+- ["So6UIViewC", "Post"]
 - ["So6UIViewC", "String"]
 - ["So6UIViewC", "UIColor"]
 - ["So6UIViewC", "UIFont"]
@@ -1053,7 +1053,7 @@ depends-member:
 - ["So6UIViewC", "priceLabel"]
 - ["So6UIViewC", "profileImageView"]
 - !private ["So6UIViewC", "rightAnchor"]
-- ["So6UIViewC", "setMyTasks"]
+- ["So6UIViewC", "set"]
 - ["So6UIViewC", "setUpLayout"]
 - ["So6UIViewC", "taskImageView"]
 - ["So6UIViewC", "taskTitleLabel"]
@@ -1181,7 +1181,6 @@ depends-nominal:
 - !private "7HandsOn12ImageServiceC"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "7HandsOn10MyTaskPostC"
 - "7HandsOn23MyTaskPostTableViewCellC"
 - "So8NSCodingP"
 - "So9NSCopyingP"
@@ -1196,6 +1195,7 @@ depends-nominal:
 - "So16NSObjectProtocolP"
 - "So14NSSecureCodingP"
 - "SC15NSTextAlignmentO"
+- !private "7HandsOn4PostC"
 - !private "s26RangeReplaceableCollectionP"
 - "s16RawRepresentableP"
 - !private "s8SequenceP"
@@ -1361,4 +1361,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "e91a762a99fcf789b6300701b5653776"
+interface-hash: "cdc7342d51592f5053c75c3e5c9a3b08"

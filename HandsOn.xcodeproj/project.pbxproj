@@ -25,6 +25,7 @@
 		FF34F3FC20AC3B6800A55596 /* MyTaskPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF34F3FA20AC3B6800A55596 /* MyTaskPostTableViewCell.swift */; };
 		FF34F3FF20AC560F00A55596 /* MyUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF34F3FE20AC560F00A55596 /* MyUserService.swift */; };
 		FF74975F20AE905700B66565 /* IndivTaskPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF74975E20AE905700B66565 /* IndivTaskPostTableViewCell.swift */; };
+		FF74976120AEAB5700B66565 /* ProfileViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF74976020AEAB5700B66565 /* ProfileViewCell.swift */; };
 		FF974A8F20AA3AD90073EB11 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF974A8E20AA3AD90073EB11 /* LogoutViewController.swift */; };
 		FFE861A7207618E600C5B8DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE861A6207618E600C5B8DD /* AppDelegate.swift */; };
 		FFE861AF207618E600C5B8DD /* HandsOn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFE861AD207618E600C5B8DD /* HandsOn.xcdatamodeld */; };
@@ -68,6 +69,7 @@
 		FF34F3FA20AC3B6800A55596 /* MyTaskPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaskPostTableViewCell.swift; sourceTree = "<group>"; };
 		FF34F3FE20AC560F00A55596 /* MyUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUserService.swift; sourceTree = "<group>"; };
 		FF74975E20AE905700B66565 /* IndivTaskPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndivTaskPostTableViewCell.swift; sourceTree = "<group>"; };
+		FF74976020AEAB5700B66565 /* ProfileViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewCell.swift; sourceTree = "<group>"; };
 		FF974A8E20AA3AD90073EB11 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		FFE861A3207618E600C5B8DD /* HandsOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandsOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE861A6207618E600C5B8DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				D083594720A3D92F00A1B7C8 /* ProfileViewController.swift */,
 				D059FD5120AB47F200F4C849 /* EditProfileViewController.swift */,
+				FF74976020AEAB5700B66565 /* ProfileViewCell.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				D06449942094EE80005B8BF2 /* MessagesViewController.swift in Sources */,
 				D06449922094ECBB005B8BF2 /* TasksViewController.swift in Sources */,
 				FFE861A7207618E600C5B8DD /* AppDelegate.swift in Sources */,
+				FF74976120AEAB5700B66565 /* ProfileViewCell.swift in Sources */,
 				FFE861F4207630F300C5B8DD /* PostTableViewCell.swift in Sources */,
 				FFE8620B207632F000C5B8DD /* LoginViewController.swift in Sources */,
 				FF34F3FF20AC560F00A55596 /* MyUserService.swift in Sources */,

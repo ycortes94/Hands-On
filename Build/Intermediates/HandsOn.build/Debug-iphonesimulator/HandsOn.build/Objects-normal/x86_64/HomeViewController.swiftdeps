@@ -451,6 +451,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "posts"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "pushViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "set"]
 - !private ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
@@ -590,6 +591,7 @@ depends-member:
 - !private ["s8SequenceP", "subscript"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
+- !private ["7HandsOn25TaskDetailsViewControllerC", "set"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "addSubview"]
@@ -669,6 +671,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "posts"]
 - !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "pushViewController"]
+- !private ["So18UIContentContainerP", "set"]
 - !private ["So18UIContentContainerP", "tableView"]
 - !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
@@ -871,6 +874,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "observePosts"]
 - !private ["So20UIScrollViewDelegateP", "posts"]
 - !private ["So20UIScrollViewDelegateP", "print"]
+- !private ["So20UIScrollViewDelegateP", "set"]
 - !private ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "view"]
 - !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
@@ -894,6 +898,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "posts"]
 - !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "pushViewController"]
+- !private ["So16UIStateRestoringP", "set"]
 - !private ["So16UIStateRestoringP", "tableView"]
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
@@ -968,6 +973,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "observePosts"]
 - !private ["So19UITableViewDelegateP", "posts"]
 - !private ["So19UITableViewDelegateP", "print"]
+- !private ["So19UITableViewDelegateP", "set"]
 - !private ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "view"]
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
@@ -1039,6 +1045,7 @@ depends-member:
 - ["So16UIViewControllerC", "posts"]
 - !private ["So16UIViewControllerC", "print"]
 - !private ["So16UIViewControllerC", "pushViewController"]
+- !private ["So16UIViewControllerC", "set"]
 - ["So16UIViewControllerC", "tableView"]
 - !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
@@ -1179,6 +1186,7 @@ depends-nominal:
 - "s8SequenceP"
 - !private "SS"
 - !private "s14StringProtocolP"
+- !private "7HandsOn25TaskDetailsViewControllerC"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController : UIViewController{
     
@@ -34,7 +35,7 @@ class ProfileViewController : UIViewController{
         
         let label = UILabel()
         label.backgroundColor = UIColor.lightGray
-        label.text = "Rich Chau"
+//        label.text = "Rich Chau"
         label.font = UIFont.systemFont(ofSize: 25, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -58,7 +59,7 @@ class ProfileViewController : UIViewController{
         let label = UILabel()
         label.backgroundColor = UIColor.lightGray
         label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
-        label.text = "San Jose, CA"
+//        label.text = "San Jose, CA"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -81,8 +82,21 @@ class ProfileViewController : UIViewController{
         
         setUpLayout()
         
+        guard let userProfile = UserService.currentUserProfile else { return }
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        let databaseRef = Database.database().reference().child("users/profile/\(uid)")
+        databaseRef.observeSingleEvent(of: .value, with: { snapshot in
+            if userProfile.uid == uid {
+                ImageService.getImage(withURL: userProfile.photoURL) { image in
+                    self.profileImageView.image = image
+                }
+                self.nameLabel.text = userProfile.username
+                self.descriptionTextView.text = Auth.auth().currentUser?.email
+            }
+        })
     }
     
+
     private func setUpLayout() {
 
         backgroundImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
@@ -109,6 +123,8 @@ class ProfileViewController : UIViewController{
         descriptionTextView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
     }
+    
+    
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {

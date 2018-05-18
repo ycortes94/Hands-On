@@ -372,6 +372,15 @@ SWIFT_CLASS("_TtC7HandsOn17PostTableViewCell")
 @end
 
 
+SWIFT_CLASS("_TtC7HandsOn15ProfileViewCell")
+@interface ProfileViewCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (void)imageTappedWithTapGestureRecognizer:(UITapGestureRecognizer * _Nonnull)tapGestureRecognizer;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)handleViewDetailsButton;
+@end
+
+
 SWIFT_CLASS("_TtC7HandsOn21ProfileViewController")
 @interface ProfileViewController : UIViewController
 - (void)viewDidLoad;
@@ -430,12 +439,8 @@ SWIFT_CLASS("_TtC7HandsOn20SignUpViewController")
 
 
 SWIFT_CLASS("_TtC7HandsOn25TaskDetailsViewController")
-@interface TaskDetailsViewController : UITableViewController
+@interface TaskDetailsViewController : UIViewController <UITableViewDelegate>
 - (void)viewDidLoad;
-- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
