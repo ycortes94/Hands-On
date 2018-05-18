@@ -12,7 +12,7 @@ import Firebase
 class TasksViewController: UITableViewController{
     
     
-    var TableView: UITableView!
+    //var TableView: UITableView!
     var myPosts = [MyTaskPost]()
     
     override func viewDidLoad() {
@@ -25,38 +25,12 @@ class TasksViewController: UITableViewController{
         let item1 = UIBarButtonItem(customView: btn1)
         self.navigationItem.setRightBarButton(item1, animated: true)
     
-        //Adding posts
-        TableView = UITableView(frame: view.bounds, style: .plain)
-        
-        let cellNib = UINib(nibName: "MyTaskPostTableViewCell", bundle: nil)
-        TableView.register(cellNib, forCellReuseIdentifier: "MyTaskPostTableViewCell")
-        TableView.backgroundColor = UIColor(white: 0.90,alpha:1.0)
-        view.addSubview(TableView)
-
-        var layoutGuide:UILayoutGuide!
-
-        if #available(iOS 11.0, *) {
-            layoutGuide = view.safeAreaLayoutGuide
-        } else {
-            // Fallback on earlier versions
-            layoutGuide = view.layoutMarginsGuide
-        }
-
-        TableView.translatesAutoresizingMaskIntoConstraints = false
-        TableView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor).isActive = true
-        TableView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
-        TableView.trailingAnchor.constraint(equalTo:layoutGuide.trailingAnchor).isActive = true
-        TableView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
-
-        TableView.delegate = self
-        TableView.dataSource = self
-        TableView.reloadData()
-
-        print("calling observe post")
         observeMyPosts()
-//        print("Hello")
+        
+        self.tableView.register(MyTaskPostTableViewCell.self, forCellReuseIdentifier: "taskpostcell")
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 100
     }
-    
     func observeMyPosts() {
         let uid = (Auth.auth().currentUser?.uid)!
         print("Current user ID is " + uid)
@@ -94,23 +68,27 @@ class TasksViewController: UITableViewController{
             }
             
             self.myPosts = tempPosts
-            self.TableView.reloadData()
+            self.tableView.reloadData()
             
         })
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myPosts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyTaskPostTableViewCell", for: indexPath) as! MyTaskPostTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "taskpostcell", for: indexPath) as! MyTaskPostTableViewCell
         cell.setMyTasks(myPost: myPosts[indexPath.row])
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let taskDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TaskDetailsViewController") as! TaskDetailsViewController
+        if let navigator = navigationController{
+            navigator.pushViewController(taskDetailsVC, animated: true)
+        }
     }
     
     @objc private func handleMapButton(){

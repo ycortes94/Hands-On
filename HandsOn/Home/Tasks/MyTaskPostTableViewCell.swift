@@ -12,36 +12,117 @@ import Firebase
 
 class MyTaskPostTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var myusernameLabel: UILabel!
-    @IBOutlet weak var mypostTextLabel: UILabel!
-    @IBOutlet weak var mysubtitleLabel: UILabel!
-    @IBOutlet weak var mypriceLabel: UILabel!
-    
-    @IBOutlet weak var myprofileImageView: UIImageView!
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var taskTitleLabel : UILabel = {
+       
+        var label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        label.backgroundColor = UIColor.clear
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
         
-        myprofileImageView.layer.cornerRadius = myprofileImageView.bounds.height / 2
-        myprofileImageView.clipsToBounds = true
+    }()
+    
+    var priceLabel : UILabel = {
+        
+        var label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 15, weight: .bold)
+        label.textAlignment = .center
+        label.backgroundColor = UIColor.clear
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+        
+    }()
+    
+    var profileImageView : UIImageView = {
+        var imageView = UIImageView()
+        imageView.layer.masksToBounds = false
+        imageView.backgroundColor = UIColor.lightGray
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 15
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    var distanceLabelView : UITextView = {
+        var textView = UITextView()
+        textView.textAlignment = .center
+        textView.backgroundColor = UIColor.lightGray
+        textView.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.isScrollEnabled = false
+        return textView
+    }()
+    
+    var taskImageView : UIImageView = {
+        var imageView = UIImageView()
+        imageView.layer.masksToBounds = false
+        imageView.backgroundColor = UIColor.gray
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 30
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        
+        self.addSubview(taskImageView)
+        self.addSubview(profileImageView)
+        self.addSubview(taskTitleLabel)
+        self.addSubview(priceLabel)
+        self.addSubview(distanceLabelView)
+        
+        setUpLayout()
+        
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
+    private func setUpLayout(){
+        
+        taskImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
+        taskImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
+        taskImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10).isActive = true
+        taskImageView.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        taskImageView.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        
+        profileImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
+        profileImageView.topAnchor.constraint(equalTo: taskImageView.centerYAnchor, constant: 0).isActive = true
+        profileImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10).isActive = true
+        profileImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        
+        taskTitleLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0).isActive = true
+        taskTitleLabel.leftAnchor.constraint(equalTo: taskImageView.rightAnchor, constant: 5).isActive = true
+        taskTitleLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        taskTitleLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -75)
+        
+        priceLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10).isActive = true
+        priceLabel.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        priceLabel.bottomAnchor.constraint(equalTo: self.centerYAnchor, constant: -2).isActive = true
+        priceLabel.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        
+        distanceLabelView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10).isActive = true
+        distanceLabelView.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        distanceLabelView.topAnchor.constraint(equalTo: self.centerYAnchor, constant: 2).isActive = true
+        distanceLabelView.heightAnchor.constraint(equalToConstant: 25).isActive = true
+    }
+    
+   
     
     func setMyTasks(myPost:MyTaskPost) {
         ImageService.getImage(withURL: myPost.author.photoURL) { image in
-            self.myprofileImageView.image = image
+            self.profileImageView.image = image
         }
         
-        myusernameLabel.text = myPost.author.username
-        mypostTextLabel.text = myPost.text
-        mysubtitleLabel.text = String(myPost.timestamp)
-        mypriceLabel.text = String(myPost.price)
+        //myusernameLabel.text = myPost.author.username
+        taskTitleLabel.text = myPost.text
+        //mysubtitleLabel.text = String(myPost.timestamp)
+        priceLabel.text = "$" + String(myPost.price)
+        
     }
+ 
+  
 }
