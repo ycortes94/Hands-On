@@ -38,7 +38,7 @@ class TasksViewController: UITableViewController{
         let postsRef = Database.database().reference().child("posts").queryOrdered(byChild: "timestamp")
         
         postsRef.observe(.value, with: { snapshot in
-            var userID:String = (Auth.auth().currentUser?.uid)!
+            let userID:String = (Auth.auth().currentUser?.uid)!
             var tempPosts = [MyTaskPost]()
             
             for child in snapshot.children {
